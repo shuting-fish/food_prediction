@@ -15,3 +15,7 @@ scipy==1.17.0
 seaborn==0.13.2
 six==1.17.0
 threadpoolctl==3.6.0
+
+# added by marcel 23.02.26
+pyarrow==12.0.1  # read .parquet files
+ipykernel==6.30.1  # read and write .ipynb files in venv
