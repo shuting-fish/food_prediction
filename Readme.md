@@ -53,3 +53,5 @@ git push origin master
 
 git checkout -b feature/<name>-<topic>
 git push -u origin feature/<name>-<topic>
+
+### !!! Delete the particular feature branches after they have been merged with master branch. !!!
