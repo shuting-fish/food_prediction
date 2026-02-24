@@ -2,3 +2,21 @@
 venv*/
 env*/
 *.parquet
+
+# Large / generated artifacts
+*.pdf
+*.log
+*.parquet
+*.xlsx
+
+# Local/raw data & generated reports
+raw_data/visualized_raw_data_analysis/
+visualized_raw_data_analysis/
+raw_data/*.parquet
+raw_data/**/viz_raw_data_analysis.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data Assets
+raw_data/geo/
