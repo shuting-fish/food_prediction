@@ -1,23 +1,27 @@
-/artifacts/
+# IDE / local env
 .idea/
 venv*/
 env*/
-*.parquet
-
-# Large / generated artifacts
-*.pdf
-*.log
-*.parquet
-*.xlsx
-
-# Local/raw data & generated reports
-raw_data/visualized_raw_data_analysis/
-visualized_raw_data_analysis/
-raw_data/*.parquet
-raw_data/**/viz_raw_data_analysis.log
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Data Assets
-raw_data/geo/
+# Large / generated artifacts
+*.log
+*.pdf
+*.xlsx
+*.parquet
+
+# Generated reports / visuals
+artifacts/
+raw_data/visualized_raw_data_analysis/
+visualized_raw_data_analysis/
+raw_data/**/viz_raw_data_analysis.log
+
+# External data tooling - keep code, ignore outputs and caches
+raw_data/code_external_data/__pycache__/
+raw_data/code_external_data/_external_data/
+
+# Reference geo: ignore everything except the NRW subset we want to share
+raw_data/code_external_data/_reference_geo/*
+!raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv
