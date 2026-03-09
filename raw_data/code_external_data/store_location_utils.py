@@ -95,7 +95,7 @@ def load_store_locations(
     stores_path:
         Absolute path to your stores table.
     plz_centroids_path:
-        Absolute path to `plz_centroids.csv` (or a compatible file). Required if the stores
+        Absolute path to `plz_centroids_nrw.csv` (or a compatible file). Required if the stores
         table does not have lat/lon.
     require_complete:
         If True, raise an error if any store ends up without coordinates.
@@ -149,3 +149,4 @@ def load_store_locations(
             )
 
     return out.reset_index(drop=True)
+
