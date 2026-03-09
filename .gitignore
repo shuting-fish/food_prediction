@@ -25,3 +25,5 @@ raw_data/code_external_data/_external_data/
 # Reference geo: ignore everything except the NRW subset we want to share
 raw_data/code_external_data/_reference_geo/*
 !raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv
+__pycache__/
+*.pyc
