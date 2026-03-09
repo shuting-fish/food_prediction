@@ -30,7 +30,7 @@ DEFAULT_DATA_SUBDIR = "_external_data"
 DEFAULT_REFERENCE_SUBDIR = "_reference_geo"
 
 # Default expected location of the ZIP centroid file.
-DEFAULT_PLZ_CENTROIDS_PATH = (DEFAULT_BASE_DIR / DEFAULT_REFERENCE_SUBDIR / "plz_centroids.csv").resolve()
+DEFAULT_PLZ_CENTROIDS_PATH = (DEFAULT_BASE_DIR / DEFAULT_REFERENCE_SUBDIR / "plz_centroids_nrw.csv").resolve()
 
 
 def require_absolute_path(path_str: str, flag_name: str) -> Path:
@@ -94,5 +94,6 @@ def get_reference_dir(base_dir: Path) -> Path:
 
 
 def get_default_plz_centroids_path(base_dir: Path) -> Path:
-    """Return the default expected path of `plz_centroids.csv` for this project."""
-    return (base_dir / DEFAULT_REFERENCE_SUBDIR / "plz_centroids.csv").resolve()
+    """Return the default expected path of `plz_centroids_nrw.csv` for this project."""
+    return (base_dir / DEFAULT_REFERENCE_SUBDIR / "plz_centroids_nrw.csv").resolve()
+

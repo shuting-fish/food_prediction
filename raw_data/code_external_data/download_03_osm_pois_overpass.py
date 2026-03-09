@@ -190,7 +190,7 @@ def main() -> int:
         "--plz-centroids-file",
         default=None,
         help=(
-            "ABSOLUTE path to plz_centroids.csv (ZIP -> lat/lon). "
+            "ABSOLUTE path to plz_centroids_nrw.csv (ZIP -> lat/lon). "
             "Required if your stores file has no lat/lon columns."
         ),
     )
@@ -313,3 +313,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
