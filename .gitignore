@@ -2,6 +2,7 @@
 .idea/
 venv*/
 env*/
+.venv/
 
 # Jupyter
 .ipynb_checkpoints/
