@@ -1,315 +1,331 @@
-"""Download football match schedule/results from OpenLigaDB and produce DAILY aggregates.
-
-Why daily?
-- Your sales/production targets are daily.
-- Event signals must be aligned to the same temporal resolution to be mergeable later.
-
-Outputs (parquet/csv)
----------------------
-1) Daily overall table:
-   - date
-   - n_matches_total
-   - n_matches_finished
-   - n_matches_nrw_involved
-
-2) Daily-by-city table:
-   - date
-   - location_city
-   - n_matches_total
-   - n_matches_finished
-   - n_matches_nrw_involved
-
-Optional (debug): match-level table.
-
-Notes
------
-OpenLigaDB's "season" semantics can be confusing depending on league/provider (start year vs end year).
-To reduce manual trial-and-error, the script automatically tries adjacent seasons if the requested
-season yields no matches in the date window.
-
-Dependencies: requests, pandas
-"""
-
 from __future__ import annotations
 
 import argparse
-import sys
-import time
-from datetime import date, datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Dict, Iterable, List
 
 import pandas as pd
 import requests
 
-from abs_path_utils import get_base_dir, get_output_dir, require_absolute_path
-
-API_BASE = "https://api.openligadb.de"
-
-# Heuristic list: team names change over time. We keep this simple.
-NRW_TEAM_SUBSTRINGS = [
-    "Köln",
-    "Koeln",
-    "Dortmund",
-    "Leverkusen",
-    "Mönchengladbach",
-    "Moenchengladbach",
-    "Bochum",
-    "Gelsenkirchen",  # Schalke naming sometimes
-    "Düsseldorf",
-    "Duesseldorf",
-    "Paderborn",
-    "Bielefeld",
-]
-
-DEFAULT_START = "2025-04-01"
-DEFAULT_END = "2025-06-30"
+from date_range_utils import (
+    format_date_range_for_logs,
+    get_default_sales_path,
+    resolve_date_range,
+)
 
 
-def _parse_date(s: str) -> date:
-    try:
-        return datetime.strptime(s, "%Y-%m-%d").date()
-    except ValueError as e:
-        raise SystemExit(f"Invalid date '{s}'. Expected YYYY-MM-DD.") from e
+API_BASE_URL = "https://api.openligadb.de"
+DEFAULT_TIMEOUT_SECONDS = 30
+DEFAULT_LEAGUES = ["bl1"]
 
 
-def _http_get_json(url: str, timeout_s: int = 60, max_retries: int = 4) -> Any:
-    """HTTP GET with small retry/backoff.
-
-    This is defensive: public APIs occasionally throttle (429) or have transient 5xx.
+def get_repo_root() -> Path:
     """
-    backoff = 2
-    for attempt in range(1, max_retries + 1):
-        try:
-            r = requests.get(url, timeout=timeout_s)
-            if r.status_code in (429, 502, 503, 504):
-                time.sleep(min(60, backoff))
-                backoff *= 2
-                continue
-            r.raise_for_status()
-            return r.json()
-        except requests.RequestException:
-            if attempt == max_retries:
-                raise
-            time.sleep(min(60, backoff))
-            backoff *= 2
-    raise RuntimeError("Unreachable")
+    Return the repository root based on this file location.
+    """
+    return Path(__file__).resolve().parents[2]
 
 
-def _is_nrw_team(name: str) -> bool:
-    n = (name or "").lower()
-    return any(sub.lower() in n for sub in NRW_TEAM_SUBSTRINGS)
+def get_base_dir() -> Path:
+    """
+    Return the external data code directory.
+    """
+    return get_repo_root() / "raw_data" / "code_external_data"
 
 
-def _is_nrw_match(home: str, away: str) -> bool:
-    return _is_nrw_team(home) or _is_nrw_team(away)
+def get_default_output_path(start_date: pd.Timestamp, end_date: pd.Timestamp) -> Path:
+    """
+    Return the default parquet output path.
+    """
+    file_name = f"openligadb_matches_{start_date.date()}_{end_date.date()}.parquet"
+    return get_base_dir() / "_external_data" / "openligadb_matches" / file_name
 
 
-def _to_iso(s: Optional[str]) -> Optional[str]:
-    if not s:
-        return None
-    try:
-        return pd.to_datetime(s).isoformat()
-    except Exception:
-        return s
+def ensure_parent_dir(path: Path) -> None:
+    """
+    Ensure the parent directory exists.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
 
 
-def _extract_rows(
-    data: Any,
-    *,
-    league: str,
+def fetch_json(
+    session: requests.Session,
+    url: str,
+    timeout_seconds: int,
+) -> object:
+    """
+    Fetch JSON payload and raise on HTTP errors.
+    """
+    response = session.get(url, timeout=timeout_seconds)
+    response.raise_for_status()
+    return response.json()
+
+
+def infer_candidate_seasons(
+    start_date: pd.Timestamp,
+    end_date: pd.Timestamp,
+) -> List[int]:
+    """
+    Infer candidate league seasons that may overlap the requested date range.
+
+    Example:
+    A date range in spring 2025 can still belong to the 2024/2025 season.
+    """
+    years = set(range(start_date.year - 1, end_date.year + 2))
+    return sorted(years)
+
+
+def league_season_url(league_shortcut: str, season: int) -> str:
+    """
+    Build the OpenLigaDB season endpoint URL.
+    """
+    return f"{API_BASE_URL}/getmatchdata/{league_shortcut}/{season}"
+
+
+def parse_match_rows(
+    payload: object,
+    league_shortcut: str,
     season: int,
-    start: date,
-    end: date,
-    nrw_only: bool,
-) -> Tuple[List[Dict[str, Any]], Optional[date], Optional[date]]:
-    """Parse JSON into match rows and also return the available date range."""
-    if not isinstance(data, list):
-        return [], None, None
+) -> pd.DataFrame:
+    """
+    Parse OpenLigaDB match payload for one league season.
+    """
+    if not isinstance(payload, list):
+        return pd.DataFrame()
 
-    rows: List[Dict[str, Any]] = []
-    all_dates: List[date] = []
+    rows: List[Dict[str, object]] = []
 
-    for m in data:
-        t1 = m.get("Team1")
-        t2 = m.get("Team2")
-        home = (t1 or {}).get("TeamName") if isinstance(t1, dict) else None
-        away = (t2 or {}).get("TeamName") if isinstance(t2, dict) else None
-
-        match_dt = _to_iso(m.get("MatchDateTime"))
-        if not match_dt:
-            continue
-        match_date = pd.to_datetime(match_dt).date()
-        all_dates.append(match_date)
-
-        # Filter to the requested window.
-        if match_date < start or match_date > end:
+    for item in payload:
+        if not isinstance(item, dict):
             continue
 
-        is_nrw = _is_nrw_match(home or "", away or "")
-        if nrw_only and not is_nrw:
-            continue
+        group = item.get("Group") or {}
+        team1 = item.get("Team1") or {}
+        team2 = item.get("Team2") or {}
 
-        loc = m.get("Location") if isinstance(m.get("Location"), dict) else {}
+        match_results = item.get("MatchResults") or []
+        final_result = None
+
+        if isinstance(match_results, list):
+            for result in match_results:
+                if not isinstance(result, dict):
+                    continue
+                result_name = str(result.get("ResultName") or "").strip().lower()
+                result_type_id = result.get("ResultTypeID")
+
+                if result_type_id == 2 or "end" in result_name or "final" in result_name:
+                    final_result = result
+                    break
+
+            if final_result is None and match_results:
+                first_result = match_results[0]
+                if isinstance(first_result, dict):
+                    final_result = first_result
+
         rows.append(
             {
-                "match_id": m.get("MatchID"),
-                "league": league,
-                "season": str(season),
-                "match_datetime": match_dt,
-                "date": match_date.isoformat(),
-                "home_team": home,
-                "away_team": away,
-                "match_is_finished": m.get("MatchIsFinished"),
-                "location_city": (loc or {}).get("LocationCity"),
-                "location_stadium": (loc or {}).get("LocationStadium"),
-                "is_nrw_involved": bool(is_nrw),
-                "last_update": m.get("LastUpdateDateTime"),
+                "league_shortcut": league_shortcut,
+                "league_season": season,
+                "league_name": item.get("LeagueName"),
+                "match_id": item.get("MatchID"),
+                "match_date_time_utc": item.get("MatchDateTimeUTC"),
+                "match_date_time_local": item.get("MatchDateTime"),
+                "match_is_finished": item.get("MatchIsFinished"),
+                "group_id": group.get("GroupID"),
+                "group_name": group.get("GroupName"),
+                "group_order_id": group.get("GroupOrderID"),
+                "team1_id": team1.get("TeamId"),
+                "team1_name": team1.get("TeamName"),
+                "team1_short_name": team1.get("ShortName"),
+                "team2_id": team2.get("TeamId"),
+                "team2_name": team2.get("TeamName"),
+                "team2_short_name": team2.get("ShortName"),
+                "location_name": (item.get("Location") or {}).get("LocationStadium"),
+                "team1_score_final": (
+                    final_result.get("PointsTeam1")
+                    if isinstance(final_result, dict)
+                    else None
+                ),
+                "team2_score_final": (
+                    final_result.get("PointsTeam2")
+                    if isinstance(final_result, dict)
+                    else None
+                ),
             }
         )
 
-    min_d = min(all_dates) if all_dates else None
-    max_d = max(all_dates) if all_dates else None
-    return rows, min_d, max_d
+    df = pd.DataFrame(rows)
 
+    if df.empty:
+        return df
 
-def _daily_agg(df_matches: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Aggregate match-level rows into daily tables."""
-    overall = (
-        df_matches.groupby("date")
-        .agg(
-            n_matches_total=("match_id", "count"),
-            n_matches_finished=("match_is_finished", lambda x: int(pd.Series(x).fillna(False).astype(bool).sum())),
-            n_matches_nrw_involved=("is_nrw_involved", lambda x: int(pd.Series(x).fillna(False).astype(bool).sum())),
-        )
-        .reset_index()
-        .sort_values("date")
+    df["match_date_time_utc"] = pd.to_datetime(
+        df["match_date_time_utc"], errors="coerce", utc=True
     )
-
-    city = (
-        df_matches.groupby(["date", "location_city"], dropna=False)
-        .agg(
-            n_matches_total=("match_id", "count"),
-            n_matches_finished=("match_is_finished", lambda x: int(pd.Series(x).fillna(False).astype(bool).sum())),
-            n_matches_nrw_involved=("is_nrw_involved", lambda x: int(pd.Series(x).fillna(False).astype(bool).sum())),
-        )
-        .reset_index()
-        .sort_values(["date", "location_city"])
+    df["match_date_time_local"] = pd.to_datetime(
+        df["match_date_time_local"], errors="coerce"
     )
+    df["match_date"] = df["match_date_time_local"].dt.normalize()
 
-    return overall, city
+    return df
 
 
-def _write_parquet_or_csv(df: pd.DataFrame, out_path: Path) -> int:
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    if out_path.suffix.lower() == ".csv":
-        df.to_csv(out_path, index=False)
-        return 0
-    try:
-        df.to_parquet(out_path, index=False)
-        return 0
-    except Exception as e:
-        csv_fallback = out_path.with_suffix(".csv")
-        df.to_csv(csv_fallback, index=False)
-        print(
-            "Parquet write failed (missing pyarrow/fastparquet?). "
-            f"Wrote CSV instead: {csv_fallback}\nError: {e}",
-            file=sys.stderr,
+def download_openligadb_matches(
+    start_date: pd.Timestamp,
+    end_date: pd.Timestamp,
+    league_shortcuts: Iterable[str],
+    timeout_seconds: int,
+) -> pd.DataFrame:
+    """
+    Download season-level match data and filter it to the resolved date range.
+    """
+    seasons = infer_candidate_seasons(start_date=start_date, end_date=end_date)
+    frames: List[pd.DataFrame] = []
+
+    with requests.Session() as session:
+        session.headers.update(
+            {
+                "User-Agent": "food_prediction/1.0",
+                "Accept": "application/json",
+            }
         )
-        return 2
+
+        for league_shortcut in league_shortcuts:
+            for season in seasons:
+                payload = fetch_json(
+                    session=session,
+                    url=league_season_url(league_shortcut=league_shortcut, season=season),
+                    timeout_seconds=timeout_seconds,
+                )
+                season_df = parse_match_rows(
+                    payload=payload,
+                    league_shortcut=league_shortcut,
+                    season=season,
+                )
+                if not season_df.empty:
+                    frames.append(season_df)
+
+    if not frames:
+        return pd.DataFrame(
+            columns=[
+                "league_shortcut",
+                "league_season",
+                "league_name",
+                "match_id",
+                "match_date_time_utc",
+                "match_date_time_local",
+                "match_is_finished",
+                "group_id",
+                "group_name",
+                "group_order_id",
+                "team1_id",
+                "team1_name",
+                "team1_short_name",
+                "team2_id",
+                "team2_name",
+                "team2_short_name",
+                "location_name",
+                "team1_score_final",
+                "team2_score_final",
+                "match_date",
+            ]
+        )
+
+    df = pd.concat(frames, ignore_index=True)
+    df = df.drop_duplicates(subset=["league_shortcut", "match_id"]).reset_index(drop=True)
+
+    mask = (df["match_date"] >= start_date) & (df["match_date"] <= end_date)
+    df = df.loc[mask].sort_values(["match_date", "league_shortcut", "match_id"]).reset_index(drop=True)
+
+    return df
+
+
+def build_argument_parser() -> argparse.ArgumentParser:
+    """
+    Build the command line parser.
+    """
+    parser = argparse.ArgumentParser(
+        description="Download historical OpenLigaDB matches using an automatic sales-based date range."
+    )
+    parser.add_argument(
+        "--sales-path",
+        type=Path,
+        default=get_default_sales_path(),
+        help=f"Path to canonical sales parquet. Default: {get_default_sales_path()}",
+    )
+    parser.add_argument(
+        "--date-col",
+        default="date",
+        help="Date column in the sales parquet.",
+    )
+    parser.add_argument(
+        "--start-date",
+        default=None,
+        help="Optional manual override for start date (YYYY-MM-DD).",
+    )
+    parser.add_argument(
+        "--end-date",
+        default=None,
+        help="Optional manual override for end date (YYYY-MM-DD).",
+    )
+    parser.add_argument(
+        "--league-shortcuts",
+        nargs="*",
+        default=DEFAULT_LEAGUES,
+        help="League shortcuts, e.g. bl1 bl2 bl3 dfb.",
+    )
+    parser.add_argument(
+        "--timeout-seconds",
+        type=int,
+        default=DEFAULT_TIMEOUT_SECONDS,
+        help="HTTP timeout in seconds.",
+    )
+    parser.add_argument(
+        "--output-path",
+        type=Path,
+        default=None,
+        help="Optional explicit output path.",
+    )
+    return parser
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--base-dir", default=None, help="ABSOLUTE base directory for scripts + outputs")
-    ap.add_argument("--league", default="bl1", help="League shortcut (default: bl1)")
-    ap.add_argument(
-        "--season",
-        required=True,
-        type=int,
-        help=(
-            "Season year (e.g., 2024). The script will auto-try adjacent seasons if needed "
-            "because providers may label seasons by start or end year."
-        ),
+    """
+    Run the historical OpenLigaDB download workflow.
+    """
+    parser = build_argument_parser()
+    args = parser.parse_args()
+
+    start_date, end_date = resolve_date_range(
+        start_date=args.start_date,
+        end_date=args.end_date,
+        sales_path=args.sales_path,
+        date_col=args.date_col,
     )
-    ap.add_argument("--start", default=DEFAULT_START, help="Start date (YYYY-MM-DD)")
-    ap.add_argument("--end", default=DEFAULT_END, help="End date (YYYY-MM-DD)")
-    ap.add_argument("--nrw-only", action="store_true", help="Keep only matches involving NRW teams (name heuristic)")
-    ap.add_argument("--write-matches", action="store_true", help="Also write match-level table (debug/traceability)")
-    ap.add_argument(
-        "--out-dir",
-        default=None,
-        help="ABSOLUTE output directory. If omitted, a default path under <base-dir> is used.",
+
+    output_path = (
+        Path(args.output_path).resolve()
+        if args.output_path is not None
+        else get_default_output_path(start_date=start_date, end_date=end_date).resolve()
     )
-    ap.add_argument("--force", action="store_true", help="Overwrite existing outputs")
-    args = ap.parse_args()
+    ensure_parent_dir(output_path)
 
-    start = _parse_date(args.start)
-    end = _parse_date(args.end)
-    if end < start:
-        raise SystemExit("--end must be >= --start")
+    print(
+        "[INFO] Resolved OpenLigaDB date range:",
+        format_date_range_for_logs(start_date, end_date),
+    )
 
-    base_dir = get_base_dir(args.base_dir)
-    out_dir = require_absolute_path(args.out_dir, "--out-dir") if args.out_dir else get_output_dir(base_dir, "openligadb")
-    out_dir.mkdir(parents=True, exist_ok=True)
+    df = download_openligadb_matches(
+        start_date=start_date,
+        end_date=end_date,
+        league_shortcuts=args.league_shortcuts,
+        timeout_seconds=args.timeout_seconds,
+    )
+    df.to_parquet(output_path, index=False)
 
-    suffix = "nrw" if args.nrw_only else "all"
-    out_overall = out_dir / f"openligadb_daily_overall_{args.league}_{args.season}_{suffix}_{start.isoformat()}_{end.isoformat()}.parquet"
-    out_city = out_dir / f"openligadb_daily_city_{args.league}_{args.season}_{suffix}_{start.isoformat()}_{end.isoformat()}.parquet"
-    out_matches = out_dir / f"openligadb_matches_{args.league}_{args.season}_{suffix}_{start.isoformat()}_{end.isoformat()}.parquet"
+    print(f"[OK] Saved {len(df)} rows to {output_path}")
 
-    if not args.force:
-        if out_overall.exists() and out_city.exists() and (not args.write_matches or out_matches.exists()):
-            print("Outputs exist, skipping (use --force).")
-            return 0
-
-    seasons_to_try = [args.season, args.season + 1, args.season - 1]
-    chosen_season: Optional[int] = None
-    chosen_rows: List[Dict[str, Any]] = []
-    diag_ranges: Dict[int, Tuple[Optional[date], Optional[date]]] = {}
-
-    for season in seasons_to_try:
-        url = f"{API_BASE}/getmatchdata/{args.league}/{season}"
-        data = _http_get_json(url)
-        rows, min_d, max_d = _extract_rows(data, league=args.league, season=season, start=start, end=end, nrw_only=args.nrw_only)
-        diag_ranges[season] = (min_d, max_d)
-        if rows:
-            chosen_season = season
-            chosen_rows = rows
-            break
-
-    if chosen_season is None or not chosen_rows:
-        # Print diagnostics so you can see which seasons overlap your date window.
-        parts = []
-        for s, (mn, mx) in diag_ranges.items():
-            parts.append(f"season={s}: available={mn}..{mx}")
-        print(
-            "No matches found in requested window. "
-            "Try a different --season (e.g., 2024 vs 2025). "
-            f"Diagnostics: {', '.join(parts)}",
-            file=sys.stderr,
-        )
-        return 1
-
-    if chosen_season != args.season:
-        print(f"NOTE: No matches for season={args.season}. Used season={chosen_season} instead.")
-
-    df = pd.DataFrame(chosen_rows).sort_values(["date", "match_datetime"]).reset_index(drop=True)
-    df_overall, df_city = _daily_agg(df)
-
-    rc1 = _write_parquet_or_csv(df_overall, out_overall)
-    rc2 = _write_parquet_or_csv(df_city, out_city)
-    rc3 = 0
-    if args.write_matches:
-        rc3 = _write_parquet_or_csv(df, out_matches)
-
-    print("Wrote:")
-    print(f"- {out_overall} ({len(df_overall):,} rows)")
-    print(f"- {out_city} ({len(df_city):,} rows)")
-    if args.write_matches:
-        print(f"- {out_matches} ({len(df):,} matches)")
-
-    return max(rc1, rc2, rc3)
+    return 0
 
 
 if __name__ == "__main__":
