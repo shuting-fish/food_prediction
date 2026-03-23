@@ -9,6 +9,7 @@ env*/
 *.log
 *.parquet
 *.xlsx
+*.csv
 
 # Local/raw data & generated reports
 raw_data/visualized_raw_data_analysis/
@@ -21,3 +22,9 @@ raw_data/**/viz_raw_data_analysis.log
 
 # Data Assets
 raw_data/geo/
+
+# Marcel
+visualization_marcel.ipynb
+.virtual_documents/
+anaconda_projects/
+marcel_lokal/
