@@ -12,6 +12,7 @@ env*/
 *.pdf
 *.xlsx
 *.parquet
+*.csv
 
 # Generated reports / visuals
 artifacts/
