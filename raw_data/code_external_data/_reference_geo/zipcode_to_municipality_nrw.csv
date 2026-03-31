@@ -1,0 +1,865 @@
+zipcode,centroid_longitude,centroid_latitude,municipality_ags,municipality_ars,municipality_name,municipality_designation,municipality_display_name,district_ars,district_name,district_designation,district_display_name,federal_state_code,federal_state_name,assignment_method,distance_to_municipality_m
+32049,8.7130931,52.13539549999999,05758012,057580012012,Herford,Stadt,"Herford, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32051,8.5897784,52.1017418,05758012,057580012012,Herford,Stadt,"Herford, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32052,8.6500658,52.0919704,05758012,057580012012,Herford,Stadt,"Herford, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32105,8.7464532,52.0848218,05766008,057660008008,Bad Salzuflen,Stadt,"Bad Salzuflen, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32107,8.693308799999999,52.0727509,05766008,057660008008,Bad Salzuflen,Stadt,"Bad Salzuflen, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32108,8.8101326,52.0853966,05766008,057660008008,Bad Salzuflen,Stadt,"Bad Salzuflen, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32120,8.636922799999999,52.1624101,05758016,057580016016,Hiddenhausen,Gemeinde,"Hiddenhausen, Gemeinde",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32130,8.54772,52.14755760000001,05758008,057580008008,Enger,Stadt,"Enger, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32139,8.458715399999999,52.1326307,05758032,057580032032,Spenge,Stadt,"Spenge, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32257,8.5777547,52.198835,05758004,057580004004,Bünde,Stadt,"Bünde, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32278,8.6566223,52.2251494,05758020,057580020020,Kirchlengern,Gemeinde,"Kirchlengern, Gemeinde",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32289,8.490898,52.2372464,05758028,057580028028,Rödinghausen,Gemeinde,"Rödinghausen, Gemeinde",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32312,8.627567299999999,52.3129662,05770020,057700020020,Lübbecke,Stadt,"Lübbecke, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32339,8.6301395,52.3663804,05770008,057700008008,Espelkamp,Stadt,"Espelkamp, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32351,8.4766636,52.4204498,05770044,057700044044,Stemwede,Gemeinde,"Stemwede, Gemeinde",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32361,8.5103036,52.3000863,05770036,057700036036,Preußisch Oldendorf,Stadt,"Preußisch Oldendorf, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32369,8.6008636,52.4543743,05770040,057700040040,Rahden,Stadt,"Rahden, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32423,8.9553818,52.2937952,05770024,057700024024,Minden,Stadt,"Minden, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32425,8.8907884,52.3362299,05770024,057700024024,Minden,Stadt,"Minden, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32427,8.887359199999999,52.29067930000001,05770024,057700024024,Minden,Stadt,"Minden, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32429,8.8427586,52.275536,05770024,057700024024,Minden,Stadt,"Minden, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32457,8.9402185,52.2253083,05770032,057700032032,Porta Westfalica,Stadt,"Porta Westfalica, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32469,8.9774411,52.3832895,05770028,057700028028,Petershagen,Stadt,"Petershagen, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32479,8.7834291,52.3121379,05770012,057700012012,Hille,Gemeinde,"Hille, Gemeinde",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32545,8.7926501,52.1971271,05770004,057700004004,Bad Oeynhausen,Stadt,"Bad Oeynhausen, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32547,8.822436999999999,52.2074157,05770004,057700004004,Bad Oeynhausen,Stadt,"Bad Oeynhausen, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32549,8.8016185,52.2357817,05770004,057700004004,Bad Oeynhausen,Stadt,"Bad Oeynhausen, Stadt",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32584,8.7434549,52.1866111,05758024,057580024024,Löhne,Stadt,"Löhne, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32602,8.830184500000001,52.1480262,05758036,057580036036,Vlotho,Stadt,"Vlotho, Stadt",000000005758,Herford,Kreis,"Herford, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32609,8.669796,52.2670048,05770016,057700016016,Hüllhorst,Gemeinde,"Hüllhorst, Gemeinde",000000005770,Minden-Lübbecke,Kreis,"Minden-Lübbecke, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32657,8.9070006,52.03535000000001,05766044,057660044044,Lemgo,Stadt,"Lemgo, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32676,9.2689127,51.8898786,05766052,057660052052,Lügde,Stadt,"Lügde, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32683,9.1208499,51.9975391,05766012,057660012012,Barntrup,Stadt,"Barntrup, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32689,8.9512242,52.1281572,05766036,057660036036,Kalletal,Gemeinde,"Kalletal, Gemeinde",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32694,9.0173133,52.0269121,05766024,057660024024,Dörentrup,Gemeinde,"Dörentrup, Gemeinde",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32699,9.1035118,52.07366529999999,05766028,057660028028,Extertal,Gemeinde,"Extertal, Gemeinde",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32756,8.8682321,51.93692249999999,05766020,057660020020,Detmold,Stadt,"Detmold, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32758,8.8251724,51.9561706,05766020,057660020020,Detmold,Stadt,"Detmold, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32760,8.8941812,51.9083032,05766020,057660020020,Detmold,Stadt,"Detmold, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32791,8.7768774,51.9811313,05766040,057660040040,Lage,Stadt,"Lage, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32805,8.9630488,51.8604282,05766032,057660032032,Horn-Bad Meinberg,Stadt,"Horn-Bad Meinberg, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32816,9.1759096,51.9078631,05766060,057660060060,Schieder-Schwalenberg,Stadt,"Schieder-Schwalenberg, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32825,9.0623357,51.9487215,05766016,057660016016,Blomberg,Stadt,"Blomberg, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32832,8.750420199999999,51.897825,05766004,057660004004,Augustdorf,Gemeinde,"Augustdorf, Gemeinde",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+32839,9.0863736,51.8697126,05762032,057620032032,Steinheim,Stadt,"Steinheim, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33014,9.0490757,51.73672819999999,05762004,057620004004,Bad Driburg,Stadt,"Bad Driburg, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33034,9.1585552,51.7281977,05762016,057620016016,Brakel,Stadt,"Brakel, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33039,9.1173323,51.8055268,05762028,057620028028,Nieheim,Stadt,"Nieheim, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33098,8.754257599999999,51.7113515,05774032,057740032032,Paderborn,Stadt,"Paderborn, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33100,8.834156199999999,51.7212792,05774032,057740032032,Paderborn,Stadt,"Paderborn, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33102,8.747207099999999,51.7331315,05774032,057740032032,Paderborn,Stadt,"Paderborn, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33104,8.738254699999999,51.7710084,05774032,057740032032,Paderborn,Stadt,"Paderborn, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33106,8.691364499999999,51.7107326,05774032,057740032032,Paderborn,Stadt,"Paderborn, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33129,8.5578667,51.7737127,05774020,057740020020,Delbrück,Stadt,"Delbrück, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33142,8.6020547,51.5581888,05774016,057740016016,Büren,Stadt,"Büren, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33154,8.5968392,51.6752444,05774036,057740036036,Salzkotten,Stadt,"Salzkotten, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33161,8.6760109,51.8394719,05774024,057740024024,Hövelhof,Gemeinde,"Hövelhof, Gemeinde",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33165,8.8995725,51.6207332,05774028,057740028028,Lichtenau,Stadt,"Lichtenau, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33175,8.826764299999999,51.785633,05774008,057740008008,Bad Lippspringe,Stadt,"Bad Lippspringe, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33178,8.7229861,51.6676571,05774012,057740012012,Borchen,Gemeinde,"Borchen, Gemeinde",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33181,8.7514254,51.5047092,05774040,057740040040,Bad Wünnenberg,Stadt,"Bad Wünnenberg, Stadt",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33184,8.939711899999999,51.745145,05774004,057740004004,Altenbeken,Gemeinde,"Altenbeken, Gemeinde",000000005774,Paderborn,Kreis,"Paderborn, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33189,8.8023317,51.8406829,05766064,057660064064,Schlangen,Gemeinde,"Schlangen, Gemeinde",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33330,8.369734900000001,51.909671,05754008,057540008008,Gütersloh,Stadt,"Gütersloh, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33332,8.3938455,51.897298,05754008,057540008008,Gütersloh,Stadt,"Gütersloh, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33334,8.4012859,51.944695,05754008,057540008008,Gütersloh,Stadt,"Gütersloh, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33335,8.4495493,51.9199178,05754008,057540008008,Gütersloh,Stadt,"Gütersloh, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33378,8.2985134,51.8349207,05754028,057540028028,Rheda-Wiedenbrück,Stadt,"Rheda-Wiedenbrück, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33397,8.3946686,51.7855342,05754032,057540032032,Rietberg,Stadt,"Rietberg, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33415,8.529086699999999,51.86091279999999,05754044,057540044044,Verl,Stadt,"Verl, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33428,8.1724753,51.9715241,05754016,057540016016,Harsewinkel,Stadt,"Harsewinkel, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33442,8.2188923,51.8937329,05754020,057540020020,Herzebrock-Clarholz,Gemeinde,"Herzebrock-Clarholz, Gemeinde",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33449,8.3236176,51.77997999999999,05754024,057540024024,Langenberg,Gemeinde,"Langenberg, Gemeinde",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33602,8.5337526,52.0230903,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33604,8.5482855,52.00664339999999,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33605,8.5795134,52.0010807,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33607,8.5749022,52.0200879,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33609,8.574527999999999,52.0414585,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33611,8.548692299999999,52.04868159999999,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33613,8.5214223,52.0499345,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33615,8.5079382,52.0303012,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33617,8.5246804,52.005081,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33619,8.4770585,52.0404442,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33647,8.5045443,51.9852138,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33649,8.4602772,51.97775499999999,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33659,8.5170368,51.9576538,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33689,8.5991676,51.9516551,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33699,8.6174004,51.9876349,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33719,8.6134521,52.0199295,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33729,8.6062946,52.0701622,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33739,8.5283,52.0848649,05711000,057110000000,Bielefeld,Stadt,"Bielefeld, Stadt",000000005711,Bielefeld,Kreisfreie Stadt,"Bielefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33758,8.661740199999999,51.88311539999999,05754036,057540036036,Schloß Holte-Stukenbrock,Stadt,"Schloß Holte-Stukenbrock, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33775,8.1804854,52.0455929,05754048,057540048048,Versmold,Stadt,"Versmold, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33790,8.3172114,52.03598,05754012,057540012012,Halle (Westf.),Stadt,"Halle (Westf.), Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33803,8.3866415,51.9883767,05754040,057540040040,Steinhagen,Gemeinde,"Steinhagen, Gemeinde",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33813,8.6813664,51.9455927,05766056,057660056056,Oerlinghausen,Stadt,"Oerlinghausen, Stadt",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33818,8.7010651,52.0081232,05766048,057660048048,Leopoldshöhe,Gemeinde,"Leopoldshöhe, Gemeinde",000000005766,Lippe,Kreis,"Lippe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33824,8.418446,52.0927985,05754052,057540052052,Werther (Westf.),Stadt,"Werther (Westf.), Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+33829,8.2813014,52.1025558,05754004,057540004004,Borgholzhausen,Stadt,"Borgholzhausen, Stadt",000000005754,Gütersloh,Kreis,"Gütersloh, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+34414,9.1309863,51.4756133,05762036,057620036036,Warburg,Stadt,"Warburg, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+34431,8.8465078,51.4551847,05958024,059580024024,Marsberg,Stadt,"Marsberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+34434,9.2811888,51.5910115,05762012,057620012012,Borgentreich,Stadt,"Borgentreich, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+34439,9.1174663,51.6039191,05762040,057620040040,Willebadessen,Stadt,"Willebadessen, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+37671,9.3510271,51.7980896,05762020,057620020020,Höxter,Stadt,"Höxter, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+37688,9.3466097,51.66014,05762008,057620008008,Beverungen,Stadt,"Beverungen, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+37696,9.2307887,51.8182984,05762024,057620024024,Marienmünster,Stadt,"Marienmünster, Stadt",000000005762,Höxter,Kreis,"Höxter, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40210,6.787720299999999,51.2225286,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40211,6.792883499999999,51.2301142,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40212,6.780529,51.22360339999999,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40213,6.7727077,51.2220859,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40215,6.7825598,51.2149435,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40217,6.7753988,51.21273110000001,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40219,6.762340699999999,51.2134879,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40221,6.7507247,51.1997076,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40223,6.772247399999999,51.1997752,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40225,6.7898817,51.19743750000001,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40227,6.7975715,51.2153849,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40229,6.8460233,51.19678709999999,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40231,6.830239,51.2134789,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40233,6.8119048,51.2198064,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40235,6.8275162,51.22940939999999,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40237,6.8091727,51.23573810000001,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40239,6.8032182,51.2452874,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40468,6.778904700000001,51.26116409999999,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40470,6.8077057,51.2568594,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40472,6.833787399999999,51.26848769999999,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40474,6.7421871,51.2738092,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40476,6.7790167,51.248009,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40477,6.7849768,51.2384606,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40479,6.7837134,51.233276,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40489,6.7625867,51.3305246,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40545,6.754373699999999,51.2284044,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40547,6.747718799999999,51.2419331,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40549,6.719087399999999,51.233068,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40589,6.821441999999999,51.1640762,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40591,6.8173593,51.1879547,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40593,6.8685413,51.1403079,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40595,6.905068099999999,51.140778,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40597,6.871023399999999,51.1637947,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40599,6.865698,51.1824951,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40625,6.852315399999999,51.2358442,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40627,6.8838823,51.2024446,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40629,6.8836115,51.2550414,05111000,051110000000,Düsseldorf,Stadt,"Düsseldorf, Stadt",000000005111,Düsseldorf,Kreisfreie Stadt,"Düsseldorf, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40667,6.690188699999999,51.2505,05162022,051620022022,Meerbusch,Stadt,"Meerbusch, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+40668,6.6842969,51.308706,05162022,051620022022,Meerbusch,Stadt,"Meerbusch, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+40670,6.6220978,51.2701556,05162022,051620022022,Meerbusch,Stadt,"Meerbusch, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+40699,6.928271199999999,51.2208468,05158004,051580004004,Erkrath,Stadt,"Erkrath, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40721,6.9153961,51.169054,05158016,051580016016,Hilden,Stadt,"Hilden, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40723,6.940116799999999,51.1544727,05158016,051580016016,Hilden,Stadt,"Hilden, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40724,6.957192399999999,51.1770783,05158016,051580016016,Hilden,Stadt,"Hilden, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40764,6.962567699999999,51.118985,05158020,051580020020,Langenfeld (Rhld.),Stadt,"Langenfeld (Rhld.), Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40789,6.8974365,51.0966108,05158026,051580026026,Monheim am Rhein,Stadt,"Monheim am Rhein, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40822,6.9831962,51.25439069999999,05158024,051580024024,Mettmann,Stadt,"Mettmann, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40878,6.8506277,51.2964433,05158028,051580028028,Ratingen,Stadt,"Ratingen, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40880,6.8152244,51.301145,05158028,051580028028,Ratingen,Stadt,"Ratingen, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40882,6.914847399999999,51.3005563,05158028,051580028028,Ratingen,Stadt,"Ratingen, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40883,6.9097177,51.3300918,05158028,051580028028,Ratingen,Stadt,"Ratingen, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+40885,6.851654,51.3411368,05158028,051580028028,Ratingen,Stadt,"Ratingen, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41061,6.429517199999999,51.1941892,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41063,6.4227663,51.2076921,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41065,6.4593441,51.19517,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41066,6.4665644,51.2262928,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41068,6.394406699999999,51.1987421,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41069,6.3999735,51.180057,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41169,6.342495599999999,51.2015715,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41179,6.3536759,51.1642093,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41189,6.401299499999999,51.1143829,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41199,6.4449432,51.1329676,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41236,6.449492299999999,51.1668326,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41238,6.4910825,51.1619037,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41239,6.4261842,51.1654923,05116000,051160000000,Mönchengladbach,Stadt,"Mönchengladbach, Stadt",000000005116,Mönchengladbach,Kreisfreie Stadt,"Mönchengladbach, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41334,6.272100099999999,51.3262794,05166016,051660016016,Nettetal,Stadt,"Nettetal, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41352,6.545060899999999,51.1956517,05162020,051620020020,Korschenbroich,Stadt,"Korschenbroich, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41363,6.494853699999999,51.0934811,05162012,051620012012,Jüchen,Stadt,"Jüchen, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41366,6.259379399999999,51.2113052,05166024,051660024024,Schwalmtal,Gemeinde,"Schwalmtal, Gemeinde",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41372,6.155755099999999,51.2168087,05166020,051660020020,Niederkrüchten,Gemeinde,"Niederkrüchten, Gemeinde",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41379,6.1649406,51.2583557,05166004,051660004004,Brüggen,Gemeinde,"Brüggen, Gemeinde",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41460,6.706313499999999,51.2075211,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41462,6.6619119,51.2153172,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41464,6.672621899999999,51.1910608,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41466,6.7016069,51.1605128,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41468,6.774528999999999,51.1615558,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41469,6.727658799999999,51.1590145,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41470,6.7356786,51.1375502,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41472,6.6442567,51.1690416,05162024,051620024024,Neuss,Stadt,"Neuss, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41515,6.603842999999999,51.08212109999999,05162008,051620008008,Grevenbroich,Stadt,"Grevenbroich, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41516,6.6294561,51.1068955,05162008,051620008008,Grevenbroich,Stadt,"Grevenbroich, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41517,6.588794,51.04627319999999,05162008,051620008008,Grevenbroich,Stadt,"Grevenbroich, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41539,6.8453187,51.0996802,05162004,051620004004,Dormagen,Stadt,"Dormagen, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41540,6.8012013,51.0812746,05162004,051620004004,Dormagen,Stadt,"Dormagen, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41541,6.8268745,51.132252,05162004,051620004004,Dormagen,Stadt,"Dormagen, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41542,6.7594436,51.09943930000001,05162004,051620004004,Dormagen,Stadt,"Dormagen, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41564,6.602028000000001,51.2134619,05162016,051620016016,Kaarst,Stadt,"Kaarst, Stadt",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41569,6.6820125,51.0514549,05162028,051620028028,Rommerskirchen,Gemeinde,"Rommerskirchen, Gemeinde",000000005162,Rhein-Kreis Neuss,Kreis,Rhein-Kreis Neuss,05,Nordrhein-Westfalen,polygon_intersects,0.0
+41747,6.380321299999999,51.2520558,05166032,051660032032,Viersen,Stadt,"Viersen, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41748,6.4169437,51.2395387,05166032,051660032032,Viersen,Stadt,"Viersen, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41749,6.3561159,51.2901799,05166032,051660032032,Viersen,Stadt,"Viersen, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41751,6.3206577,51.25004089999999,05166032,051660032032,Viersen,Stadt,"Viersen, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41812,6.3195429,51.07164600000001,05370004,053700004004,Erkelenz,Stadt,"Erkelenz, Stadt",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41836,6.222254899999999,51.0454321,05370020,053700020020,Hückelhoven,Stadt,"Hückelhoven, Stadt",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41844,6.245415299999999,51.1490546,05370040,053700040040,Wegberg,Stadt,"Wegberg, Stadt",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+41849,6.1328887,51.1130534,05370036,053700036036,Wassenberg,Stadt,"Wassenberg, Stadt",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42103,7.146606599999999,51.2554934,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42105,7.1417099,51.2623662,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42107,7.1552397,51.262393,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42109,7.157783299999999,51.2771687,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42111,7.1679237,51.2932651,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42113,7.1013566,51.2735765,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42115,7.1170563,51.2533735,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42117,7.133836899999999,51.2438036,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42119,7.156482899999999,51.241269,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42275,7.205441100000001,51.27362120000001,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42277,7.215241700000001,51.2831824,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42279,7.2409927,51.29659119999999,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42281,7.188234700000001,51.2866862,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42283,7.184218400000001,51.2711403,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42285,7.1736304,51.256002,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42287,7.1972592,51.2500514,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42289,7.211937799999999,51.26894069999999,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42327,7.0671702,51.2440784,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42329,7.0697027,51.2266111,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42349,7.130101199999999,51.20343740000001,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42369,7.195853599999999,51.22569739999999,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42389,7.248769099999999,51.2750473,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42399,7.2836846,51.2425128,05124000,051240000000,Wuppertal,Stadt,"Wuppertal, Stadt",000000005124,Wuppertal,Kreisfreie Stadt,"Wuppertal, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42477,7.3720815,51.20943889999999,05374036,053740036036,Radevormwald,Stadt,"Radevormwald, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+42489,7.0382833,51.28792139999999,05158036,051580036036,Wülfrath,Stadt,"Wülfrath, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42499,7.3293896,51.1490386,05374016,053740016016,Hückeswagen,Stadt,"Hückeswagen, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+42549,7.0224783,51.3309978,05158032,051580032032,Velbert,Stadt,"Velbert, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42551,7.0540533,51.3501692,05158032,051580032032,Velbert,Stadt,"Velbert, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42553,7.098790699999999,51.3158524,05158032,051580032032,Velbert,Stadt,"Velbert, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42555,7.114656600000001,51.3517649,05158032,051580032032,Velbert,Stadt,"Velbert, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42579,6.9672791,51.3237681,05158012,051580012012,Heiligenhaus,Stadt,"Heiligenhaus, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42651,7.0922604,51.1705488,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42653,7.0828745,51.201055,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42655,7.057952599999999,51.1684016,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42657,7.0647863,51.1531315,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42659,7.1220857,51.14611679999999,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42697,6.9912361,51.1540297,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42699,7.014782599999999,51.1421119,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42719,7.0402385,51.1843821,05122000,051220000000,Solingen,Stadt,"Solingen, Stadt",000000005122,Solingen,Kreisfreie Stadt,"Solingen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42781,7.0042465,51.20579910000001,05158008,051580008008,Haan,Stadt,"Haan, Stadt",000000005158,Mettmann,Kreis,"Mettmann, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42799,7.059227,51.10792679999999,05378016,053780016016,Leichlingen (Rhld.),Stadt,"Leichlingen (Rhld.), Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+42853,7.179900900000001,51.1832986,05120000,051200000000,Remscheid,Stadt,"Remscheid, Stadt",000000005120,Remscheid,Kreisfreie Stadt,"Remscheid, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42855,7.200955899999999,51.19382969999999,05120000,051200000000,Remscheid,Stadt,"Remscheid, Stadt",000000005120,Remscheid,Kreisfreie Stadt,"Remscheid, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42857,7.1621551,51.16776050000001,05120000,051200000000,Remscheid,Stadt,"Remscheid, Stadt",000000005120,Remscheid,Kreisfreie Stadt,"Remscheid, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42859,7.206046199999999,51.16197769999999,05120000,051200000000,Remscheid,Stadt,"Remscheid, Stadt",000000005120,Remscheid,Kreisfreie Stadt,"Remscheid, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42897,7.282278799999999,51.1730117,05120000,051200000000,Remscheid,Stadt,"Remscheid, Stadt",000000005120,Remscheid,Kreisfreie Stadt,"Remscheid, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42899,7.2325965,51.21290699999999,05120000,051200000000,Remscheid,Stadt,"Remscheid, Stadt",000000005120,Remscheid,Kreisfreie Stadt,"Remscheid, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+42929,7.2240777,51.1030829,05378032,053780032032,Wermelskirchen,Stadt,"Wermelskirchen, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+44135,7.4749694,51.5126773,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44137,7.441617300000001,51.5081979,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44139,7.4654343,51.4961111,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44141,7.501506399999999,51.5043716,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44143,7.5123813,51.5195303,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44145,7.492579000000001,51.5340175,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44147,7.4365122,51.5270219,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44149,7.4176438,51.5070785,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44225,7.4465564,51.4761823,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44227,7.419828499999999,51.4646773,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44229,7.4568942,51.4517574,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44263,7.5079783,51.49074510000001,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44265,7.490747600000001,51.46400569999999,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44267,7.526148800000001,51.45788080000001,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44269,7.5319762,51.4918437,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44287,7.561229,51.4873134,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44289,7.5878666,51.4855875,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44309,7.5458916,51.5305901,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44319,7.602083399999999,51.53752679999999,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44328,7.5220488,51.5427015,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44329,7.543860499999999,51.5730339,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44339,7.4790381,51.5512261,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44357,7.3663465,51.552221,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44359,7.383803599999999,51.56844539999999,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44369,7.409122199999999,51.53538940000001,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44379,7.3777551,51.5096015,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44388,7.335137100000001,51.5017141,05913000,059130000000,Dortmund,Stadt,"Dortmund, Stadt",000000005913,Dortmund,Kreisfreie Stadt,"Dortmund, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44532,7.530896500000001,51.6003281,05978024,059780024024,Lünen,Stadt,"Lünen, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44534,7.504544099999999,51.62849019999999,05978024,059780024024,Lünen,Stadt,"Lünen, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44536,7.4774771,51.6037535,05978024,059780024024,Lünen,Stadt,"Lünen, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44575,7.306240900000001,51.5458031,05562004,055620004004,Castrop-Rauxel,Stadt,"Castrop-Rauxel, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44577,7.343384400000001,51.532905,05562004,055620004004,Castrop-Rauxel,Stadt,"Castrop-Rauxel, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44579,7.287848200000001,51.578678,05562004,055620004004,Castrop-Rauxel,Stadt,"Castrop-Rauxel, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44581,7.3239725,51.6002294,05562004,055620004004,Castrop-Rauxel,Stadt,"Castrop-Rauxel, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44623,7.2251173,51.5389464,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44625,7.210458999999998,51.5279591,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44627,7.263640299999999,51.5378828,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44628,7.2451473,51.55753199999999,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44629,7.2092264,51.5491768,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44649,7.154747599999999,51.534021,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44651,7.1599986,51.515206,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44652,7.175943999999999,51.5247965,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44653,7.1614185,51.546826,05916000,059160000000,Herne,Stadt,"Herne, Stadt",000000005916,Herne,Kreisfreie Stadt,"Herne, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44787,7.2168733,51.4813394,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44789,7.222114899999999,51.4691349,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44791,7.2474125,51.4886935,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44793,7.194331099999999,51.4787676,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44795,7.195777899999999,51.449197,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44797,7.220564699999999,51.42436619999999,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44799,7.231304600000001,51.452729,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44801,7.268409899999999,51.4530679,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44803,7.260592399999999,51.474673,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44805,7.2714747,51.5162564,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44807,7.226305199999999,51.5111295,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44809,7.199720499999999,51.4995616,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44866,7.1281215,51.48282099999999,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44867,7.1333755,51.464022,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44869,7.159798599999999,51.4492114,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44879,7.1544452,51.4284308,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44892,7.326905,51.47053709999999,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+44894,7.3058408,51.49298169999999,05911000,059110000000,Bochum,Stadt,"Bochum, Stadt",000000005911,Bochum,Kreisfreie Stadt,"Bochum, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45127,7.010454299999999,51.4556194,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45128,7.0078317,51.4452228,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45130,7.011142,51.4384291,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45131,7.0039007,51.4296308,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45133,6.9881259,51.4068406,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45134,7.0303007,51.41486,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45136,7.035560599999999,51.4356438,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45138,7.042152799999999,51.4484381,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45139,7.0381829,51.4592319,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45141,7.032881199999999,51.4780256,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45143,6.9787572,51.46279209999999,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45144,6.9675727,51.4515852,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45145,6.9761637,51.4457967,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45147,6.988340399999999,51.4371895,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45149,6.964374899999999,51.4188047,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45219,6.9513739,51.36685960000001,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45239,7.0145249,51.37889879999999,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45257,7.0818561,51.3830398,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45259,7.067239199999999,51.4020856,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45276,7.0751759,51.44644520000001,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45277,7.076486699999999,51.4252611,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45279,7.1042434,51.4420446,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45289,7.112138600000001,51.4204604,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45307,7.096337399999999,51.4636356,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45309,7.072542599999999,51.4756346,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45326,7.010410299999999,51.4820139,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45327,7.0381507,51.4988292,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45329,7.014328300000001,51.5108223,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45355,6.951011599999999,51.4723607,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45356,6.9694303,51.4923815,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45357,6.9272094,51.48432950000001,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45359,6.9259698,51.465929,05113000,051130000000,Essen,Stadt,"Essen, Stadt",000000005113,Essen,Kreisfreie Stadt,"Essen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45468,6.882684599999999,51.4262774,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45470,6.9143789,51.4059514,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45472,6.9274349,51.4315473,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45473,6.886547999999999,51.441874,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45475,6.8970064,51.45708579999999,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45476,6.854898899999999,51.44900819999999,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45478,6.835237100000001,51.4369709,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45479,6.8250198,51.3953848,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45481,6.8566061,51.3882662,05117000,051170000000,Mülheim an der Ruhr,Stadt,"Mülheim an der Ruhr, Stadt",000000005117,Mülheim an der Ruhr,Kreisfreie Stadt,"Mülheim an der Ruhr, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45525,7.186049300000001,51.3948427,05954016,059540016016,Hattingen,Stadt,"Hattingen, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+45527,7.2097807,51.3828346,05954016,059540016016,Hattingen,Stadt,"Hattingen, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+45529,7.1393759,51.4050267,05954016,059540016016,Hattingen,Stadt,"Hattingen, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+45549,7.2465538,51.3436595,05954028,059540028028,Sprockhövel,Stadt,"Sprockhövel, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+45657,7.1895577,51.6164977,05562032,055620032032,Recklinghausen,Stadt,"Recklinghausen, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45659,7.1816476,51.6381524,05562032,055620032032,Recklinghausen,Stadt,"Recklinghausen, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45661,7.192057199999999,51.5740255,05562032,055620032032,Recklinghausen,Stadt,"Recklinghausen, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45663,7.2346403,51.5819787,05562032,055620032032,Recklinghausen,Stadt,"Recklinghausen, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45665,7.2561046,51.6123927,05562032,055620032032,Recklinghausen,Stadt,"Recklinghausen, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45699,7.1548905,51.58688,05562020,055620020020,Herten,Stadt,"Herten, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45701,7.0991237,51.6061427,05562020,055620020020,Herten,Stadt,"Herten, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45711,7.3284165,51.6555326,05562008,055620008008,Datteln,Stadt,"Datteln, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45721,7.1847865,51.7810293,05562016,055620016016,Haltern am See,Stadt,"Haltern am See, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45731,7.402965399999998,51.62966340000001,05562036,055620036036,Waltrop,Stadt,"Waltrop, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45739,7.257956399999999,51.637739,05562028,055620028028,Oer-Erkenschwick,Stadt,"Oer-Erkenschwick, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45768,7.0645794,51.6558581,05562024,055620024024,Marl,Stadt,"Marl, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45770,7.1738079,51.6862883,05562024,055620024024,Marl,Stadt,"Marl, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45772,7.120501,51.6895398,05562024,055620024024,Marl,Stadt,"Marl, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45879,7.097707,51.5084358,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45881,7.0818258,51.5252464,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45883,7.0566645,51.5188417,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45884,7.0871032,51.4932339,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45886,7.1215271,51.4964248,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45888,7.1202394,51.51763219999999,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45889,7.1149676,51.5364462,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45891,7.0805146,51.5596768,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45892,7.1097059,51.5684808,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45894,7.0460284,51.5829052,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45896,7.019461,51.6109446,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45897,7.0447171,51.5644796,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45899,7.032826399999999,51.5308428,05513000,055130000000,Gelsenkirchen,Stadt,"Gelsenkirchen, Stadt",000000005513,Gelsenkirchen,Kreisfreie Stadt,"Gelsenkirchen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45964,6.990365499999999,51.575667,05562014,055620014014,Gladbeck,Stadt,"Gladbeck, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45966,6.9664828,51.5876645,05562014,055620014014,Gladbeck,Stadt,"Gladbeck, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+45968,6.998364,51.5540454,05562014,055620014014,Gladbeck,Stadt,"Gladbeck, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46045,6.8560957,51.4674055,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46047,6.885038100000001,51.4762613,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46049,6.829739099999999,51.4689468,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46117,6.9033979,51.4962954,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46119,6.8821559,51.5186688,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46145,6.8608898,51.54104599999999,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46147,6.8212626,51.5433613,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46149,6.8293458,51.5217616,05119000,051190000000,Oberhausen,Stadt,"Oberhausen, Stadt",000000005119,Oberhausen,Kreisfreie Stadt,"Oberhausen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46236,6.9243806,51.5267424,05512000,055120000000,Bottrop,Stadt,"Bottrop, Stadt",000000005512,Bottrop,Kreisfreie Stadt,"Bottrop, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46238,6.9614341,51.5139806,05512000,055120000000,Bottrop,Stadt,"Bottrop, Stadt",000000005512,Bottrop,Kreisfreie Stadt,"Bottrop, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46240,6.929575499999999,51.547568,05512000,055120000000,Bottrop,Stadt,"Bottrop, Stadt",000000005512,Bottrop,Kreisfreie Stadt,"Bottrop, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46242,6.9006057,51.5255053,05512000,055120000000,Bottrop,Stadt,"Bottrop, Stadt",000000005512,Bottrop,Kreisfreie Stadt,"Bottrop, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46244,6.9081701,51.5964063,05512000,055120000000,Bottrop,Stadt,"Bottrop, Stadt",000000005512,Bottrop,Kreisfreie Stadt,"Bottrop, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46282,6.968923299999999,51.6510004,05562012,055620012012,Dorsten,Stadt,"Dorsten, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46284,6.928973399999999,51.6798375,05562012,055620012012,Dorsten,Stadt,"Dorsten, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46286,7.013875899999999,51.74895590000001,05562012,055620012012,Dorsten,Stadt,"Dorsten, Stadt",000000005562,Recklinghausen,Kreis,"Recklinghausen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46325,6.8572196,51.8441276,05554012,055540012012,Borken,Stadt,"Borken, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46342,6.938673,51.8807629,05554064,055540064064,Velen,Stadt,"Velen, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46348,6.843366000000001,51.7696309,05554040,055540040040,Raesfeld,Gemeinde,"Raesfeld, Gemeinde",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46354,6.8682266,51.9450666,05554060,055540060060,Südlohn,Gemeinde,"Südlohn, Gemeinde",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46359,6.9348091,51.826563,05554028,055540028028,Heiden,Gemeinde,"Heiden, Gemeinde",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46395,6.587619999999999,51.8266853,05554008,055540008008,Bocholt,Stadt,"Bocholt, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46397,6.645786,51.8446261,05554008,055540008008,Bocholt,Stadt,"Bocholt, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46399,6.604128299999999,51.8454749,05554008,055540008008,Bocholt,Stadt,"Bocholt, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46414,6.699007099999999,51.8416015,05554048,055540048048,Rhede,Stadt,"Rhede, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46419,6.4641478,51.8331306,05554032,055540032032,Isselburg,Stadt,"Isselburg, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46446,6.2430132,51.8455099,05154008,051540008008,Emmerich am Rhein,Stadt,"Emmerich am Rhein, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46459,6.3765753,51.7853234,05154044,051540044044,Rees,Stadt,"Rees, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46483,6.619224699999999,51.663334,05170048,051700048048,Wesel,Stadt,"Wesel, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46485,6.653707499999999,51.6534456,05170048,051700048048,Wesel,Stadt,"Wesel, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46487,6.5529368,51.6802862,05170048,051700048048,Wesel,Stadt,"Wesel, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46499,6.6315075,51.7288118,05170012,051700012012,Hamminkeln,Stadt,"Hamminkeln, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46509,6.4424438,51.6652446,05170052,051700052052,Xanten,Stadt,"Xanten, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46514,6.827912599999999,51.7069487,05170036,051700036036,Schermbeck,Gemeinde,"Schermbeck, Gemeinde",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46519,6.4805701,51.5996924,05170004,051700004004,Alpen,Gemeinde,"Alpen, Gemeinde",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46535,6.7313988,51.5591279,05170008,051700008008,Dinslaken,Stadt,"Dinslaken, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46537,6.749660800000001,51.5792147,05170008,051700008008,Dinslaken,Stadt,"Dinslaken, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46539,6.797176599999999,51.58175259999999,05170008,051700008008,Dinslaken,Stadt,"Dinslaken, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46562,6.6544111,51.6005212,05170044,051700044044,Voerde (Niederrhein),Stadt,"Voerde (Niederrhein), Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+46569,6.770239399999999,51.6361917,05170016,051700016016,Hünxe,Gemeinde,"Hünxe, Gemeinde",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47051,6.7708325,51.4328048,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47053,6.7512387,51.4207541,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47055,6.7724588,51.3984402,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47057,6.803821300000001,51.4177077,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47058,6.795755199999999,51.4392709,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47059,6.739224699999999,51.4399036,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47119,6.7325141,51.4534764,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47137,6.7665427,51.4699795,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47138,6.800844199999999,51.4600764,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47139,6.7112395,51.4758022,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47166,6.768954099999999,51.4935895,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47167,6.8110409,51.5017063,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47169,6.7635077,51.512382,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47178,6.699981699999999,51.5397986,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47179,6.7501943,51.52635189999999,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47198,6.7062152,51.4549865,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47199,6.6767794,51.4988831,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47226,6.7172779,51.4042577,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47228,6.698690000000001,51.4237748,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47229,6.7042983,51.39182599999999,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47239,6.6518329,51.3948213,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47249,6.7594483,51.3860167,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47259,6.715193699999999,51.3543213,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47269,6.775461399999999,51.35611189999999,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47279,6.7961943,51.38652219999999,05112000,051120000000,Duisburg,Stadt,"Duisburg, Stadt",000000005112,Duisburg,Kreisfreie Stadt,"Duisburg, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47441,6.6275504,51.4462817,05170024,051700024024,Moers,Stadt,"Moers, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47443,6.6536425,51.4579872,05170024,051700024024,Moers,Stadt,"Moers, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47445,6.6138604,51.4866216,05170024,051700024024,Moers,Stadt,"Moers, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47447,6.6174545,51.4178535,05170024,051700024024,Moers,Stadt,"Moers, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47475,6.5136635,51.5133491,05170020,051700020020,Kamp-Lintfort,Stadt,"Kamp-Lintfort, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47495,6.6024164,51.55062119999999,05170032,051700032032,Rheinberg,Stadt,"Rheinberg, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47506,6.5514802,51.4479279,05170028,051700028028,Neukirchen-Vluyn,Stadt,"Neukirchen-Vluyn, Stadt",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47509,6.472825599999999,51.4523038,05154048,051540048048,Rheurdt,Gemeinde,"Rheurdt, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47533,6.1280084,51.8091567,05154036,051540036036,Kleve,Stadt,"Kleve, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47546,6.303336799999999,51.7574924,05154024,051540024024,Kalkar,Stadt,"Kalkar, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47551,6.197811199999999,51.7631112,05154004,051540004004,Bedburg-Hau,Gemeinde,"Bedburg-Hau, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47559,6.018026,51.7936497,05154040,051540040040,Kranenburg,Gemeinde,"Kranenburg, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47574,6.1312129,51.703086,05154016,051540016016,Goch,Stadt,"Goch, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47589,6.284361199999999,51.6738215,05154056,051540056056,Uedem,Gemeinde,"Uedem, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47608,6.3037657,51.5248333,05154012,051540012012,Geldern,Stadt,"Geldern, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47623,6.2291703,51.5763399,05154032,051540032032,Kevelaer,Stadt,"Kevelaer, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47624,6.203681899999999,51.5512895,05154032,051540032032,Kevelaer,Stadt,"Kevelaer, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47625,6.287001099999999,51.5679707,05154032,051540032032,Kevelaer,Stadt,"Kevelaer, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47626,6.312603699999999,51.5930063,05154032,051540032032,Kevelaer,Stadt,"Kevelaer, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47627,6.2671596,51.6271522,05154032,051540032032,Kevelaer,Stadt,"Kevelaer, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47638,6.2540853,51.4220239,05154052,051540052052,Straelen,Stadt,"Straelen, Stadt",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47647,6.394248699999999,51.456622,05154028,051540028028,Kerken,Gemeinde,"Kerken, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47652,6.180650399999999,51.6264583,05154064,051540064064,Weeze,Gemeinde,"Weeze, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47661,6.4134557,51.5399953,05154020,051540020020,Issum,Gemeinde,"Issum, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47665,6.3801061,51.6263468,05170040,051700040040,Sonsbeck,Gemeinde,"Sonsbeck, Gemeinde",000000005170,Wesel,Kreis,"Wesel, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47669,6.3276794,51.3969941,05154060,051540060060,Wachtendonk,Gemeinde,"Wachtendonk, Gemeinde",000000005154,Kleve,Kreis,"Kleve, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47798,6.5599075,51.3289104,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47799,6.5754307,51.3385673,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47800,6.6001623,51.3450717,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47802,6.5682857,51.3784666,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47803,6.5478529,51.34801220000001,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47804,6.5274645,51.3175676,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47805,6.563990599999999,51.3181543,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47807,6.569497200000001,51.2994268,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47809,6.6500224,51.3317165,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47829,6.646861899999999,51.3740278,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47839,6.510621,51.3869582,05114000,051140000000,Krefeld,Stadt,"Krefeld, Stadt",000000005114,Krefeld,Kreisfreie Stadt,"Krefeld, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47877,6.5075709,51.2608122,05166036,051660036036,Willich,Stadt,"Willich, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47906,6.4273577,51.3704929,05166012,051660012012,Kempen,Stadt,"Kempen, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47918,6.443845199999999,51.3274683,05166028,051660028028,Tönisvorst,Stadt,"Tönisvorst, Stadt",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+47929,6.339554499999999,51.3331676,05166008,051660008008,Grefrath,Gemeinde,"Grefrath, Gemeinde",000000005166,Viersen,Kreis,"Viersen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48143,7.626755199999999,51.9630088,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48145,7.6552677,51.966475,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48147,7.637854300000001,51.9782559,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48149,7.595598700000001,51.9623682,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48151,7.6142282,51.9425363,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48153,7.624865099999999,51.9312052,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48155,7.6603488,51.94751609999999,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48157,7.6724351,52.01594009999999,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48159,7.593563899999999,52.0050893,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48161,7.5468477,51.9601912,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48163,7.583703900000001,51.8939868,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48165,7.659392700000001,51.8943856,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48167,7.7357128,51.92128839999999,05515000,055150000000,Münster,Stadt,"Münster, Stadt",000000005515,Münster,Kreisfreie Stadt,"Münster, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48231,7.9592161,51.9542349,05570052,055700052052,Warendorf,Stadt,"Warendorf, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48249,7.3138755,51.8579795,05558016,055580016016,Dülmen,Stadt,"Dülmen, Stadt",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48268,7.652041299999999,52.0918867,05566012,055660012012,Greven,Stadt,"Greven, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48282,7.522652899999999,52.1749328,05566008,055660008008,Emsdetten,Stadt,"Emsdetten, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48291,7.7751002,51.9878803,05570044,055700044044,Telgte,Stadt,"Telgte, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48301,7.3736495,51.9286432,05558032,055580032032,Nottuln,Gemeinde,"Nottuln, Gemeinde",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48308,7.491457100000001,51.8573969,05558044,055580044044,Senden,Gemeinde,"Senden, Gemeinde",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48317,7.7224294,51.7999168,05570016,055700016016,Drensteinfurt,Stadt,"Drensteinfurt, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48324,7.7939669,51.8589361,05570040,055700040040,Sendenhorst,Stadt,"Sendenhorst, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48329,7.438794299999999,51.9670881,05558020,055580020020,Havixbeck,Gemeinde,"Havixbeck, Gemeinde",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48336,8.0590295,52.0113451,05570036,055700036036,Sassenberg,Stadt,"Sassenberg, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48341,7.482778599999999,52.0281781,05566004,055660004004,Altenberge,Gemeinde,"Altenberge, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48346,7.8578218,52.0356487,05570032,055700032032,Ostbevern,Gemeinde,"Ostbevern, Gemeinde",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48351,7.8222339,51.9102302,05570024,055700024024,Everswinkel,Gemeinde,"Everswinkel, Gemeinde",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48356,7.489105700000001,52.1023837,05566064,055660064064,Nordwalde,Gemeinde,"Nordwalde, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48361,8.116246,51.922176,05570012,055700012012,Beelen,Gemeinde,"Beelen, Gemeinde",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48366,7.353130599999999,52.0576719,05566036,055660036036,Laer,Gemeinde,"Laer, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48369,7.637348299999998,52.188896,05566080,055660080080,Saerbeck,Gemeinde,"Saerbeck, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48429,7.464065000000001,52.2908515,05566076,055660076076,Rheine,Stadt,"Rheine, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48431,7.431114699999999,52.27155339999999,05566076,055660076076,Rheine,Stadt,"Rheine, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48432,7.468862000000001,52.2317604,05566076,055660076076,Rheine,Stadt,"Rheine, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48477,7.584440099999999,52.2992,05566016,055660016016,Hörstel,Stadt,"Hörstel, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48485,7.3707786,52.22726189999999,05566060,055660060060,Neuenkirchen,Gemeinde,"Neuenkirchen, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48493,7.2892253,52.2323411,05566096,055660096096,Wettringen,Gemeinde,"Wettringen, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48496,7.6408948,52.4025974,05566020,055660020020,Hopsten,Gemeinde,"Hopsten, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48565,7.3918716,52.1512065,05566084,055660084084,Steinfurt,Stadt,"Steinfurt, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48599,7.028936099999999,52.1841199,05554020,055540020020,Gronau (Westf.),Stadt,"Gronau (Westf.), Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48607,7.185959299999999,52.2066558,05566068,055660068068,Ochtrup,Stadt,"Ochtrup, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48612,7.3101494,52.1029861,05566024,055660024024,Horstmar,Stadt,"Horstmar, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48619,7.1048718,52.1204646,05554024,055540024024,Heek,Gemeinde,"Heek, Gemeinde",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48624,7.2390639,52.0928401,05554052,055540052052,Schöppingen,Gemeinde,"Schöppingen, Gemeinde",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48629,7.212902799999999,52.1516491,05566052,055660052052,Metelen,Gemeinde,"Metelen, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48653,7.163694899999999,51.9097477,05558012,055580012012,Coesfeld,Stadt,"Coesfeld, Stadt",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48683,7.016540399999999,52.0790306,05554004,055540004004,Ahaus,Stadt,"Ahaus, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48691,6.820565299999999,52.0361066,05554068,055540068068,Vreden,Stadt,"Vreden, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48703,6.9273548,51.9983639,05554056,055540056056,Stadtlohn,Stadt,Stadtlohn,000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48712,7.008142299999999,51.9506357,05554016,055540016016,Gescher,Stadt,"Gescher, Stadt",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48720,7.2016112,52.0031585,05558040,055580040040,Rosendahl,Gemeinde,"Rosendahl, Gemeinde",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48727,7.3364268,51.9948158,05558008,055580008008,Billerbeck,Stadt,"Billerbeck, Stadt",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48734,7.043756500000001,51.8314277,05554044,055540044044,Reken,Gemeinde,"Reken, Gemeinde",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+48739,7.0885151,52.04197449999999,05554036,055540036036,Legden,Gemeinde,"Legden, Gemeinde",000000005554,Borken,Kreis,"Borken, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49477,7.7099696,52.2750008,05566028,055660028028,Ibbenbüren,Stadt,"Ibbenbüren, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49479,7.7094645,52.2483027,05566028,055660028028,Ibbenbüren,Stadt,"Ibbenbüren, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49492,7.8728578,52.31375019999999,05566092,055660092092,Westerkappeln,Gemeinde,"Westerkappeln, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49497,7.7878608,52.32871890000001,05566056,055660056056,Mettingen,Gemeinde,"Mettingen, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49504,7.9304875,52.3138428,05566048,055660048048,Lotte,Gemeinde,"Lotte, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49509,7.711480000000001,52.3551575,05566072,055660072072,Recke,Gemeinde,"Recke, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49525,7.839039699999999,52.16494059999999,05566040,055660040040,Lengerich,Stadt,"Lengerich, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49536,7.9739767,52.145326,05566044,055660044044,Lienen,Gemeinde,"Lienen, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49545,7.8188739,52.2410811,05566088,055660088088,Tecklenburg,Stadt,"Tecklenburg, Stadt",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+49549,7.7372402,52.1364814,05566032,055660032032,Ladbergen,Gemeinde,"Ladbergen, Gemeinde",000000005566,Steinfurt,Kreis,"Steinfurt, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50126,6.6209788,50.9606466,05362008,053620008008,Bergheim,Stadt,"Bergheim, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50127,6.6870134,50.9390797,05362008,053620008008,Bergheim,Stadt,"Bergheim, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50129,6.703536,50.9768705,05362008,053620008008,Bergheim,Stadt,"Bergheim, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50169,6.7381125,50.8754649,05362032,053620032032,Kerpen,Stadt,"Kerpen, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50170,6.6014193,50.8780618,05362032,053620032032,Kerpen,Stadt,"Kerpen, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50171,6.673858999999999,50.8530284,05362032,053620032032,Kerpen,Stadt,"Kerpen, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50181,6.5167885,51.0188788,05362004,053620004004,Bedburg,Stadt,"Bedburg, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50189,6.5595738,50.9222572,05362016,053620016016,Elsdorf,Stadt,"Elsdorf, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50226,6.7920994,50.9089383,05362024,053620024024,Frechen,Stadt,"Frechen, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50259,6.786287799999999,50.9930323,05362036,053620036036,Pulheim,Stadt,"Pulheim, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50321,6.8753256,50.82040869999999,05362012,053620012012,Brühl,Stadt,"Brühl, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50354,6.8596159,50.8631453,05362028,053620028028,Hürth,Stadt,"Hürth, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50374,6.7774607,50.7948075,05362020,053620020020,Erftstadt,Stadt,Erftstadt,000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50389,6.9787209,50.8142569,05362040,053620040040,Wesseling,Stadt,"Wesseling, Stadt",000000005362,Rhein-Erft-Kreis,Kreis,Rhein-Erft-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+50667,6.9538847,50.9386437,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50668,6.9629492,50.9485731,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50670,6.943474399999999,50.9497351,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50672,6.9370026,50.9435762,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50674,6.9331365,50.9346454,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50676,6.953899799999999,50.9320995,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50677,6.9533042,50.9200408,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50678,6.964945699999999,50.9235887,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50679,6.9759562,50.934707,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50733,6.9538234,50.96482710000001,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50735,6.973287099999999,50.9767582,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50737,6.9368694,50.9894083,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50739,6.923917599999999,50.9770824,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50765,6.879553,51.0242454,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50767,6.8769987,50.9984287,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50769,6.874194399999999,51.0560173,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50823,6.9240043,50.9508935,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50825,6.911026799999999,50.9516638,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50827,6.8927833,50.9710715,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50829,6.8693678,50.9829287,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50858,6.854136,50.9210017,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50859,6.8358142,50.9534818,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50931,6.9188847,50.9302584,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50933,6.8851368,50.94010859999999,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50935,6.8968829,50.9210958,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50937,6.9137713,50.9096296,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50939,6.9283822,50.90997729999999,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50968,6.968224999999999,50.9037692,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50969,6.9396948,50.9080883,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50996,6.9889986,50.8815995,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50997,6.9372374,50.8585477,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+50999,7.0149269,50.8800407,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51061,7.0044716,50.9958446,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51063,7.012290999999999,50.974418,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51065,7.011000999999999,50.9561644,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51067,7.039602299999999,50.9649145,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51069,7.0565351,50.9927042,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51103,7.0136077,50.9402993,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51105,6.9993352,50.9228362,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51107,7.0902515,50.91733809999999,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51109,7.082491399999999,50.93875,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51143,7.0356669,50.8578708,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51145,7.0822261,50.881777,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51147,7.123898499999999,50.8681948,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51149,7.0486698,50.9093945,05315000,053150000000,Köln,Stadt,"Köln, Stadt",000000005315,Köln,Kreisfreie Stadt,"Köln, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51371,6.9418571,51.0624986,05316000,053160000000,Leverkusen,Stadt,"Leverkusen, Stadt",000000005316,Leverkusen,Kreisfreie Stadt,"Leverkusen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51373,6.986211300000001,51.02838759999999,05316000,053160000000,Leverkusen,Stadt,"Leverkusen, Stadt",000000005316,Leverkusen,Kreisfreie Stadt,"Leverkusen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51375,7.053959400000001,51.0347944,05316000,053160000000,Leverkusen,Stadt,"Leverkusen, Stadt",000000005316,Leverkusen,Kreisfreie Stadt,"Leverkusen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51377,7.072237899999999,51.0546646,05316000,053160000000,Leverkusen,Stadt,"Leverkusen, Stadt",000000005316,Leverkusen,Kreisfreie Stadt,"Leverkusen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51379,6.9965788,51.0697197,05316000,053160000000,Leverkusen,Stadt,"Leverkusen, Stadt",000000005316,Leverkusen,Kreisfreie Stadt,"Leverkusen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51381,7.0383204,51.077701,05316000,053160000000,Leverkusen,Stadt,"Leverkusen, Stadt",000000005316,Leverkusen,Kreisfreie Stadt,"Leverkusen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+51399,7.124521,51.077714,05378008,053780008008,Burscheid,Stadt,"Burscheid, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51427,7.1267771,50.95699639999999,05378004,053780004004,Bergisch Gladbach,Stadt,"Bergisch Gladbach, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51429,7.2024025,50.968061,05378004,053780004004,Bergisch Gladbach,Stadt,"Bergisch Gladbach, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51465,7.1634118,50.9966653,05378004,053780004004,Bergisch Gladbach,Stadt,"Bergisch Gladbach, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51467,7.079237399999999,51.0139761,05378004,053780004004,Bergisch Gladbach,Stadt,"Bergisch Gladbach, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51469,7.104717099999999,50.987157,05378004,053780004004,Bergisch Gladbach,Stadt,"Bergisch Gladbach, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51491,7.301358399999999,50.94094699999999,05378024,053780024024,Overath,Stadt,"Overath, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51503,7.186445699999999,50.9062084,05378028,053780028028,Rösrath,Stadt,"Rösrath, Stadt",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51515,7.249921199999999,51.0489965,05378012,053780012012,Kürten,Gemeinde,"Kürten, Gemeinde",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51519,7.1084426,51.0424968,05378020,053780020020,Odenthal,Gemeinde,"Odenthal, Gemeinde",000000005378,Rheinisch-Bergischer Kreis,Kreis,Rheinisch-Bergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51545,7.5981332,50.85912889999999,05374044,053740044044,Waldbröl,Stadt,"Waldbröl, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51570,7.565531900000001,50.7880324,05382076,053820076076,Windeck,Gemeinde,"Windeck, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51580,7.662744,50.9491612,05374040,053740040040,Reichshof,Gemeinde,"Reichshof, Gemeinde",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51588,7.530899,50.905378,05374032,053740032032,Nümbrecht,Gemeinde,"Nümbrecht, Gemeinde",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51597,7.708383,50.872813,05374028,053740028028,Morsbach,Gemeinde,"Morsbach, Gemeinde",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51643,7.5433,51.0251286,05374012,053740012012,Gummersbach,Stadt,"Gummersbach, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51645,7.526984100000001,50.98946979999999,05374012,053740012012,Gummersbach,Stadt,"Gummersbach, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51647,7.6225495,51.0462082,05374012,053740012012,Gummersbach,Stadt,"Gummersbach, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51674,7.5158602,50.9482553,05374048,053740048048,Wiehl,Stadt,"Wiehl, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51688,7.397240999999999,51.10272819999999,05374052,053740052052,Wipperfürth,Stadt,"Wipperfürth, Stadt",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51702,7.6694615,51.022137,05374004,053740004004,Bergneustadt,Stadt,Bergneustadt,000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51709,7.5493127,51.07197439999999,05374024,053740024024,Marienheide,Gemeinde,"Marienheide, Gemeinde",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51766,7.4167285,50.9755735,05374008,053740008008,Engelskirchen,Gemeinde,"Engelskirchen, Gemeinde",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+51789,7.349167299999999,51.02179899999999,05374020,053740020020,Lindlar,Gemeinde,"Lindlar, Gemeinde",000000005374,Oberbergischer Kreis,Kreis,Oberbergischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+52062,6.0887682,50.7780476,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52064,6.080150000000001,50.7680669,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52066,6.1123901,50.7533438,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52068,6.1339006,50.7794144,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52070,6.0958906,50.7959332,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52072,6.0440697,50.8247238,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52074,6.040409899999999,50.7779566,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52076,6.1490776,50.7149258,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52078,6.1633895,50.7506567,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52080,6.159716299999999,50.7925769,05334002,053340002002,Aachen,Stadt,"Aachen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52134,6.1086614,50.8840217,05334016,053340016016,Herzogenrath,Stadt,"Herzogenrath, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52146,6.1462316,50.8193814,05334036,053340036036,Würselen,Stadt,"Würselen, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52152,6.3194228,50.6120728,05334028,053340028028,Simmerath,Gemeinde,"Simmerath, Gemeinde",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52156,6.250148900000001,50.5326163,05334020,053340020020,Monschau,Stadt,"Monschau, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52159,6.2003238,50.6460356,05334024,053340024024,Roetgen,Gemeinde,"Roetgen, Gemeinde",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52222,6.2237174,50.78027909999999,05334032,053340032032,Stolberg (Rhld.),Stadt,"Stolberg (Rhld.), Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52223,6.214423399999999,50.7479452,05334032,053340032032,Stolberg (Rhld.),Stadt,"Stolberg (Rhld.), Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52224,6.2811789,50.7287236,05334032,053340032032,Stolberg (Rhld.),Stadt,"Stolberg (Rhld.), Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52249,6.2636408,50.8235705,05334012,053340012012,Eschweiler,Stadt,"Eschweiler, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52349,6.4701808,50.804453,05358008,053580008008,Düren,Stadt,"Düren, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52351,6.5101019,50.7943983,05358008,053580008008,Düren,Stadt,"Düren, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52353,6.4530802,50.82889780000001,05358008,053580008008,Düren,Stadt,"Düren, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52355,6.4487859,50.7821519,05358008,053580008008,Düren,Stadt,"Düren, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52372,6.4905127,50.7380994,05358028,053580028028,Kreuzau,Gemeinde,"Kreuzau, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52379,6.3766007,50.8070027,05358032,053580032032,Langerwehe,Gemeinde,"Langerwehe, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52382,6.487902999999999,50.8948919,05358048,053580048048,Niederzier,Gemeinde,"Niederzier, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52385,6.4761942,50.676347,05358044,053580044044,Nideggen,Stadt,"Nideggen, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52388,6.6382717,50.81326929999999,05358052,053580052052,Nörvenich,Gemeinde,"Nörvenich, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52391,6.5979265,50.752926,05358060,053580060060,Vettweiß,Gemeinde,"Vettweiß, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52393,6.3786897,50.70257369999999,05358016,053580016016,Hürtgenwald,Gemeinde,"Hürtgenwald, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52396,6.4583081,50.6343729,05358012,053580012012,Heimbach,Stadt,"Heimbach, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52399,6.5258275,50.8312436,05358040,053580040040,Merzenich,Gemeinde,"Merzenich, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52428,6.394430799999999,50.9418933,05358024,053580024024,Jülich,Stadt,"Jülich, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52441,6.2856124,50.979203,05358036,053580036036,Linnich,Stadt,"Linnich, Stadt",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52445,6.426986899999999,51.0055724,05358056,053580056056,Titz,Gemeinde,"Titz, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52457,6.2670273,50.8965203,05358004,053580004004,Aldenhoven,Gemeinde,"Aldenhoven, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52459,6.3578351,50.84660909999999,05358020,053580020020,Inden,Gemeinde,"Inden, Gemeinde",000000005358,Düren,Kreis,"Düren, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52477,6.1756589,50.86482,05334004,053340004004,Alsdorf,Stadt,"Alsdorf, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52499,6.1946473,50.9212978,05334008,053340008008,Baesweiler,Stadt,"Baesweiler, Stadt",000000005334,Städteregion Aachen,Kreis,"Städteregion Aachen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52511,6.1267754,50.96672179999999,05370012,053700012012,Geilenkirchen,Stadt,"Geilenkirchen, Stadt",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52525,6.104102,51.04119379999999,05370016,053700016016,Heinsberg,Stadt,"Heinsberg, Stadt",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52531,6.1177073,50.9253588,05370028,053700028028,Übach-Palenberg,Stadt,"Übach-Palenberg, Stadt",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+52538,5.981771300000001,51.0161092,05370008,053700008008,Gangelt,Gemeinde,"Gangelt, Gemeinde",000000005370,Heinsberg,Kreis,"Heinsberg, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53111,7.0950367,50.7419457,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53113,7.1221114,50.71941589999999,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53115,7.089817099999999,50.7213888,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53117,7.0730966,50.7589425,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53119,7.0627318,50.74391139999999,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53121,7.060132899999999,50.73363089999999,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53123,7.042035299999999,50.7138566,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53125,7.0716236,50.6625196,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53127,7.0871788,50.6980735,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53129,7.1093481,50.7074591,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53173,7.167453899999999,50.6894605,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53175,7.1388159,50.6949151,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53177,7.13357,50.6743763,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53179,7.1834096,50.6600271,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53225,7.115776299999999,50.7589505,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53227,7.1557344,50.7225704,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53229,7.1648955,50.74549409999999,05314000,053140000000,Bonn,Stadt,"Bonn, Stadt",000000005314,Bonn,Kreisfreie Stadt,"Bonn, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53332,6.9684402,50.7730884,05382012,053820012012,Bornheim,Stadt,"Bornheim, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53340,7.0149256,50.6190568,05382032,053820032032,Meckenheim,Stadt,"Meckenheim, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53343,7.0869865,50.6198949,05382072,053820072072,Wachtberg,Gemeinde,"Wachtberg, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53347,7.004626,50.7082905,05382004,053820004004,Alfter,Gemeinde,"Alfter, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53359,6.953247,50.607138,05382048,053820048048,Rheinbach,Stadt,"Rheinbach, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53604,7.278090300000001,50.6497767,05382008,053820008008,Bad Honnef,Stadt,"Bad Honnef, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53639,7.2629186,50.692446,05382024,053820024024,Königswinter,Stadt,"Königswinter, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53721,7.2118403,50.80004539999999,05382060,053820060060,Siegburg,Stadt,"Siegburg, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53757,7.201223300000001,50.7589143,05382056,053820056056,Sankt Augustin,Stadt,"Sankt Augustin, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53773,7.294612400000001,50.76354019999999,05382020,053820020020,Hennef (Sieg),Stadt,"Hennef (Sieg), Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53783,7.4401363,50.7647691,05382016,053820016016,Eitorf,Gemeinde,"Eitorf, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53797,7.2538128,50.8601727,05382028,053820028028,Lohmar,Stadt,"Lohmar, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53804,7.394836199999999,50.8931596,05382036,053820036036,Much,Gemeinde,"Much, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53809,7.4305514,50.8281024,05382052,053820052052,Ruppichteroth,Gemeinde,"Ruppichteroth, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53819,7.331858599999999,50.8552827,05382040,053820040040,Neunkirchen-Seelscheid,Gemeinde,"Neunkirchen-Seelscheid, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53840,7.157454899999999,50.8190807,05382068,053820068068,Troisdorf,Stadt,"Troisdorf, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53842,7.170546499999999,50.844413,05382068,053820068068,Troisdorf,Stadt,"Troisdorf, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53844,7.102913099999999,50.7858479,05382068,053820068068,Troisdorf,Stadt,"Troisdorf, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53859,7.0563538,50.80957679999999,05382044,053820044044,Niederkassel,Stadt,"Niederkassel, Stadt",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53879,6.788765199999999,50.6533185,05366016,053660016016,Euskirchen,Stadt,"Euskirchen, Stadt",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53881,6.8299259,50.6352801,05366016,053660016016,Euskirchen,Stadt,"Euskirchen, Stadt",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53894,6.6254941,50.5950421,05366028,053660028028,Mechernich,Stadt,"Mechernich, Stadt",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53902,6.8049149,50.5326569,05366004,053660004004,Bad Münstereifel,Stadt,"Bad Münstereifel, Stadt",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53909,6.6449966,50.6772512,05366044,053660044044,Zülpich,Stadt,"Zülpich, Stadt",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53913,6.9222034,50.6923636,05382064,053820064064,Swisttal,Gemeinde,"Swisttal, Gemeinde",000000005382,Rhein-Sieg-Kreis,Kreis,Rhein-Sieg-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+53919,6.8293338,50.7395791,05366040,053660040040,Weilerswist,Gemeinde,"Weilerswist, Gemeinde",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53925,6.5448019,50.52679860000001,05366024,053660024024,Kall,Gemeinde,"Kall, Gemeinde",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53937,6.462810999999999,50.5625794,05366036,053660036036,Schleiden,Stadt,"Schleiden, Stadt",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53940,6.4344607,50.439471,05366020,053660020020,Hellenthal,Gemeinde,"Hellenthal, Gemeinde",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53945,6.7376022,50.4130038,05366008,053660008008,Blankenheim,Gemeinde,"Blankenheim, Gemeinde",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53947,6.6673756,50.4990435,05366032,053660032032,Nettersheim,Gemeinde,"Nettersheim, Gemeinde",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+53949,6.5464093,50.3863587,05366012,053660012012,Dahlem,Gemeinde,"Dahlem, Gemeinde",000000005366,Euskirchen,Kreis,"Euskirchen, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57072,7.984455400000001,50.8803723,05970040,059700040040,Siegen,Stadt,"Siegen, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57074,8.0633292,50.87492959999999,05970040,059700040040,Siegen,Stadt,"Siegen, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57076,8.0298034,50.8982059,05970040,059700040040,Siegen,Stadt,"Siegen, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57078,7.988192000000001,50.91679269999999,05970040,059700040040,Siegen,Stadt,"Siegen, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57080,8.0171526,50.8309969,05970040,059700040040,Siegen,Stadt,"Siegen, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57223,7.9795468,50.9803101,05970024,059700024024,Kreuztal,Stadt,"Kreuztal, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57234,8.112063599999999,50.8348814,05970044,059700044044,Wilnsdorf,Gemeinde,"Wilnsdorf, Gemeinde",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57250,8.188759000000001,50.9133272,05970032,059700032032,Netphen,Stadt,"Netphen, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57258,7.9034589,50.9016203,05970016,059700016016,Freudenberg,Stadt,"Freudenberg, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57271,8.1174394,50.9917621,05970020,059700020020,Hilchenbach,Stadt,"Hilchenbach, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57290,8.0053567,50.78995,05970036,059700036036,Neunkirchen,Gemeinde,"Neunkirchen, Gemeinde",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57299,8.098353099999999,50.741672,05970008,059700008008,Burbach,Gemeinde,"Burbach, Gemeinde",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57319,8.3966362,51.066498,05970004,059700004004,Bad Berleburg,Stadt,"Bad Berleburg, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57334,8.3594859,50.9431339,05970028,059700028028,Bad Laasphe,Stadt,"Bad Laasphe, Stadt",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57339,8.2545307,50.9891361,05970012,059700012012,Erndtebrück,Gemeinde,"Erndtebrück, Gemeinde",000000005970,Siegen-Wittgenstein,Kreis,"Siegen-Wittgenstein, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57368,8.0902631,51.1302557,05966020,059660020020,Lennestadt,Stadt,Lennestadt,000000005966,Olpe,Kreis,"Olpe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57392,8.2945396,51.1790374,05958040,059580040040,Schmallenberg,Stadt,"Schmallenberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+57399,8.0663235,51.0478203,05966016,059660016016,Kirchhundem,Gemeinde,"Kirchhundem, Gemeinde",000000005966,Olpe,Kreis,"Olpe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57413,8.0182899,51.20890379999999,05966012,059660012012,Finnentrop,Gemeinde,"Finnentrop, Gemeinde",000000005966,Olpe,Kreis,"Olpe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57439,7.866654599999999,51.1035104,05966004,059660004004,Attendorn,Stadt,"Attendorn, Stadt",000000005966,Olpe,Kreis,"Olpe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57462,7.891666499999999,51.0492854,05966024,059660024024,Olpe,Stadt,"Olpe, Stadt",000000005966,Olpe,Kreis,"Olpe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57482,7.868350400000001,50.9669001,05966028,059660028028,Wenden,Gemeinde,"Wenden, Gemeinde",000000005966,Olpe,Kreis,"Olpe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+57489,7.7804217,51.03577,05966008,059660008008,Drolshagen,Stadt,"Drolshagen, Stadt",000000005966,Olpe,Kreis,"Olpe, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58089,7.437417099999999,51.37911520000001,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58091,7.486979099999999,51.342288,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58093,7.5064901,51.3852473,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58095,7.468980600000001,51.3586435,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58097,7.4797898,51.3737728,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58099,7.4694954,51.3981699,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58119,7.569582700000001,51.3442574,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58135,7.426324600000001,51.3376396,05914000,059140000000,Hagen,Stadt,"Hagen, Stadt",000000005914,Hagen,Kreisfreie Stadt,"Hagen, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58239,7.565631499999999,51.4289295,05978028,059780028028,Schwerte,Stadt,"Schwerte, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58256,7.362174,51.2732165,05954008,059540008008,Ennepetal,Stadt,"Ennepetal, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58285,7.3522193,51.3370571,05954012,059540012012,Gevelsberg,Stadt,"Gevelsberg, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58300,7.3632022,51.3785418,05954032,059540032032,Wetter (Ruhr),Stadt,"Wetter (Ruhr), Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58313,7.427248199999998,51.416693,05954020,059540020020,Herdecke,Stadt,"Herdecke, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58332,7.291009299999999,51.2829475,05954024,059540024024,Schwelm,Stadt,"Schwelm, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58339,7.467771099999999,51.2665091,05954004,059540004004,Breckerfeld,Stadt,"Breckerfeld, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58452,7.3264627,51.4177772,05954036,059540036036,Witten,Stadt,"Witten, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58453,7.3717166,51.4360422,05954036,059540036036,Witten,Stadt,"Witten, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58454,7.395169999999999,51.4509553,05954036,059540036036,Witten,Stadt,"Witten, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58455,7.3089317,51.4406856,05954036,059540036036,Witten,Stadt,"Witten, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58456,7.2812919,51.399497,05954036,059540036036,Witten,Stadt,"Witten, Stadt",000000005954,Ennepe-Ruhr-Kreis,Kreis,Ennepe-Ruhr-Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58507,7.6351109,51.2274763,05962032,059620032032,Lüdenscheid,Stadt,"Lüdenscheid, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58509,7.604898599999999,51.2188551,05962032,059620032032,Lüdenscheid,Stadt,"Lüdenscheid, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58511,7.6495294,51.21788530000001,05962032,059620032032,Lüdenscheid,Stadt,"Lüdenscheid, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58513,7.678827699999999,51.2264872,05962032,059620032032,Lüdenscheid,Stadt,"Lüdenscheid, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58515,7.635820699999999,51.192474,05962032,059620032032,Lüdenscheid,Stadt,"Lüdenscheid, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58540,7.7082643,51.1140959,05962036,059620036036,Meinerzhagen,Stadt,"Meinerzhagen, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58553,7.498275100000001,51.1803587,05962012,059620012012,Halver,Stadt,"Halver, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58566,7.566130100000001,51.1339188,05962028,059620028028,Kierspe,Stadt,"Kierspe, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58579,7.5734973,51.2596963,05962056,059620056056,Schalksmühle,Gemeinde,"Schalksmühle, Gemeinde",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58636,7.716816899999999,51.38115440000001,05962024,059620024024,Iserlohn,Stadt,"Iserlohn, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58638,7.684607000000001,51.3833068,05962024,059620024024,Iserlohn,Stadt,"Iserlohn, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58640,7.67204,51.421991,05962024,059620024024,Iserlohn,Stadt,"Iserlohn, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58642,7.610033499999999,51.3656583,05962024,059620024024,Iserlohn,Stadt,"Iserlohn, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58644,7.6814401,51.3580473,05962024,059620024024,Iserlohn,Stadt,"Iserlohn, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58675,7.7669715,51.3734917,05962016,059620016016,Hemer,Stadt,"Hemer, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58706,7.789601599999998,51.4300527,05962040,059620040040,Menden (Sauerland),Stadt,"Menden (Sauerland), Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58708,7.822114699999999,51.449009,05962040,059620040040,Menden (Sauerland),Stadt,"Menden (Sauerland), Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58710,7.837095499999999,51.4057535,05962040,059620040040,Menden (Sauerland),Stadt,"Menden (Sauerland), Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58730,7.748431,51.501482,05978012,059780012012,Fröndenberg/Ruhr,Stadt,"Fröndenberg/Ruhr, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58739,7.863498700000001,51.499084,05974056,059740056056,Wickede (Ruhr),Gemeinde,"Wickede (Ruhr), Gemeinde",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+58762,7.658575000000001,51.2752109,05962004,059620004004,Altena,Stadt,"Altena, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58769,7.6194494,51.3119731,05962044,059620044044,Nachrodt-Wiblingwerde,Gemeinde,"Nachrodt-Wiblingwerde, Gemeinde",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58791,7.7588258,51.24751930000001,05962060,059620060060,Werdohl,Stadt,"Werdohl, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58802,7.861748100000001,51.3249474,05962008,059620008008,Balve,Stadt,"Balve, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58809,7.850045400000001,51.2835618,05962048,059620048048,Neuenrade,Stadt,"Neuenrade, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58840,7.8590561,51.2197462,05962052,059620052052,Plettenberg,Stadt,"Plettenberg, Stadt",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+58849,7.7415401,51.1855036,05962020,059620020020,Herscheid,Gemeinde,"Herscheid, Gemeinde",000000005962,Märkischer Kreis,Kreis,Märkischer Kreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59063,7.8327364,51.6679119,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59065,7.8117261,51.6905221,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59067,7.7868698,51.66302220000001,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59069,7.8638754,51.6207822,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59071,7.908525399999999,51.6813704,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59073,7.833335399999999,51.7082999,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59075,7.752975099999999,51.71298789999999,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59077,7.7355149,51.6505301,05915000,059150000000,Hamm,Stadt,"Hamm, Stadt",000000005915,Hamm,Kreisfreie Stadt,"Hamm, Kreisfreie Stadt",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59174,7.6645865,51.5916471,05978020,059780020020,Kamen,Stadt,"Kamen, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59192,7.616799500000001,51.6159437,05978004,059780004004,Bergkamen,Stadt,"Bergkamen, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59199,7.7716829,51.5845809,05978008,059780008008,Bönen,Gemeinde,"Bönen, Gemeinde",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59227,7.8843043,51.7891354,05570004,055700004004,Ahlen,Stadt,"Ahlen, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59229,7.926383899999999,51.7438219,05570004,055700004004,Ahlen,Stadt,"Ahlen, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59269,8.0569581,51.7667636,05570008,055700008008,Beckum,Stadt,"Beckum, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59302,8.1774995,51.8009056,05570028,055700028028,Oelde,Stadt,"Oelde, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59320,8.0270417,51.8538375,05570020,055700020020,Ennigerloh,Stadt,"Ennigerloh, Stadt",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59329,8.2611324,51.7100576,05570048,055700048048,Wadersloh,Gemeinde,"Wadersloh, Gemeinde",000000005570,Warendorf,Kreis,"Warendorf, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59348,7.3990214,51.76770399999999,05558024,055580024024,Lüdinghausen,Stadt,"Lüdinghausen, Stadt",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59368,7.5909062,51.6705945,05978040,059780040040,Werne,Stadt,"Werne, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59379,7.483776400000001,51.6774905,05978032,059780032032,Selm,Stadt,"Selm, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59387,7.625261299999999,51.7956602,05558004,055580004004,Ascheberg,Gemeinde,"Ascheberg, Gemeinde",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59394,7.564927299999999,51.7252857,05558028,055580028028,Nordkirchen,Gemeinde,"Nordkirchen, Gemeinde",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59399,7.3717253,51.7163944,05558036,055580036036,Olfen,Stadt,"Olfen, Stadt",000000005558,Coesfeld,Kreis,"Coesfeld, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59423,7.695548499999999,51.5314134,05978036,059780036036,Unna,Stadt,"Unna, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59425,7.7013158,51.5521918,05978036,059780036036,Unna,Stadt,"Unna, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59427,7.6481486,51.53842849999999,05978036,059780036036,Unna,Stadt,"Unna, Stadt",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59439,7.635929799999999,51.48774239999999,05978016,059780016016,Holzwickede,Gemeinde,"Holzwickede, Gemeinde",000000005978,Unna,Kreis,"Unna, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59457,7.899810899999999,51.5548237,05974052,059740052052,Werl,Stadt,"Werl, Stadt",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59469,7.9683377,51.5078471,05974012,059740012012,Ense,Gemeinde,"Ense, Gemeinde",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59494,8.0937324,51.56273119999999,05974040,059740040040,Soest,Stadt,"Soest, Stadt",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59505,8.1805455,51.57786919999999,05974008,059740008008,Bad Sassendorf,Gemeinde,"Bad Sassendorf, Gemeinde",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59510,8.0867078,51.6797982,05974024,059740024024,Lippetal,Gemeinde,"Lippetal, Gemeinde",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59514,7.9982395,51.6116713,05974048,059740048048,Welver,Gemeinde,"Welver, Gemeinde",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59519,8.123169899999999,51.47602999999999,05974032,059740032032,Möhnesee,Gemeinde,"Möhnesee, Gemeinde",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59555,8.3456644,51.6800523,05974028,059740028028,Lippstadt,Stadt,Lippstadt,000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59556,8.3330167,51.7130927,05974028,059740028028,Lippstadt,Stadt,Lippstadt,000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59557,8.3485737,51.6560952,05974028,059740028028,Lippstadt,Stadt,Lippstadt,000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59558,8.376768199999999,51.6923675,05974028,059740028028,Lippstadt,Stadt,Lippstadt,000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59581,8.2945758,51.4534047,05974044,059740044044,Warstein,Stadt,"Warstein, Stadt",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59590,8.4651976,51.6530133,05974020,059740020020,Geseke,Stadt,"Geseke, Stadt",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59597,8.300745899999999,51.6117813,05974016,059740016016,Erwitte,Stadt,"Erwitte, Stadt",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59602,8.4272375,51.528562,05974036,059740036036,Rüthen,Stadt,"Rüthen, Stadt",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59609,8.3090555,51.5476187,05974004,059740004004,Anröchte,Gemeinde,"Anröchte, Gemeinde",000000005974,Soest,Kreis,"Soest, Kreis",05,Nordrhein-Westfalen,polygon_intersects,0.0
+59755,7.972033,51.4522286,05958004,059580004004,Arnsberg,Stadt,"Arnsberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59757,7.9445473,51.4248978,05958004,059580004004,Arnsberg,Stadt,"Arnsberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59759,8.009164199999999,51.4363328,05958004,059580004004,Arnsberg,Stadt,"Arnsberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59821,8.066182099999999,51.3743121,05958004,059580004004,Arnsberg,Stadt,"Arnsberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59823,8.045328099999999,51.41812609999999,05958004,059580004004,Arnsberg,Stadt,"Arnsberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59846,7.9785738,51.3064714,05958044,059580044044,Sundern (Sauerland),Stadt,"Sundern (Sauerland), Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59872,8.2575415,51.3292568,05958032,059580032032,Meschede,Stadt,"Meschede, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59889,8.1796804,51.2503677,05958016,059580016016,Eslohe (Sauerland),Gemeinde,"Eslohe (Sauerland), Gemeinde",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59909,8.387337,51.3516663,05958008,059580008008,Bestwig,Gemeinde,"Bestwig, Gemeinde",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59929,8.5841108,51.4113167,05958012,059580012012,Brilon,Stadt,"Brilon, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59939,8.5253748,51.3099808,05958036,059580036036,Olsberg,Stadt,"Olsberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59955,8.5000619,51.2274391,05958048,059580048048,Winterberg,Stadt,"Winterberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59964,8.6606583,51.21560789999999,05958028,059580028028,Medebach,Stadt,"Medebach, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
+59969,8.6196383,51.11265290000001,05958020,059580020020,Hallenberg,Stadt,"Hallenberg, Stadt",000000005958,Hochsauerlandkreis,Kreis,Hochsauerlandkreis,05,Nordrhein-Westfalen,polygon_intersects,0.0
