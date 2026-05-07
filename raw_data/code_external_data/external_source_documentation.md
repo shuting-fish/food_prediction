@@ -170,6 +170,18 @@ ZIP centroids are approximate reference points. They must not be treated as exac
 
 ZIP/postcode must not be treated as a one-to-one municipality key in general. The script documents deterministic tie handling for cases where one centroid intersects multiple municipality polygons by choosing the lexicographically smallest municipality_ags. This remains a mapping risk unless later resolved by explicit allocation logic and QA evidence.
 
+### ZIP/AGS QA Update
+
+Read-only QA on branch `feature/zipcode-ags-reference-qa` observed the current ZIP-to-municipality file has 864 rows, 864 unique ZIPs, 0 duplicate ZIP row groups, and 864 rows with `assignment_method = polygon_intersects`.
+
+The current output showed 0 lexicographic resolution rows and 0 nearest municipality fallback rows. This is a current-file observation only. It does not prove true one-to-one ZIP-to-municipality mapping.
+
+Source truth for multi-municipality ZIPs in repository evidence: No reliable evidence.
+
+Multi-municipality ZIP ambiguity remains TODO-VERIFY.
+
+Current AGS/Gemeindeschluessel shape checks found 0 invalid 8-digit `municipality_ags` values and 0 non-NRW-prefix values in the ZIP map. Authoritative municipality identity remains TODO-VERIFY.
+
 ## Source 7: Store Municipality Reference
 
 | Field | Status |
@@ -191,6 +203,25 @@ ZIP/postcode must not be treated as a one-to-one municipality key in general. Th
 ### Notes
 
 The current store municipality reference is not based on valid store coordinate spatial joins. It uses ZIP fallback for all stores according to the QA summary. This is acceptable as documented reference mapping work, but it must remain limited and must not be treated as precise geospatial truth.
+
+### Store Fallback QA Update
+
+Read-only QA on branch `feature/zipcode-ags-reference-qa` observed:
+- `assignment_method = zipcode_fallback_no_valid_coordinates`: 84 rows
+- `qa_has_valid_coordinates = False`: 84 rows
+- `qa_assignment_used_fallback = True`: 84 rows
+- rows unassigned or missing ZIP reference: 0
+
+This confirms the current store municipality reference depends on ZIP fallback for all stores. ZIP fallback can create false precision if treated as verified store-level municipality truth.
+
+Store coordinate source quality remains TODO-VERIFY.
+
+## ZIP/AGS Reference QA Artifact
+
+A dedicated non-final QA artifact records the current ZIP, AGS, centroid, VG250, and store fallback findings:
+- raw_data/code_external_data/zipcode_ags_reference_qa.md
+
+This artifact is source and reference mapping QA only. It does not validate predictive value, forecast improvement, operational benefit, model impact, or ML readiness.
 
 ## Deferred or Out-of-Scope Sources
 

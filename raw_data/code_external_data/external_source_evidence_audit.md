@@ -201,6 +201,94 @@ No dedicated source documentation file was identified that fully resolves source
 
 Files found by documentation-name search were registry, QA, source CSV, and QA summary artifacts, not complete source documentation.
 
+## ZIP/AGS Reference QA Evidence
+
+File:
+- raw_data/code_external_data/zipcode_ags_reference_qa.md
+
+Read-only QA was performed on branch:
+- feature/zipcode-ags-reference-qa
+
+### ZIP-to-municipality current output
+
+File:
+- raw_data/code_external_data/_reference_geo/zipcode_to_municipality_nrw.csv
+
+Observed metrics:
+- rows = 864
+- unique ZIPs = 864
+- duplicate ZIP row groups = 0
+- assignment_method polygon_intersects = 864
+- lexicographic resolution rows observed in current output = 0
+- nearest municipality fallback rows observed in current output = 0
+
+Interpretation limit:
+- The current output has one row per ZIP, but that is not proof of true one-to-one ZIP-to-municipality mapping.
+- Source truth for multi-municipality ZIPs in repository evidence: No reliable evidence.
+- Multi-municipality ZIP ambiguity remains TODO-VERIFY.
+
+### AGS/Gemeindeschluessel current output
+
+Observed metrics:
+- ZIP map municipality_ags values failing 8-digit shape check = 0
+- ZIP map municipality_ags values without NRW prefix 05 = 0
+- Store reference municipality_ags values failing 8-digit shape check = 0
+- Store reference municipality_ags values without NRW prefix 05 = 0
+
+Script evidence:
+- build_zipcode_to_municipality_nrw_csv.py normalizes AGS to width 8 and ARS to width 12.
+- build_zipcode_to_municipality_nrw_csv.py filters NRW municipalities using AGS prefix 05.
+- build_store_municipality_reference.py reads the ZIP reference CSV with dtype="string".
+
+Interpretation limit:
+- Shape and prefix checks do not prove authoritative municipality identity.
+- AGS/Gemeindeschluessel identity remains TODO-VERIFY.
+
+### PLZ centroid current output
+
+File:
+- raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv
+
+Observed metrics:
+- rows = 864
+- unique ZIPs = 864
+- duplicate ZIP groups = 0
+- duplicate coordinate groups = 0
+- missing coordinate rows = 0
+- nonnumeric coordinate rows = 0
+- broad NRW-bounds outlier rows = 0
+
+Interpretation limit:
+- PLZ centroid coordinates are approximate.
+- Broad coordinate bounds are a sanity check only.
+- PLZ centroid source provenance and precision remain TODO-VERIFY.
+
+### Store municipality fallback current output
+
+File:
+- raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.csv
+
+Observed metrics:
+- assignment_method zipcode_fallback_no_valid_coordinates = 84
+- qa_has_valid_coordinates False = 84
+- qa_assignment_used_fallback True = 84
+- rows unassigned or missing ZIP reference = 0
+
+Interpretation limit:
+- The current store municipality reference depends on ZIP fallback for all stores.
+- ZIP fallback can create false precision if treated as verified store-level municipality truth.
+- Store coordinate source quality remains TODO-VERIFY.
+
+### VG250 boundary cache
+
+Observed:
+- raw_data/code_external_data/_reference_geo/vg250_cache/DE_VG250.gpkg exists.
+- build_zipcode_to_municipality_nrw_csv.py references VG250 and the vg250_gem municipality layer.
+
+Interpretation limit:
+- File presence and script references do not prove license, boundary version, CRS, layer integrity, source access date, or full NRW boundary consistency.
+- VG250 lineage, license, and full NRW boundary consistency remain TODO-VERIFY.
+
 ## Unresolved TODO-VERIFY Items
 
 The following items remain unresolved:
