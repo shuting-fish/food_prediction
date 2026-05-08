@@ -26,6 +26,7 @@ Conclusion on predictive value: No reliable evidence.
 ## Evidence Basis
 
 This document is based only on repository evidence available in the current branch:
+- verified branch for this update: feature/next-external-source-qa
 - raw_data/code_external_data/external_source_qa_registry.csv
 - raw_data/code_external_data/external_source_evidence_audit.md
 - raw_data/code_external_data/build_municipality_census_feature_base.py
@@ -108,9 +109,9 @@ The script records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 and MAX_ALLOWED_REFERE
 
 | Field | Status |
 |---|---|
-| Source name | BKG VG250 boundary dataset, TODO-VERIFY license and exact usage terms |
+| Source name | BKG VG250 boundary dataset |
 | Source file or path | raw_data/code_external_data/_reference_geo/vg250_cache/DE_VG250.gpkg |
-| Source URL | URL is present in build_zipcode_to_municipality_nrw_csv.py |
+| Source URL | https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/aktuell/vg250_01-01.utm32s.gpkg.ebenen.zip |
 | Access or creation date | TODO-VERIFY |
 | License or usage terms | TODO-VERIFY |
 | Spatial level | municipality boundary |
@@ -124,7 +125,7 @@ The script records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 and MAX_ALLOWED_REFERE
 
 ### Notes
 
-The script uses the VG250 municipality layer and filters NRW municipalities by AGS prefix 05. This supports reference mapping work, but it does not fully resolve license status, boundary version, source access date, or NRW boundary consistency.
+The script uses the VG250 municipality layer `vg250_gem` and filters NRW municipalities by AGS prefix 05. This supports reference mapping work, but it does not fully resolve license status, boundary version, source access date, or NRW boundary consistency.
 
 ## Source 5: NRW PLZ Centroids
 
@@ -202,7 +203,7 @@ Current AGS/Gemeindeschluessel shape checks found 0 invalid 8-digit `municipalit
 
 ### Notes
 
-The current store municipality reference is not based on valid store coordinate spatial joins. It uses ZIP fallback for all stores according to the QA summary. This is acceptable as documented reference mapping work, but it must remain limited and must not be treated as precise geospatial truth.
+The current store municipality reference is not based on valid store coordinate spatial joins. It uses ZIP fallback for all stores according to the QA summary. This is acceptable as documented reference mapping work, but it must remain limited and must not be treated as precise geospatial truth. Spatial assignment quality remains TODO-VERIFY.
 
 ### Store Fallback QA Update
 
@@ -216,6 +217,10 @@ This confirms the current store municipality reference depends on ZIP fallback f
 
 Store coordinate source quality remains TODO-VERIFY.
 
+Spatial assignment quality remains TODO-VERIFY.
+
+OSM remains deferred until store coordinate quality is verified.
+
 ## ZIP/AGS Reference QA Artifact
 
 A dedicated non-final QA artifact records the current ZIP, AGS, centroid, VG250, and store fallback findings:
@@ -226,7 +231,7 @@ This artifact is source and reference mapping QA only. It does not validate pred
 ## Deferred or Out-of-Scope Sources
 
 The following sources remain deferred or registry-only in the current phase:
-- OSM POI context: priority 2 but deferred until source, license, coordinate quality, lineage, leakage, and identical-coordinate effects are verified.
+- OSM POI context: priority 2 but deferred until store coordinate quality is verified; current store geography QA reports 84 stores, 0 valid coordinates, and 84 ZIP fallback assignments. Source, license, lineage, leakage, and identical-coordinate effects also remain TODO-VERIFY.
 - OpenLigaDB or event-like data: low-priority deferred context only.
 - Bahn-Vorhersage downloader context: low-priority deferred context only.
 - Zensus grid downloader stub: high-priority domain but deferred until source, license, lineage, file existence, QA, and causal availability are verified.
