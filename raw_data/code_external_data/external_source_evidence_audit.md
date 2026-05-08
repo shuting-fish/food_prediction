@@ -25,7 +25,7 @@ Conclusion on predictive value: No reliable evidence.
 ## Verified Repository State During Audit
 
 Verified branch:
-- feature/external-context-features
+- feature/next-external-source-qa
 
 Verified working tree:
 - clean before read-only audit
@@ -40,6 +40,25 @@ Verified registry:
 - candidate_enrichment_status is candidate_external_enrichment_only for all rows
 - 5 deferred registry rows
 - no invalid phase_scope_status values found
+
+## Current High TODO-VERIFY Inventory
+
+The following current_high registry rows still contain TODO-VERIFY fields after applying only repository-supported evidence.
+
+| Registry row | TODO-VERIFY fields |
+|---|---|
+| census_destatis_workbook | source_name; source_reference_or_url; source_documentation_status; license_status; file_lineage_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_method; mapping_quality_status; predictive_value_status; notes |
+| census_population_area_source_csv | source_name; source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| census_raw_municipality_csv | source_name; source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| census_municipality_feature_base | source_reference_or_url; source_documentation_status; license_status; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| census_store_feature_base | source_reference_or_url; source_documentation_status; license_status; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status |
+| zipcode_to_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| nrw_plz_centroids | source_name; source_reference_or_url; source_documentation_status; license_status; file_lineage_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| vg250_boundary_cache | source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| store_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| store_municipality_reference_parquet | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+
+Fields are left as TODO-VERIFY where repository evidence does not resolve source URL, access date, license, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping validity, predictive value, feature value, forecast improvement, or business value.
 
 ## Evidence Path Audit
 
@@ -104,6 +123,7 @@ Interpretation limit:
 - Coordinate source quality remains TODO-VERIFY.
 - ZIP-to-municipality ambiguity remains TODO-VERIFY.
 - Spatial assignment quality remains TODO-VERIFY because no valid store-coordinate spatial join was used.
+- OSM work remains deferred until store coordinate quality is verified.
 
 ## Header Evidence
 
@@ -129,13 +149,14 @@ Relevant evidence:
 - Normalizes municipality_ags.
 - Checks missing or invalid municipality_ags.
 - Checks duplicate municipality_ags.
+- Uses RAW_SOURCE_NAME = Official municipality census / demography extract.
 - Uses RAW_SOURCE_REFERENCE_DATE = 2022-05-15.
 - Uses MAX_ALLOWED_REFERENCE_DATE = 2025-06-30.
 - Writes municipality and store census feature base outputs.
 - Writes census_feature_base_qa_summary.csv.
 
 Limit:
-- The script contains a source-name metadata string, but source URL and license/usage terms are not fully documented in this audit.
+- The script contains a source-name metadata string, but source URL and license/usage terms are not resolved by repository evidence.
 - Source documentation remains TODO-VERIFY.
 - License status remains TODO-VERIFY.
 - Publication lag and revision lag remain TODO-VERIFY.
@@ -194,12 +215,14 @@ Limit:
 - ZIP fallback assignment remains candidate reference mapping only.
 - Spatial assignment validity is limited because no valid coordinates were available.
 - Geospatial join assumptions remain TODO-VERIFY.
+- OSM remains deferred until coordinate quality is verified.
 
-## Documentation File Search Result
+## Documentation Hardening Status
 
-No dedicated source documentation file was identified that fully resolves source URL, access date, license/usage terms, update logic, publication lag, revision lag, causal availability, or leakage review for the high-priority Census and reference mapping artifacts.
+The repository source documentation artifact was updated for repository-supported evidence only:
+- raw_data/code_external_data/external_source_documentation.md
 
-Files found by documentation-name search were registry, QA, source CSV, and QA summary artifacts, not complete source documentation.
+This does not fully resolve source URL, access date, license/usage terms, publication lag, revision lag, causal availability, leakage review, mapping validity, or predictive value for the high-priority Census and reference mapping artifacts.
 
 ## ZIP/AGS Reference QA Evidence
 
@@ -278,6 +301,8 @@ Interpretation limit:
 - The current store municipality reference depends on ZIP fallback for all stores.
 - ZIP fallback can create false precision if treated as verified store-level municipality truth.
 - Store coordinate source quality remains TODO-VERIFY.
+- Spatial assignment quality remains TODO-VERIFY.
+- OSM remains deferred until coordinate quality is verified.
 
 ### VG250 boundary cache
 
@@ -323,12 +348,9 @@ The following items remain unresolved:
 - operational benefit
 - business benefit
 
-## Recommended Next Step
+## Remaining Required Work Before Further Downloads
 
-Create or update a dedicated English source documentation artifact for high-priority Census and reference mapping sources before resolving registry TODO-VERIFY fields.
-
-Recommended documentation target:
-- raw_data/code_external_data/external_source_documentation.md
+Before further downloads, collect source evidence that directly resolves source URL or stable source reference, access date, license or usage terms, raw source provenance, publication lag, revision lag, temporal availability, causal availability, leakage risk, mapping validity, and store coordinate quality.
 
 Do not change any TODO-VERIFY status to resolved unless supported by repository evidence, source evidence, reproducible checks, or explicit user confirmation.
 
