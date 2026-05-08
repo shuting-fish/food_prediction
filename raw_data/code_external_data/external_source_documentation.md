@@ -26,7 +26,7 @@ Conclusion on predictive value: No reliable evidence.
 ## Evidence Basis
 
 This document is based only on repository evidence available in the current branch:
-- verified branch for this update: feature/next-external-source-qa
+- verified branch for this update: feature/source-license-hardening
 - raw_data/code_external_data/external_source_qa_registry.csv
 - raw_data/code_external_data/external_source_evidence_audit.md
 - raw_data/code_external_data/build_municipality_census_feature_base.py
@@ -34,8 +34,14 @@ This document is based only on repository evidence available in the current bran
 - raw_data/code_external_data/build_zipcode_to_municipality_nrw_csv.py
 - raw_data/code_external_data/build_store_municipality_reference.py
 - existing QA summaries and headers under raw_data/code_external_data
+- official public source pages listed below
 
-No web research was used.
+Official public source pages checked on 2026-05-08:
+- Destatis GV-ISys Gemeindeverzeichnis: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/_inhalt.html
+- Destatis 31.12.2024 GV-ISys publication page: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV4QAktuell.html
+- Destatis standard copyright terms: https://www.destatis.de/DE/Service/Impressum/copyright-allgemein.html
+- BKG VG250 product page: https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html
+- BKG PLZ product page, context only: https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html
 
 Do not treat TODO-VERIFY fields as resolved unless later supported by source evidence, file evidence, reproducible checks, or explicit user confirmation.
 
@@ -43,38 +49,38 @@ Do not treat TODO-VERIFY fields as resolved unless later supported by source evi
 
 | Field | Status |
 |---|---|
-| Source name | TODO-VERIFY |
+| Source name | Destatis GV-ISys Alle politisch selbständigen Gemeinden mit ausgewählten Merkmalen am 31.12.2024 (4. Quartal) |
 | Source file or path | raw_data/code_external_data/census_raw/destatis_gvisys_31122024.xlsx |
-| Source URL | TODO-VERIFY |
-| Access or creation date | TODO-VERIFY |
-| License or usage terms | TODO-VERIFY |
-| Spatial level | municipality candidate context, TODO-VERIFY |
-| Temporal level | TODO-VERIFY |
-| Update logic | TODO-VERIFY |
-| Join key | municipality_ags, TODO-VERIFY |
-| Known limitations | workbook provenance, source URL, access date, license, publication lag, revision lag, and causal availability are unresolved |
-| QA status | file exists; source documentation incomplete |
+| Source URL | https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV4QAktuell.html |
+| Access or creation date | official source page checked 2026-05-08; local workbook modified timestamp remains repository file metadata only |
+| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
+| Spatial level | municipality |
+| Temporal level | official product reference 2024-12-31; official page date 2025-01-07; local workbook metadata title says Gebietsstand 31.12.2024 and Stand August 2025 |
+| Update logic | local workbook is read by fill_municipality_census_population_area.py; no download or refresh was performed in this audit |
+| Join key | municipality_ags |
+| Known limitations | product-specific third-party rights, local workbook acquisition path, publication lag, revision lag, and causal availability remain TODO-VERIFY |
+| QA status | file exists; xlsx core metadata title references the 31.12.2024 GV-ISys product; script parses Satzart 60 municipality rows |
 | Current phase status | candidate external enrichment only |
 | Predictive value status | TODO-VERIFY |
 
 ### Notes
 
-The repository contains a local workbook at the documented path. The local file presence does not prove source validity, source URL, license status, publication lag, revision lag, causal availability, leakage safety, or predictive value.
+The repository contains a local workbook at the documented path. Official Destatis pages document the GV-ISys product and standard reuse terms, but repository evidence does not prove the exact acquisition event for the local workbook. The local workbook metadata shows a modified timestamp after the official page date, so publication lag and revision lag remain TODO-VERIFY.
 
 ## Source 2: Municipality Population and Area Source CSV
 
 | Field | Status |
 |---|---|
-| Source name | TODO-VERIFY |
+| Source name | Destatis GV-ISys derived municipality population and area source CSV |
 | Source file or path | raw_data/code_external_data/census_raw/municipality_population_area_source.csv |
-| Source URL | TODO-VERIFY |
-| Access or creation date | TODO-VERIFY |
-| License or usage terms | TODO-VERIFY |
+| Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
+| Access or creation date | official source page checked 2026-05-08; local file timestamp remains repository file metadata only |
+| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
 | Spatial level | municipality |
-| Temporal level | TODO-VERIFY |
+| Temporal level | source workbook product reference 2024-12-31; revision lag remains TODO-VERIFY |
 | Update logic | generated or updated from local Destatis workbook by fill_municipality_census_population_area.py |
 | Join key | municipality_ags |
-| Known limitations | workbook provenance, source URL, access date, license, and source update behavior remain TODO-VERIFY |
+| Known limitations | local workbook acquisition event, product-specific third-party rights, source update behavior, publication lag, revision lag, and causal availability remain TODO-VERIFY |
 | QA status | header verified; AGS handling present in script; full source documentation incomplete |
 | Current phase status | candidate external enrichment only |
 | Predictive value status | TODO-VERIFY |
@@ -87,45 +93,67 @@ The script normalizes municipality_ags to 8 characters and checks duplicate or u
 
 | Field | Status |
 |---|---|
-| Source name | TODO-VERIFY |
+| Source name | Destatis GV-ISys derived municipality census raw CSV |
 | Source file or path | raw_data/code_external_data/census_raw/municipality_census_raw.csv |
-| Source URL | TODO-VERIFY |
-| Access or creation date | TODO-VERIFY |
-| License or usage terms | TODO-VERIFY |
+| Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
+| Access or creation date | official source page checked 2026-05-08; local file timestamp remains repository file metadata only |
+| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
 | Spatial level | municipality |
-| Temporal level | reference date 2022-05-15 appears in build_municipality_census_feature_base.py; source temporal validity remains TODO-VERIFY |
+| Temporal level | source workbook product reference 2024-12-31; build_municipality_census_feature_base.py still records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 for derived feature outputs, so temporal metadata consistency remains TODO-VERIFY |
 | Update logic | used by build_municipality_census_feature_base.py |
 | Join key | municipality_ags |
-| Known limitations | source provenance, license, temporal availability, publication lag, revision lag, and causal availability remain TODO-VERIFY |
+| Known limitations | local workbook acquisition event, product-specific third-party rights, temporal metadata consistency, publication lag, revision lag, and causal availability remain TODO-VERIFY |
 | QA status | header verified; script checks missing, invalid, and duplicate municipality_ags |
 | Current phase status | candidate external enrichment only |
 | Predictive value status | TODO-VERIFY |
 
 ### Notes
 
-The script records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 and MAX_ALLOWED_REFERENCE_DATE = 2025-06-30. This is repository metadata only. It does not prove source access date, publication lag, revision lag, or causal availability at prediction time.
+The script records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 and MAX_ALLOWED_REFERENCE_DATE = 2025-06-30. That derived-script metadata conflicts with the official 2024-12-31 source product reference and must not be silently treated as resolved.
+
+## Source 3a: Derived Census Feature Base Artifacts
+
+| Field | Status |
+|---|---|
+| Source name | Destatis GV-ISys derived municipality and store census feature bases |
+| Source file or path | raw_data/code_external_data/_external_data/census_features/municipality_census_feature_base.csv; raw_data/code_external_data/_external_data/census_features/store_census_feature_base.csv |
+| Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
+| Access or creation date | official source page checked 2026-05-08; derived artifact timestamps remain repository file metadata only |
+| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
+| Spatial level | municipality; store-to-municipality candidate context |
+| Temporal level | registry preserves script metadata reference date 2022-05-15; source workbook product reference is 2024-12-31; consistency remains TODO-VERIFY |
+| Update logic | generated by build_municipality_census_feature_base.py from municipality_census_raw.csv and store_municipality_reference |
+| Join key | municipality_ags; store_id |
+| Known limitations | source-date conflict, name mismatch interpretation, publication lag, revision lag, causal availability, mapping quality, and predictive value remain TODO-VERIFY |
+| QA status | QA summary reports 25 municipality feature rows, 19 municipality rows with name mismatch, 84 store rows, and 0 store rows with missing municipality features |
+| Current phase status | candidate external enrichment only |
+| Predictive value status | TODO-VERIFY |
+
+### Notes
+
+These derived artifacts remain candidate enrichment only. The script metadata reference date must not be used to override the official GV-ISys workbook reference date without explicit source correction.
 
 ## Source 4: BKG VG250 Boundary Cache
 
 | Field | Status |
 |---|---|
-| Source name | BKG VG250 boundary dataset |
+| Source name | BKG Verwaltungsgebiete 1:250 000, Stand 01.01. (VG250 01.01.) |
 | Source file or path | raw_data/code_external_data/_reference_geo/vg250_cache/DE_VG250.gpkg |
-| Source URL | https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/aktuell/vg250_01-01.utm32s.gpkg.ebenen.zip |
-| Access or creation date | TODO-VERIFY |
-| License or usage terms | TODO-VERIFY |
+| Source URL | product page: https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html; direct URL in script: https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/aktuell/vg250_01-01.utm32s.gpkg.ebenen.zip |
+| Access or creation date | official source page checked 2026-05-08; local cache file timestamp remains repository file metadata only |
+| License or usage terms | Datenlizenz Deutschland Namensnennung 2.0; BKG source attribution and linked license/source notice required for public/external use |
 | Spatial level | municipality boundary |
-| Temporal level | TODO-VERIFY |
+| Temporal level | official product page reports current reference 2025-01-01 and annual update cycle; local cache version remains TODO-VERIFY |
 | Update logic | script can download or refresh VG250 boundary cache if executed; no execution in this documentation step |
 | Join key | municipality_ags, municipality_ars |
-| Known limitations | license, boundary version, access date, NRW boundary consistency, and source update timing remain TODO-VERIFY |
+| Known limitations | local cache version, CRS/layer integrity, NRW boundary consistency, and prediction-time suitability remain TODO-VERIFY |
 | QA status | file exists; script filters NRW by AGS prefix 05 and normalizes AGS to width 8 and ARS to width 12 |
 | Current phase status | reference mapping candidate |
 | Predictive value status | TODO-VERIFY |
 
 ### Notes
 
-The script uses the VG250 municipality layer `vg250_gem` and filters NRW municipalities by AGS prefix 05. This supports reference mapping work, but it does not fully resolve license status, boundary version, source access date, or NRW boundary consistency.
+The script uses the VG250 municipality layer `vg250_gem` and filters NRW municipalities by AGS prefix 05. Official BKG documentation resolves the public product page, license family, attribution requirement, and annual update cycle, but it does not prove the exact version of the local cached GeoPackage.
 
 ## Source 5: NRW PLZ Centroids
 
@@ -140,7 +168,7 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 | Temporal level | TODO-VERIFY |
 | Update logic | TODO-VERIFY |
 | Join key | zip, lat, lng |
-| Known limitations | centroid approximation, coordinate source quality, source URL, license, and update logic remain TODO-VERIFY |
+| Known limitations | centroid approximation, coordinate source quality, source URL, license, lineage, precision, and update logic remain TODO-VERIFY |
 | QA status | header verified; script checks valid ZIPs and duplicate ZIP coordinate pairs |
 | Current phase status | reference coordinate candidate |
 | Predictive value status | TODO-VERIFY |
@@ -149,20 +177,22 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 
 ZIP centroids are approximate reference points. They must not be treated as exact store coordinates or exact municipality membership proof without documented allocation logic and QA evidence.
 
+Official BKG PLZ product context was checked on 2026-05-08 at https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html. That page describes a restricted product requiring a license agreement and does not prove the lineage of the local `plz_centroids_nrw.csv`; local PLZ centroid provenance remains TODO-VERIFY.
+
 ## Source 6: ZIP to Municipality Reference
 
 | Field | Status |
 |---|---|
 | Source name | derived ZIP-to-municipality reference candidate |
 | Source file or path | raw_data/code_external_data/_reference_geo/zipcode_to_municipality_nrw.csv |
-| Source URL | derived from PLZ centroids and VG250 boundary logic; upstream source URLs remain partly TODO-VERIFY |
+| Source URL | derived from PLZ centroids and VG250 boundary logic; VG250 official source checked 2026-05-08; PLZ centroid upstream source remains TODO-VERIFY |
 | Access or creation date | TODO-VERIFY |
-| License or usage terms | TODO-VERIFY |
+| License or usage terms | VG250 license resolved as Datenlizenz Deutschland Namensnennung 2.0; PLZ centroid license remains TODO-VERIFY, so derived artifact license status remains partial/TODO-VERIFY |
 | Spatial level | ZIP to municipality reference |
 | Temporal level | TODO-VERIFY |
 | Update logic | generated by build_zipcode_to_municipality_nrw_csv.py |
 | Join key | zipcode, municipality_ags |
-| Known limitations | ZIP/postcode ambiguity, centroid approximation, multi-municipality ZIPs, tie handling, license, and boundary consistency remain TODO-VERIFY |
+| Known limitations | ZIP/postcode ambiguity, centroid approximation, multi-municipality ZIPs, tie handling, PLZ provenance/license, and boundary consistency remain TODO-VERIFY |
 | QA status | header verified; script checks duplicate ZIPs and non-NRW municipality keys |
 | Current phase status | reference mapping candidate |
 | Predictive value status | TODO-VERIFY |
@@ -188,10 +218,10 @@ Current AGS/Gemeindeschluessel shape checks found 0 invalid 8-digit `municipalit
 | Field | Status |
 |---|---|
 | Source name | derived store-to-municipality reference candidate |
-| Source file or path | raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.csv |
-| Source URL | derived from canonical stores and ZIP-to-municipality reference; source URL not applicable for derived file, upstream source references remain TODO-VERIFY |
+| Source file or path | raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.csv; raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.parquet |
+| Source URL | derived from canonical stores and ZIP-to-municipality reference; source URL not applicable for derived file; upstream PLZ centroid provenance remains TODO-VERIFY |
 | Access or creation date | TODO-VERIFY |
-| License or usage terms | TODO-VERIFY |
+| License or usage terms | upstream license status is partial: VG250 resolved, PLZ centroid license remains TODO-VERIFY |
 | Spatial level | store to municipality |
 | Temporal level | TODO-VERIFY |
 | Update logic | generated by build_store_municipality_reference.py |

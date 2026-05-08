@@ -25,11 +25,11 @@ Conclusion on predictive value: No reliable evidence.
 ## Verified Repository State During Audit
 
 Verified branch:
-- feature/next-external-source-qa
+- feature/source-license-hardening
 
 Verified working tree:
-- clean before read-only audit
-- clean after read-only audit
+- clean before source-license hardening edits
+- after implementation modified files are limited to external_source_qa_registry.csv, external_source_documentation.md, and external_source_evidence_audit.md
 
 Verified registry:
 - raw_data/code_external_data/external_source_qa_registry.csv
@@ -43,22 +43,44 @@ Verified registry:
 
 ## Current High TODO-VERIFY Inventory
 
-The following current_high registry rows still contain TODO-VERIFY fields after applying only repository-supported evidence.
+The following current_high registry rows still contain TODO-VERIFY fields after applying repository-supported evidence and official public source evidence checked on 2026-05-08.
 
 | Registry row | TODO-VERIFY fields |
 |---|---|
-| census_destatis_workbook | source_name; source_reference_or_url; source_documentation_status; license_status; file_lineage_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_method; mapping_quality_status; predictive_value_status; notes |
-| census_population_area_source_csv | source_name; source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
-| census_raw_municipality_csv | source_name; source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
-| census_municipality_feature_base | source_reference_or_url; source_documentation_status; license_status; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
-| census_store_feature_base | source_reference_or_url; source_documentation_status; license_status; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status |
+| census_destatis_workbook | temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| census_population_area_source_csv | temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| census_raw_municipality_csv | temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| census_municipality_feature_base | temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| census_store_feature_base | temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
 | zipcode_to_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
 | nrw_plz_centroids | source_name; source_reference_or_url; source_documentation_status; license_status; file_lineage_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
-| vg250_boundary_cache | source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
-| store_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| vg250_boundary_cache | reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
+| store_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status |
 | store_municipality_reference_parquet | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
 
-Fields are left as TODO-VERIFY where repository evidence does not resolve source URL, access date, license, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping validity, predictive value, feature value, forecast improvement, or business value.
+Fields are left as TODO-VERIFY where repository evidence and checked official public source pages do not resolve source URL, access date, license, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping validity, predictive value, feature value, forecast improvement, or business value.
+
+## Official Public Source Evidence
+
+Official pages checked on 2026-05-08:
+- Destatis GV-ISys Gemeindeverzeichnis: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/_inhalt.html
+- Destatis 31.12.2024 GV-ISys publication page: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV4QAktuell.html
+- Destatis standard copyright terms: https://www.destatis.de/DE/Service/Impressum/copyright-allgemein.html
+- BKG VG250 product page: https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html
+- BKG PLZ product page, context only: https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html
+
+Destatis evidence:
+- GV-ISys is published by the Statistical Offices of the Federation and the Länder and includes AGS, ARS, municipality names, postal code of the administrative seat, area, and population.
+- The 31.12.2024 publication page for all politically independent municipalities is dated 2025-01-07.
+- Destatis standard copyright terms permit reuse with source attribution unless product-specific third-party or deviating rights apply.
+- Product-specific third-party or deviating rights remain TODO-VERIFY for the local workbook.
+
+BKG evidence:
+- VG250 01.01 provides administrative areas from state to municipality boundaries for Germany.
+- The official product page reports reference status 2025-01-01 and a 1-year update cycle.
+- VG250 is provided under Datenlizenz Deutschland Namensnennung 2.0 with BKG source attribution requirements.
+- The local `DE_VG250.gpkg` cache version remains TODO-VERIFY because file presence and script URL do not prove exact local cache version.
+- The BKG PLZ product is restricted and requires a license agreement; it is context only and does not prove lineage for the local `plz_centroids_nrw.csv`.
 
 ## Evidence Path Audit
 
@@ -156,9 +178,8 @@ Relevant evidence:
 - Writes census_feature_base_qa_summary.csv.
 
 Limit:
-- The script contains a source-name metadata string, but source URL and license/usage terms are not resolved by repository evidence.
-- Source documentation remains TODO-VERIFY.
-- License status remains TODO-VERIFY.
+- Official Destatis pages resolve the source family and standard reuse terms for the GV-ISys source, but the derived script reference date conflicts with the official 2024-12-31 product reference.
+- Product-specific third-party or deviating rights remain TODO-VERIFY.
 - Publication lag and revision lag remain TODO-VERIFY.
 - Predictive value remains TODO-VERIFY.
 
@@ -173,8 +194,9 @@ Relevant evidence:
 - Checks unresolved target municipalities.
 
 Limit:
-- Exact source URL, access date, license/usage terms, and workbook provenance remain TODO-VERIFY.
-- The local workbook presence alone is not sufficient source documentation.
+- Official Destatis pages resolve source family, source page, access date, and standard reuse terms.
+- The exact local workbook acquisition event remains TODO-VERIFY.
+- Product-specific third-party or deviating rights remain TODO-VERIFY.
 
 ### build_zipcode_to_municipality_nrw_csv.py
 
@@ -195,7 +217,8 @@ Mapping risk:
 - ZIP/postcode must not be treated as a one-to-one municipality key for all business or geospatial purposes.
 
 Limit:
-- VG250 URL is present in code, but license/usage terms remain TODO-VERIFY.
+- VG250 source page, license family, update cycle, and source attribution requirement are resolved from official BKG evidence.
+- The exact local cache version remains TODO-VERIFY.
 - NRW boundary consistency remains TODO-VERIFY until independently QA-checked.
 - ZIP centroid source quality remains TODO-VERIFY.
 - Multi-municipality ZIP ambiguity remains TODO-VERIFY.
@@ -219,7 +242,7 @@ Limit:
 
 ## Documentation Hardening Status
 
-The repository source documentation artifact was updated for repository-supported evidence only:
+The repository source documentation artifact was updated for repository-supported evidence and checked official public source evidence only:
 - raw_data/code_external_data/external_source_documentation.md
 
 This does not fully resolve source URL, access date, license/usage terms, publication lag, revision lag, causal availability, leakage review, mapping validity, or predictive value for the high-priority Census and reference mapping artifacts.
@@ -312,15 +335,18 @@ Observed:
 
 Interpretation limit:
 - File presence and script references do not prove license, boundary version, CRS, layer integrity, source access date, or full NRW boundary consistency.
-- VG250 lineage, license, and full NRW boundary consistency remain TODO-VERIFY.
+- VG250 official source page, license family, update cycle, and attribution requirement are resolved from official BKG evidence.
+- Local cache version, CRS/layer integrity, and full NRW boundary consistency remain TODO-VERIFY.
 
 ## Unresolved TODO-VERIFY Items
 
 The following items remain unresolved:
 
-- source URL or stable source reference for Census workbook
-- access or creation date for external source material
-- license or usage terms
+- exact local acquisition event for the Census workbook
+- product-specific third-party or deviating Destatis rights
+- PLZ centroid source URL or stable source reference
+- PLZ centroid license or usage terms
+- local VG250 cache reference date/version
 - raw source provenance
 - file lineage completeness
 - publication lag
