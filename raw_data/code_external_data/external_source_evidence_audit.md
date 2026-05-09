@@ -82,6 +82,11 @@ BKG evidence:
 - The local `DE_VG250.gpkg` cache version remains TODO-VERIFY because file presence and script URL do not prove exact local cache version.
 - The BKG PLZ product is restricted and requires a license agreement; it is context only and does not prove lineage for the local `plz_centroids_nrw.csv`.
 
+PLZ centroid repository evidence:
+- Git history adds `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv` in commit `9be4a742` on 2026-03-09.
+- The historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list.
+- Repository evidence does not prove the upstream centroid source, source URL, access date, license, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, leakage risk, or mapping quality.
+
 ## Evidence Path Audit
 
 All qa_evidence_path entries in the registry existed during the audit.
@@ -296,6 +301,7 @@ File:
 - raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv
 
 Observed metrics:
+- schema = zip, lat, lng
 - rows = 864
 - unique ZIPs = 864
 - duplicate ZIP groups = 0
@@ -307,7 +313,7 @@ Observed metrics:
 Interpretation limit:
 - PLZ centroid coordinates are approximate.
 - Broad coordinate bounds are a sanity check only.
-- PLZ centroid source provenance and precision remain TODO-VERIFY.
+- PLZ centroid source provenance, source URL, access date, license, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, leakage risk, mapping quality, and predictive value remain TODO-VERIFY.
 
 ### Store municipality fallback current output
 
@@ -346,6 +352,7 @@ The following items remain unresolved:
 - product-specific third-party or deviating Destatis rights
 - PLZ centroid source URL or stable source reference
 - PLZ centroid license or usage terms
+- PLZ centroid access date, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, leakage risk, and mapping quality
 - local VG250 cache reference date/version
 - raw source provenance
 - file lineage completeness

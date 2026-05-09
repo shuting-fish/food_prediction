@@ -101,6 +101,7 @@ Interpretation limit:
 
 Observed current file:
 - Path: `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv`
+- Schema: `zip,lat,lng`
 - Rows: 864
 - Unique ZIPs: 864
 - Duplicate ZIP groups: 0
@@ -113,7 +114,9 @@ Interpretation limit:
 - Broad coordinate bounds are a sanity check only.
 - PLZ centroid coordinates are approximate.
 - PLZ centroids must not be interpreted as precise store coordinates.
-- PLZ centroid source provenance and precision remain TODO-VERIFY.
+- Git history adds `plz_centroids_nrw.csv` in commit `9be4a742` on 2026-03-09.
+- Historical helper script evidence supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list.
+- PLZ centroid source name, source URL, access date, license or usage terms, upstream provenance, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping quality, and predictive value remain TODO-VERIFY.
 
 ## Store Municipality Fallback QA
 
@@ -159,4 +162,3 @@ No forecast-improvement, feature-value, operational-benefit, business-benefit, o
 ## Non-Final Status
 
 This QA supports source and reference mapping documentation only. It does not approve ML integration or final training feature engineering.
-
