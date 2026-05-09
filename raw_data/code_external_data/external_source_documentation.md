@@ -262,6 +262,20 @@ Spatial assignment quality remains TODO-VERIFY.
 
 OSM remains deferred until store coordinate quality is verified.
 
+### Store Source Schema QA Update
+
+Read-only schema QA on branch `feature/store-coordinate-source-qa` observed the canonical stores parquet at `raw_data/20260218_144523_stores.parquet` with 84 rows and 5 columns:
+
+- `subdivision_code`
+- `country_code`
+- `zipcode`
+- `average_weekly_revenue_Q1`
+- `store_id`
+
+No latitude, longitude, coordinate, address, street, city, or precise store-location columns were observed. Only `zipcode` and `store_id` matched the geo/address search terms used in the schema check.
+
+This confirms there is currently no repository evidence for precise store coordinates in the canonical stores file. Store coordinate source quality remains TODO-VERIFY. ZIP fallback remains candidate reference mapping only. OSM remains deferred until a precise and documented store coordinate source is verified.
+
 ## ZIP/AGS Reference QA Artifact
 
 A dedicated non-final QA artifact records the current ZIP, AGS, centroid, VG250, and store fallback findings:
