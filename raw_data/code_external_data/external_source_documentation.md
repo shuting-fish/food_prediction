@@ -180,6 +180,14 @@ ZIP centroids are approximate reference points. They must not be treated as exac
 
 Official BKG PLZ product context was checked on 2026-05-08 at https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html. That page describes a restricted product requiring a license agreement and does not prove the lineage of the local `plz_centroids_nrw.csv`; local PLZ centroid provenance remains TODO-VERIFY.
 
+### Upstream Source Research Outcome
+
+Read-only upstream source research on 2026-05-09 reviewed official or source-linked candidate pages only. BKG Postleitzahlgebiete Deutschland remains restricted context only, not local lineage. OpenPLZ and the OpenPLZ API data GitHub repository remain plausible candidates only, not proven local lineage. Open.NRW / CKAN Deutschland Postleitzahlen remains a plausible candidate only, not proven local lineage. OpenStreetMap copyright/license evidence provides ODbL context only, not local lineage.
+
+No candidate source is tied by repository evidence to the local `plz_centroids.csv` or `plz_centroids_nrw.csv`. No tracked Git history was found for local `plz_centroids.csv`. Same-commit scripts and notebook references use PLZ centroids as an input but do not prove source URL, license, access date, upstream provenance, precision, coordinate method, or reference date.
+
+The local `plz_centroids.csv` is proven only as a historical helper input, not as a sourced or provenanced artifact. Upstream provenance conclusion for `plz_centroids_nrw.csv`: No reliable evidence.
+
 Repository evidence does not resolve the PLZ centroid source name, source URL, upstream access date, license or usage terms, upstream provenance, precision, coordinate quality, reference date, update logic, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping quality, or predictive value. These fields remain TODO-VERIFY.
 
 ## Source 6: ZIP to Municipality Reference
