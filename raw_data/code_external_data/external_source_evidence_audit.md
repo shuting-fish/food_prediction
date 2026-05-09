@@ -257,6 +257,21 @@ Limit:
 - Geospatial join assumptions remain TODO-VERIFY.
 - OSM remains deferred until coordinate quality is verified.
 
+Additional read-only schema QA on branch `feature/store-coordinate-source-qa` observed:
+
+- Canonical stores parquet path exists: `raw_data/20260218_144523_stores.parquet`.
+- Shape: 84 rows and 5 columns.
+- Columns: `subdivision_code`, `country_code`, `zipcode`, `average_weekly_revenue_Q1`, `store_id`.
+- No latitude, longitude, coordinate, address, street, city, or precise store-location columns were observed.
+- Only `zipcode` and `store_id` matched the geo/address search terms used in the schema check.
+
+Limit:
+
+- The canonical stores file provides ZIP-level location context only.
+- There is no repository evidence for precise store coordinates in the canonical stores file.
+- Store coordinate source quality remains TODO-VERIFY.
+- OSM remains deferred until a precise and documented store coordinate source is verified.
+
 ## Documentation Hardening Status
 
 The repository source documentation artifact was updated for repository-supported evidence and checked official public source evidence only:

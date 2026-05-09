@@ -148,6 +148,23 @@ Interpretation limit:
 - Store coordinate source quality remains TODO-VERIFY.
 - Spatial assignment quality remains limited because no valid store-coordinate spatial join was used.
 
+### Store Source Schema QA Update
+
+Read-only schema QA on branch `feature/store-coordinate-source-qa` observed the canonical stores parquet at `raw_data/20260218_144523_stores.parquet` with:
+
+- Store rows: 84
+- Columns: `subdivision_code`, `country_code`, `zipcode`, `average_weekly_revenue_Q1`, `store_id`
+- Potential geo or address columns found by keyword search: `zipcode`, `store_id`
+
+No latitude, longitude, coordinate, address, street, city, or precise store-location columns were observed.
+
+Interpretation limit:
+
+- The canonical stores file does not provide precise store coordinates.
+- ZIP fallback remains the only current repository-supported store geography assignment basis.
+- Store coordinate source quality remains TODO-VERIFY.
+- OSM remains deferred until precise store coordinate quality is verified.
+
 ## Leakage and Causal Availability
 
 The following remain TODO-VERIFY:
