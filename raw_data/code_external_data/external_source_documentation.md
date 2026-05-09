@@ -169,7 +169,8 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 | Update logic | TODO-VERIFY |
 | Join key | zip, lat, lng |
 | Known limitations | centroid approximation, coordinate source quality, source URL, license, lineage, precision, and update logic remain TODO-VERIFY |
-| QA status | header verified; script checks valid ZIPs and duplicate ZIP coordinate pairs |
+| QA status | schema `zip,lat,lng`; current file has 864 rows, 864 unique ZIPs, 0 duplicate ZIP groups, 0 duplicate coordinate groups, 0 missing coordinates, 0 nonnumeric coordinates, and 0 broad NRW-bounds outliers |
+| Repository lineage evidence | Git history adds `plz_centroids_nrw.csv` in commit `9be4a742` on 2026-03-09; the historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list; upstream centroid source remains TODO-VERIFY |
 | Current phase status | reference coordinate candidate |
 | Predictive value status | TODO-VERIFY |
 
@@ -178,6 +179,8 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 ZIP centroids are approximate reference points. They must not be treated as exact store coordinates or exact municipality membership proof without documented allocation logic and QA evidence.
 
 Official BKG PLZ product context was checked on 2026-05-08 at https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html. That page describes a restricted product requiring a license agreement and does not prove the lineage of the local `plz_centroids_nrw.csv`; local PLZ centroid provenance remains TODO-VERIFY.
+
+Repository evidence does not resolve the PLZ centroid source name, source URL, upstream access date, license or usage terms, upstream provenance, precision, coordinate quality, reference date, update logic, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping quality, or predictive value. These fields remain TODO-VERIFY.
 
 ## Source 6: ZIP to Municipality Reference
 
