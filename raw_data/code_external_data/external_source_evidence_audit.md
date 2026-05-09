@@ -85,7 +85,19 @@ BKG evidence:
 PLZ centroid repository evidence:
 - Git history adds `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv` in commit `9be4a742` on 2026-03-09.
 - The historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list.
+- No tracked Git history was found for local `plz_centroids.csv`.
+- Same-commit scripts and notebook references use PLZ centroids as an input but do not prove source URL, license, access date, upstream provenance, precision, coordinate method, or reference date.
 - Repository evidence does not prove the upstream centroid source, source URL, access date, license, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, leakage risk, or mapping quality.
+
+PLZ centroid upstream source research:
+- Read-only upstream source research on 2026-05-09 reviewed official or source-linked candidate pages only.
+- BKG Postleitzahlgebiete Deutschland remains restricted context only, not local lineage.
+- OpenPLZ and the OpenPLZ API data GitHub repository remain plausible candidates only, not proven local lineage.
+- Open.NRW / CKAN Deutschland Postleitzahlen remains a plausible candidate only, not proven local lineage.
+- OpenStreetMap copyright/license evidence provides ODbL context only, not local lineage.
+- No candidate source is tied by repository evidence to local `plz_centroids.csv` or `plz_centroids_nrw.csv`.
+- The local `plz_centroids.csv` is proven only as historical helper input, not as a sourced or provenanced artifact.
+- Upstream provenance conclusion for `plz_centroids_nrw.csv`: No reliable evidence.
 
 ## Evidence Path Audit
 
@@ -313,6 +325,8 @@ Observed metrics:
 Interpretation limit:
 - PLZ centroid coordinates are approximate.
 - Broad coordinate bounds are a sanity check only.
+- Read-only upstream source research did not prove local lineage from BKG PLZ, OpenPLZ, OpenPLZ API data, Open.NRW / CKAN Deutschland Postleitzahlen, OpenStreetMap, or any other candidate source.
+- Upstream provenance conclusion for `plz_centroids_nrw.csv`: No reliable evidence.
 - PLZ centroid source provenance, source URL, access date, license, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, leakage risk, mapping quality, and predictive value remain TODO-VERIFY.
 
 ### Store municipality fallback current output

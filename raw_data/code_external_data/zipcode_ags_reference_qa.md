@@ -116,6 +116,9 @@ Interpretation limit:
 - PLZ centroids must not be interpreted as precise store coordinates.
 - Git history adds `plz_centroids_nrw.csv` in commit `9be4a742` on 2026-03-09.
 - Historical helper script evidence supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list.
+- Read-only upstream source research on 2026-05-09 did not prove local lineage from BKG PLZ, OpenPLZ, OpenPLZ API data, Open.NRW / CKAN Deutschland Postleitzahlen, OpenStreetMap, or any other candidate source.
+- Local `plz_centroids.csv` is proven only as historical helper input, not as a sourced or provenanced artifact.
+- Upstream provenance conclusion for `plz_centroids_nrw.csv`: No reliable evidence.
 - PLZ centroid source name, source URL, access date, license or usage terms, upstream provenance, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping quality, and predictive value remain TODO-VERIFY.
 
 ## Store Municipality Fallback QA
