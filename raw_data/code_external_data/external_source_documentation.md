@@ -276,6 +276,12 @@ No latitude, longitude, coordinate, address, street, city, or precise store-loca
 
 This confirms there is currently no repository evidence for precise store coordinates in the canonical stores file. Store coordinate source quality remains TODO-VERIFY. ZIP fallback remains candidate reference mapping only. OSM remains deferred until a precise and documented store coordinate source is verified.
 
+### Deferred OSM / Identical Geospatial Output QA
+
+PR25 store coordinate source QA confirms that the canonical stores file does not provide precise coordinate, address, or location columns. Therefore the deferred OSM POI artifact cannot currently be interpreted as precise store context. Any identical OSM feature outputs, duplicate geospatial outputs, or coordinate-derived context effects remain TODO-VERIFY because the current repository-supported store geography basis is ZIP fallback only.
+
+OSM source name, source URL, license, raw source traceability, file lineage, temporal availability, causal availability, leakage risk, mapping quality, coordinate source quality, and predictive value remain TODO-VERIFY. Source, lineage, coordinate quality, causal availability, leakage safety, predictive value, and operational value conclusion: No reliable evidence.
+
 ## ZIP/AGS Reference QA Artifact
 
 A dedicated non-final QA artifact records the current ZIP, AGS, centroid, VG250, and store fallback findings:
@@ -286,7 +292,7 @@ This artifact is source and reference mapping QA only. It does not validate pred
 ## Deferred or Out-of-Scope Sources
 
 The following sources remain deferred or registry-only in the current phase:
-- OSM POI context: priority 2 but deferred until store coordinate quality is verified; current store geography QA reports 84 stores, 0 valid coordinates, and 84 ZIP fallback assignments. Source, license, lineage, leakage, and identical-coordinate effects also remain TODO-VERIFY.
+- OSM POI context: priority 2 but deferred until precise documented store coordinate quality is verified; current store geography QA reports 84 stores, 0 valid coordinates, and 84 ZIP fallback assignments. PR25 store source schema QA found no precise coordinate/address/location columns in canonical stores. Source, license, lineage, temporal availability, causal availability, leakage, mapping quality, duplicate geospatial outputs, and identical-coordinate effects also remain TODO-VERIFY. No reliable evidence supports precise store-level OSM context, predictive value, or operational value.
 - OpenLigaDB or event-like data: low-priority deferred context only.
 - Bahn-Vorhersage downloader context: low-priority deferred context only.
 - Zensus grid downloader stub: high-priority domain but deferred until source, license, lineage, file existence, QA, and causal availability are verified.
