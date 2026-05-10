@@ -133,6 +133,7 @@ Observed metrics:
 - municipality_feature_rows = 25
 - municipality_rows_missing_coverage = 0
 - municipality_rows_with_name_mismatch = 19
+- municipality rows with `qa_name_mismatch_store_vs_raw = False` = 6
 - municipality_rows_with_missing_population = 0
 - municipality_rows_with_missing_area = 0
 - municipality_rows_with_incomplete_feature_row = 0
@@ -140,6 +141,8 @@ Observed metrics:
 
 Interpretation limit:
 - The metrics document generated QA output only.
+- Read-only row-level review found the observed mismatch pattern is official/display municipality names with designation suffixes versus shorter store-reference municipality names.
+- Name mismatch review does not prove authoritative municipality identity or resolve AGS/Gemeindeschluessel authority, format, or leading-zero preservation.
 - They do not prove source license, source URL, publication lag, revision lag, causal availability, leakage safety, or predictive value.
 
 ### Store municipality reference QA summary
@@ -188,6 +191,8 @@ Relevant evidence:
 - Normalizes municipality_ags.
 - Checks missing or invalid municipality_ags.
 - Checks duplicate municipality_ags.
+- Builds `municipality_name_store_reference` from the store municipality universe.
+- Computes `qa_name_mismatch_store_vs_raw` by comparing stripped and casefolded raw and store-reference municipality names.
 - Uses RAW_SOURCE_NAME = Official municipality census / demography extract.
 - Uses RAW_SOURCE_REFERENCE_DATE = 2022-05-15.
 - Uses MAX_ALLOWED_REFERENCE_DATE = 2025-06-30.
@@ -196,6 +201,7 @@ Relevant evidence:
 
 Limit:
 - Official Destatis pages resolve the source family and standard reuse terms for the GV-ISys source, but the derived script reference date conflicts with the official 2024-12-31 product reference.
+- Name mismatch QA is a string-comparison check only and must not be used to resolve municipality identity by assumption.
 - Product-specific third-party or deviating rights remain TODO-VERIFY.
 - Publication lag and revision lag remain TODO-VERIFY.
 - Predictive value remains TODO-VERIFY.
