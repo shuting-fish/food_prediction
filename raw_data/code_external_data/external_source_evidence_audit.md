@@ -272,6 +272,20 @@ Limit:
 - Store coordinate source quality remains TODO-VERIFY.
 - OSM remains deferred until a precise and documented store coordinate source is verified.
 
+### Deferred OSM / identical geospatial output blocker after PR25
+
+Observed:
+- PR25 store coordinate source QA found no latitude, longitude, coordinate, address, street, city, or precise store-location columns in canonical stores.
+- Current store geography QA reports 84 stores, 0 valid coordinates, 84 ZIP fallback assignments, and 0 spatial joins.
+- The registry row `osm_pois_overpass_store_context` remains deferred.
+
+Interpretation limit:
+- OSM work must remain deferred until precise documented store coordinates are verified.
+- The existing OSM artifact must not be interpreted as precise store context.
+- Duplicate geospatial output risk and identical OSM feature outputs remain TODO-VERIFY because current store geography is ZIP fallback only.
+- OSM source, license, raw source traceability, file lineage, temporal availability, causal availability, leakage risk, mapping quality, coordinate source quality, and predictive value remain TODO-VERIFY.
+- Source, lineage, coordinate quality, causal availability, leakage safety, predictive value, and operational value conclusion: No reliable evidence.
+
 ## Documentation Hardening Status
 
 The repository source documentation artifact was updated for repository-supported evidence and checked official public source evidence only:
@@ -403,6 +417,7 @@ The following items remain unresolved:
 - store coordinate source quality
 - duplicate coordinate risk
 - identical OSM features caused by identical or centroid-derived coordinates
+- OSM source, license, lineage, temporal availability, causal availability, leakage risk, mapping quality, and predictive value
 - predictive value
 - feature value
 - model impact
