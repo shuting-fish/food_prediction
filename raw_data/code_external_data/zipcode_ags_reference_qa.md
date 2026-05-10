@@ -164,6 +164,9 @@ Interpretation limit:
 - ZIP fallback remains the only current repository-supported store geography assignment basis.
 - Store coordinate source quality remains TODO-VERIFY.
 - OSM remains deferred until precise store coordinate quality is verified.
+- Deferred OSM POI context, duplicate geospatial output risk, and identical OSM feature outputs remain TODO-VERIFY because current store geography is ZIP fallback only.
+- OSM source, license, lineage, temporal availability, causal availability, leakage risk, mapping quality, coordinate source quality, and predictive value remain TODO-VERIFY.
+- Source, lineage, coordinate quality, causal availability, leakage safety, predictive value, and operational value conclusion: No reliable evidence.
 
 ## Leakage and Causal Availability
 
