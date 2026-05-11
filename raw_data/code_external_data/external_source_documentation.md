@@ -161,18 +161,18 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 
 | Field | Status |
 |---|---|
-| Source name | TODO-VERIFY |
+| Source name | TODO-VERIFY; upstream source identity: No reliable evidence. |
 | Source file or path | raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv |
-| Source URL | TODO-VERIFY |
-| Access or creation date | TODO-VERIFY |
-| License or usage terms | TODO-VERIFY |
+| Source URL | TODO-VERIFY; stable upstream URL, download path, or source repository: No reliable evidence. |
+| Access or creation date | TODO-VERIFY; current repository evidence shows local file presence only |
+| License or usage terms | TODO-VERIFY; local PLZ centroid license: No reliable evidence. |
 | Spatial level | ZIP or postcode centroid |
-| Temporal level | TODO-VERIFY |
-| Update logic | TODO-VERIFY |
+| Temporal level | TODO-VERIFY; reference date, publication lag, revision lag, and backfill behavior: No reliable evidence. |
+| Update logic | TODO-VERIFY; historical helper evidence supports only partial local subset logic, not reproducible upstream acquisition |
 | Join key | zip, lat, lng |
-| Known limitations | centroid approximation, coordinate source quality, source URL, license, lineage, precision, and update logic remain TODO-VERIFY |
+| Known limitations | centroid approximation, coordinate source quality, source URL, license, lineage, precision, update logic, temporal availability, causal availability, leakage risk, NRW boundary consistency, and ZIP/postcode mapping ambiguity remain TODO-VERIFY |
 | QA status | schema `zip,lat,lng`; current file has 864 rows, 864 unique ZIPs, 0 duplicate ZIP groups, 0 duplicate coordinate groups, 0 missing coordinates, 0 nonnumeric coordinates, and 0 broad NRW-bounds outliers |
-| Repository lineage evidence | Git history adds `plz_centroids_nrw.csv` in commit `9be4a742` on 2026-03-09; the historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list; upstream centroid source remains TODO-VERIFY |
+| Repository lineage evidence | Git history adds `plz_centroids_nrw.csv` in commit `9be4a74` on 2026-03-09; the historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list; no tracked upstream `plz_centroids.csv` history was found; upstream centroid source remains TODO-VERIFY |
 | Current phase status | reference coordinate candidate |
 | Predictive value status | TODO-VERIFY |
 
@@ -181,6 +181,8 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 ZIP centroids are approximate reference points. They must not be treated as exact store coordinates or exact municipality membership proof without documented allocation logic and QA evidence.
 
 Official BKG PLZ product context was checked on 2026-05-08 at https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html. That page describes a restricted product requiring a license agreement and does not prove the lineage of the local `plz_centroids_nrw.csv`; local PLZ centroid provenance remains TODO-VERIFY.
+
+Current-file QA is structural only. The row count, unique-ZIP count, duplicate checks, missing-coordinate check, numeric-coordinate check, and broad NRW-bounds sanity check do not prove source identity, license, coordinate method, precision, temporal availability, causal availability, leakage safety, NRW boundary consistency, or true ZIP-to-municipality validity.
 
 ### Upstream Source Research Outcome
 
