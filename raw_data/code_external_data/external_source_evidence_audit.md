@@ -134,6 +134,22 @@ Additional current slice artifacts verified as present for the post-PR30 store-m
 
 Artifact presence does not prove content-level parquet-to-CSV equivalence, precise store geography, ZIP-to-municipality truth, causal availability, leakage safety, mapping validity, or predictive value.
 
+## Deferred Registry-Only Consistency Evidence
+
+The registry contains exactly five `deferred_registry_only` entries in the current repository state. These are registry-specific deferred entries only and remain candidate enrichment entries only.
+
+| Registry ID | Source name | Artifact path | QA evidence path | Deferred reason |
+|---|---|---|---|---|
+| `osm_pois_overpass_store_context` | TODO-VERIFY | `raw_data/code_external_data/_external_data/osm_pois_overpass/store_static_context_osm.parquet` | `raw_data/code_external_data/_external_data/osm_pois_overpass/store_static_context_osm.parquet` | deferred until source license, coordinate quality, lineage, leakage, mapping quality, temporal availability, causal availability, and identical-coordinate effects are verified |
+| `openligadb_event_like_matches` | TODO-VERIFY | `raw_data/code_external_data/_external_data/openligadb_matches/openligadb_matches_2025-04-01_2025-06-30.parquet` | `raw_data/code_external_data/_external_data/openligadb_matches/openligadb_matches_2025-04-01_2025-06-30.parquet` | low-priority event-like feed deferred; source license, temporal availability, and leakage posture remain TODO-VERIFY |
+| `bahnvorhersage_downloader_stub` | TODO-VERIFY | `raw_data/code_external_data/download_08_bahnvorhersage_parsed_delays.py` | `raw_data/code_external_data/download_08_bahnvorhersage_parsed_delays.py` | low-priority downloader context deferred; do not repair, execute, activate, or prioritize without explicit approval |
+| `zensus_grid_downloader_stub` | TODO-VERIFY | `raw_data/code_external_data/download_09_zensus_grid_download_stub.py` | `raw_data/code_external_data/download_09_zensus_grid_download_stub.py` | high-priority domain deferred until source license, lineage, file existence, QA, and causal availability are verified |
+| `vrr_gtfs_downloader_stub` | TODO-VERIFY | `raw_data/code_external_data/download_10_vrr_gtfs_download_stub.py` | `raw_data/code_external_data/download_10_vrr_gtfs_download_stub.py` | priority 5 transit feed deferred until source license, lineage, temporal coverage, QA, and causal availability are verified |
+
+For these five entries, registry presence, artifact-path presence, file presence, or downloader presence does not prove source validity, license status, usage-rights status, temporal availability, causal availability, leakage safety, mapping quality, ZIP-to-municipality truth, AGS/Gemeindeschluessel identity, coordinate quality, predictive value, forecast improvement, feature value, model impact, operational benefit, or business benefit. No reliable evidence supports activating, repairing, executing, prioritizing, validating, promoting, or value-assessing these deferred entries from the current registry-only evidence.
+
+TODO-VERIFY remains unresolved for source identity, source reference, source documentation status, license status, file lineage, reference date, temporal availability, causal availability, leakage risk, mapping quality, predictive value, feature value, forecast improvement, model impact, operational benefit, and business benefit where those fields are recorded as TODO-VERIFY or unsupported by repository evidence.
+
 ## QA Summary Evidence
 
 ### Census feature QA summary

@@ -317,14 +317,19 @@ This artifact is source and reference mapping QA only. It does not validate pred
 
 ## Deferred or Out-of-Scope Sources
 
-The following sources remain deferred or registry-only in the current phase:
-- OSM POI context: priority 2 but deferred until precise documented store coordinate quality is verified; current store geography QA reports 84 stores, 0 valid coordinates, and 84 ZIP fallback assignments. PR25 store source schema QA found no precise coordinate/address/location columns in canonical stores. Source, license, lineage, temporal availability, causal availability, leakage, mapping quality, duplicate geospatial outputs, and identical-coordinate effects also remain TODO-VERIFY. No reliable evidence supports precise store-level OSM context, predictive value, or operational value.
-- OpenLigaDB or event-like data: low-priority deferred context only.
-- Bahn-Vorhersage downloader context: low-priority deferred context only.
-- Zensus grid downloader stub: high-priority domain but deferred until source, license, lineage, file existence, QA, and causal availability are verified.
-- VRR GTFS downloader stub: priority 5 transit context only, deferred until source, license, lineage, temporal coverage, QA, and causal availability are verified.
+The following registry-specific entries remain deferred and registry-only in the current phase. They are candidate enrichment entries only; their `source_name`, source reference, source documentation status, license status, file lineage, reference date, temporal availability, causal availability, leakage risk, mapping quality, and predictive value fields remain TODO-VERIFY where recorded as TODO-VERIFY in the registry.
 
-Do not activate, repair, execute, or prioritize deferred downloaders without explicit user approval.
+| Registry ID | Source name | Artifact path | Phase status | Deferred reason |
+|---|---|---|---|---|
+| `osm_pois_overpass_store_context` | TODO-VERIFY | `raw_data/code_external_data/_external_data/osm_pois_overpass/store_static_context_osm.parquet` | `deferred_registry_only` | deferred until source license, coordinate quality, lineage, leakage, mapping quality, temporal availability, causal availability, and identical-coordinate effects are verified |
+| `openligadb_event_like_matches` | TODO-VERIFY | `raw_data/code_external_data/_external_data/openligadb_matches/openligadb_matches_2025-04-01_2025-06-30.parquet` | `deferred_registry_only` | low-priority event-like feed deferred; source license, temporal availability, and leakage posture remain TODO-VERIFY |
+| `bahnvorhersage_downloader_stub` | TODO-VERIFY | `raw_data/code_external_data/download_08_bahnvorhersage_parsed_delays.py` | `deferred_registry_only` | low-priority downloader context deferred; do not repair, execute, activate, or prioritize without explicit approval |
+| `zensus_grid_downloader_stub` | TODO-VERIFY | `raw_data/code_external_data/download_09_zensus_grid_download_stub.py` | `deferred_registry_only` | high-priority domain deferred until source license, lineage, file existence, QA, and causal availability are verified |
+| `vrr_gtfs_downloader_stub` | TODO-VERIFY | `raw_data/code_external_data/download_10_vrr_gtfs_download_stub.py` | `deferred_registry_only` | priority 5 transit feed deferred until source license, lineage, temporal coverage, QA, and causal availability are verified |
+
+Registry presence, artifact-path presence, file presence, or downloader presence does not prove source validity, license status, usage-rights status, temporal availability, causal availability, leakage safety, mapping quality, ZIP-to-municipality truth, AGS/Gemeindeschluessel identity, coordinate quality, predictive value, forecast improvement, feature value, model impact, operational benefit, or business benefit. No reliable evidence supports promoting these deferred entries beyond registry-only candidate enrichment status.
+
+Do not activate, repair, execute, prioritize, validate, or promote deferred downloaders without explicit later approval and phase-compliant evidence.
 
 ## Leakage and Causal Availability Status
 
