@@ -28,10 +28,14 @@ Verified branch:
 - master
 
 Verified working tree:
-- clean before 2026-05-11 `zipcode_to_municipality_reference` source-QA/reference-mapping consistency edits
+- clean before 2026-05-11 `store_municipality_reference` CSV/parquet registry/source-documentation consistency edits
 
 Verified HEAD:
-- 586460e1e85647d346901e8c76d924dab1d53e95
+- 6cd6fa263cb4f66db7351ecda5f73a4d69745bca
+
+Verified upstream state:
+- upstream/master at 6cd6fa263cb4f66db7351ecda5f73a4d69745bca
+- `git rev-list --left-right --count HEAD...upstream/master` returned `0 0`
 
 Verified registry:
 - raw_data/code_external_data/external_source_qa_registry.csv
@@ -57,7 +61,7 @@ The following current_high registry rows still contain TODO-VERIFY fields after 
 | zipcode_to_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
 | nrw_plz_centroids | source_name; source_reference_or_url; source_documentation_status; license_status; file_lineage_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
 | vg250_boundary_cache | reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
-| store_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status |
+| store_municipality_reference | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
 | store_municipality_reference_parquet | source_reference_or_url; source_documentation_status; license_status; reference_date; temporal_availability_status; causal_availability_status; leakage_risk_status; mapping_quality_status; predictive_value_status; notes |
 
 Fields are left as TODO-VERIFY where repository evidence and checked official public source pages do not resolve source URL, access date, license, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping validity, predictive value, feature value, forecast improvement, or business value.
@@ -124,6 +128,12 @@ Evidence paths verified as present:
 
 File presence does not prove source validity, license status, causal availability, leakage safety, mapping validity, or predictive value.
 
+Additional current slice artifacts verified as present for the post-PR30 store-municipality consistency update:
+- raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.csv
+- raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.parquet
+
+Artifact presence does not prove content-level parquet-to-CSV equivalence, precise store geography, ZIP-to-municipality truth, causal availability, leakage safety, mapping validity, or predictive value.
+
 ## QA Summary Evidence
 
 ### Census feature QA summary
@@ -163,6 +173,8 @@ Observed metrics:
 - stores_with_duplicate_coordinates_exact = 0
 - stores_with_spatial_zip_mismatch = 0
 - stores_with_invalid_zipcode = 0
+
+Post-PR30 current-file verification on `master` at HEAD `6cd6fa263cb4f66db7351ecda5f73a4d69745bca` confirmed these current QA summary metrics.
 
 Interpretation limit:
 - The metrics show that the current output used ZIP fallback for all stores because no valid store coordinates were available.
@@ -259,11 +271,13 @@ Relevant evidence:
 - Validates stores are DE and DE-NW.
 - Checks coordinate columns, missing coordinates, coordinate helper usage, source conflicts, Germany range, NRW bbox, duplicate coordinates, invalid ZIPs, ZIP reference matches, spatial matches, ambiguous spatial matches, spatial-vs-ZIP mismatches, fallback usage, and unassigned stores.
 - Current QA summary reports 0 valid coordinates and 84 ZIP fallback assignments.
+- Writes the same `final_df` to `store_municipality_reference.parquet` and `store_municipality_reference.csv`, then writes `build_qa_summary(final_df)` to `store_municipality_reference_qa_summary.csv`.
 
 Limit:
 - Store coordinate quality remains TODO-VERIFY.
 - ZIP fallback assignment remains candidate reference mapping only.
 - Spatial assignment validity is limited because no valid coordinates were available.
+- Shared script lineage does not prove content-level parquet-to-CSV equivalence if generated files are modified independently after generation.
 - Geospatial join assumptions remain TODO-VERIFY.
 - OSM remains deferred until coordinate quality is verified.
 
@@ -381,9 +395,13 @@ File:
 - raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.csv
 
 Observed metrics:
+- schema = store_id, store_name, store_latitude, store_longitude, store_zipcode, country_code, subdivision_code, average_weekly_revenue_Q1, municipality_ags, municipality_name, district_ags, district_name, federal_state_ags, federal_state_name, assignment_method, qa_coordinate_columns_present_in_canonical_stores, qa_has_valid_coordinates, qa_coordinates_missing, qa_coordinates_from_helper_file, qa_coordinate_source_conflict, qa_coordinates_out_of_germany_range, qa_coordinates_outside_nrw_bbox, qa_duplicate_coordinates_exact, qa_duplicate_zipcode_multiple_stores, qa_zipcode_missing_or_invalid, qa_zipcode_reference_found, qa_spatial_match_found, qa_spatial_match_ambiguous, qa_spatial_assignment_available, qa_spatial_vs_zip_mismatch, qa_assignment_used_fallback, qa_unassigned
+- rows = 84
 - assignment_method zipcode_fallback_no_valid_coordinates = 84
 - qa_has_valid_coordinates False = 84
 - qa_assignment_used_fallback True = 84
+- missing store_zipcode values = 0
+- missing municipality_ags values = 0
 - rows unassigned or missing ZIP reference = 0
 
 Interpretation limit:
@@ -392,6 +410,20 @@ Interpretation limit:
 - Store coordinate source quality remains TODO-VERIFY.
 - Spatial assignment quality remains TODO-VERIFY.
 - OSM remains deferred until coordinate quality is verified.
+
+### Store municipality parquet current output
+
+File:
+- raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.parquet
+
+Observed evidence:
+- The parquet artifact exists in the current repository state.
+- `build_store_municipality_reference.py` writes the parquet artifact from the same `final_df` that is then written to the CSV artifact and QA summary.
+
+Interpretation limit:
+- File presence and shared script lineage support derived-artifact lineage only.
+- They do not prove content-level parquet-to-CSV equivalence if generated files are modified independently after generation.
+- They do not prove precise geospatial truth, downstream use, source validity, ZIP-to-municipality truth, causal availability, leakage safety, mapping quality, predictive value, forecast improvement, feature value, model impact, operational benefit, or business benefit.
 
 ### VG250 boundary cache
 
@@ -432,6 +464,8 @@ The following items remain unresolved:
 - ZIP centroid source quality
 - centroid approximation risk
 - store coordinate source quality
+- store-to-municipality spatial assignment quality
+- content-level parquet-to-CSV equivalence and downstream use
 - duplicate coordinate risk
 - identical OSM features caused by identical or centroid-derived coordinates
 - OSM source, license, lineage, temporal availability, causal availability, leakage risk, mapping quality, and predictive value
