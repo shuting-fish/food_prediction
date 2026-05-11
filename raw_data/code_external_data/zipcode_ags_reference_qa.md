@@ -25,7 +25,7 @@ Conclusion on predictive value: No reliable evidence.
 
 ## Evidence Basis
 
-This QA is based only on repository files and read-only PowerShell checks on branch `feature/zipcode-ags-reference-qa`.
+This QA was originally based only on repository files and read-only PowerShell checks on branch `feature/zipcode-ags-reference-qa`. Post-PR29 current-file metrics for `zipcode_to_municipality_reference` were rechecked on `master` at HEAD `586460e1e85647d346901e8c76d924dab1d53e95`.
 
 Files inspected:
 - `raw_data/code_external_data/build_zipcode_to_municipality_nrw_csv.py`

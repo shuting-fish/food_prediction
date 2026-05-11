@@ -28,10 +28,10 @@ Verified branch:
 - master
 
 Verified working tree:
-- clean before 2026-05-11 `nrw_plz_centroids` source-QA consistency edits
+- clean before 2026-05-11 `zipcode_to_municipality_reference` source-QA/reference-mapping consistency edits
 
 Verified HEAD:
-- e9daa5b167f08fc48f0aeb5e58ca61cabb335c73
+- 586460e1e85647d346901e8c76d924dab1d53e95
 
 Verified registry:
 - raw_data/code_external_data/external_source_qa_registry.csv
@@ -311,12 +311,15 @@ File:
 Read-only QA was performed on branch:
 - feature/zipcode-ags-reference-qa
 
+Post-PR29 current-file metrics were rechecked on `master` at HEAD `586460e1e85647d346901e8c76d924dab1d53e95`.
+
 ### ZIP-to-municipality current output
 
 File:
 - raw_data/code_external_data/_reference_geo/zipcode_to_municipality_nrw.csv
 
 Observed metrics:
+- schema = zipcode, centroid_longitude, centroid_latitude, municipality_ags, municipality_ars, municipality_name, municipality_designation, municipality_display_name, district_ars, district_name, district_designation, district_display_name, federal_state_code, federal_state_name, assignment_method, distance_to_municipality_m
 - rows = 864
 - unique ZIPs = 864
 - duplicate ZIP row groups = 0
@@ -334,6 +337,8 @@ Interpretation limit:
 Observed metrics:
 - ZIP map municipality_ags values failing 8-digit shape check = 0
 - ZIP map municipality_ags values without NRW prefix 05 = 0
+- ZIP map municipality_ars values failing 12-digit shape check = 0
+- ZIP map federal_state_code values not equal to 05 = 0
 - Store reference municipality_ags values failing 8-digit shape check = 0
 - Store reference municipality_ags values without NRW prefix 05 = 0
 
@@ -343,7 +348,7 @@ Script evidence:
 - build_store_municipality_reference.py reads the ZIP reference CSV with dtype="string".
 
 Interpretation limit:
-- Shape and prefix checks do not prove authoritative municipality identity.
+- Shape, prefix, and state-code checks do not prove authoritative municipality identity or leading-zero preservation against a source authority.
 - AGS/Gemeindeschluessel identity remains TODO-VERIFY.
 
 ### PLZ centroid current output
