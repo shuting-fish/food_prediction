@@ -25,11 +25,13 @@ Conclusion on predictive value: No reliable evidence.
 ## Verified Repository State During Audit
 
 Verified branch:
-- feature/source-license-hardening
+- master
 
 Verified working tree:
-- clean before source-license hardening edits
-- after implementation modified files are limited to external_source_qa_registry.csv, external_source_documentation.md, and external_source_evidence_audit.md
+- clean before 2026-05-11 `nrw_plz_centroids` source-QA consistency edits
+
+Verified HEAD:
+- e9daa5b167f08fc48f0aeb5e58ca61cabb335c73
 
 Verified registry:
 - raw_data/code_external_data/external_source_qa_registry.csv
@@ -83,7 +85,7 @@ BKG evidence:
 - The BKG PLZ product is restricted and requires a license agreement; it is context only and does not prove lineage for the local `plz_centroids_nrw.csv`.
 
 PLZ centroid repository evidence:
-- Git history adds `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv` in commit `9be4a742` on 2026-03-09.
+- Git history adds `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv` in commit `9be4a742a538d22e2ed6b98c278b490ec5b4a40f` on 2026-03-09; this is repository-addition evidence only, not upstream access, creation, or reference-date evidence.
 - The historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list.
 - No tracked Git history was found for local `plz_centroids.csv`.
 - Current working-tree search found `plz_centroids_nrw.csv` but did not find a tracked upstream `plz_centroids.csv` input or a current helper script that can reproduce the upstream acquisition.

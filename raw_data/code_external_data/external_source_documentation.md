@@ -25,8 +25,10 @@ Conclusion on predictive value: No reliable evidence.
 
 ## Evidence Basis
 
-This document is based only on repository evidence available in the current branch:
-- verified branch for this update: feature/source-license-hardening
+This document is based only on repository evidence available in the current post-PR28 branch state verified for the 2026-05-11 `nrw_plz_centroids` source-QA consistency update:
+- verified branch for this update: master
+- verified HEAD for this update: e9daa5b167f08fc48f0aeb5e58ca61cabb335c73
+- verified working tree for this update: clean before edits
 - raw_data/code_external_data/external_source_qa_registry.csv
 - raw_data/code_external_data/external_source_evidence_audit.md
 - raw_data/code_external_data/build_municipality_census_feature_base.py
@@ -164,7 +166,7 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 | Source name | TODO-VERIFY; upstream source identity: No reliable evidence. |
 | Source file or path | raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv |
 | Source URL | TODO-VERIFY; stable upstream URL, download path, or source repository: No reliable evidence. |
-| Access or creation date | TODO-VERIFY; current repository evidence shows local file presence only |
+| Access or creation date | TODO-VERIFY; repository evidence shows local file presence and repository-addition commit date only, not upstream access, creation, or reference date |
 | License or usage terms | TODO-VERIFY; local PLZ centroid license: No reliable evidence. |
 | Spatial level | ZIP or postcode centroid |
 | Temporal level | TODO-VERIFY; reference date, publication lag, revision lag, and backfill behavior: No reliable evidence. |
@@ -172,7 +174,7 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 | Join key | zip, lat, lng |
 | Known limitations | centroid approximation, coordinate source quality, source URL, license, lineage, precision, update logic, temporal availability, causal availability, leakage risk, NRW boundary consistency, and ZIP/postcode mapping ambiguity remain TODO-VERIFY |
 | QA status | schema `zip,lat,lng`; current file has 864 rows, 864 unique ZIPs, 0 duplicate ZIP groups, 0 duplicate coordinate groups, 0 missing coordinates, 0 nonnumeric coordinates, and 0 broad NRW-bounds outliers |
-| Repository lineage evidence | Git history adds `plz_centroids_nrw.csv` in commit `9be4a74` on 2026-03-09; the historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list; no tracked upstream `plz_centroids.csv` history was found; upstream centroid source remains TODO-VERIFY |
+| Repository lineage evidence | Git history adds `plz_centroids_nrw.csv` in commit `9be4a742a538d22e2ed6b98c278b490ec5b4a40f` on 2026-03-09; this is repository-addition evidence only, not upstream access or reference-date evidence; the historical helper script `make_plz_centroids_nrw_subset_from_list.py` supports only partial local subset lineage from a local `plz_centroids.csv` and a user-provided NRW PLZ list; no tracked upstream `plz_centroids.csv` history was found; upstream centroid source remains TODO-VERIFY |
 | Current phase status | reference coordinate candidate |
 | Predictive value status | TODO-VERIFY |
 
