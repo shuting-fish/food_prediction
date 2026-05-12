@@ -447,10 +447,26 @@ Observed:
 - raw_data/code_external_data/_reference_geo/vg250_cache/DE_VG250.gpkg exists.
 - build_zipcode_to_municipality_nrw_csv.py references VG250 and the vg250_gem municipality layer.
 
+Read-only SQLite metadata evidence:
+- Standard-library sqlite3 inspection completed successfully against the local GeoPackage.
+- GeoPackage tables include `gpkg_contents`, `gpkg_geometry_columns`, `gpkg_spatial_ref_sys`, `gpkg_metadata`, and `gpkg_metadata_reference`.
+- `gpkg_contents` declares VG250 feature layers with `srs_id = 25832` and identifier/date-like description entries showing `2025-01-01`.
+- `gpkg_geometry_columns` declares `geom` columns for `vg250_gem` MULTIPOLYGON, `vg250_krs` MULTIPOLYGON, `vg250_lan` MULTIPOLYGON, `vg250_li` LINESTRING, `vg250_pk` POINT, `vg250_rbz` MULTIPOLYGON, `vg250_sta` MULTIPOLYGON, and `vg250_vwg` MULTIPOLYGON, all with `srs_id = 25832`.
+- `gpkg_spatial_ref_sys` contains EPSG:25832 / ETRS89 / UTM zone 32N.
+- SQLite row counts: `vg250_gem = 11103`, `vg250_krs = 433`, `vg250_lan = 34`, `vg250_rbz = 21`, `vg250_sta = 11`, and `vg250_vwg = 4680`.
+- `vg250_gem` columns include `AGS`, `ARS`, `GEN`, `BEZ`, `SN_L`, `SN_R`, `SN_K`, `NUTS`, and `geom`.
+- `vg250_gem` AGS checks found 11103 total rows, 0 null or blank `AGS` values, all checked `AGS` values length 8, and 0 non-digit `AGS` values.
+- NRW subset checks for `SN_L = '05'` found 396 rows, 396 distinct `AGS`, 396 distinct `ARS`, 0 duplicate `AGS`, 0 duplicate `ARS`, 0 `SN_L = '05'` rows with `AGS` not starting `05`, and 0 `AGS` starting `05` rows with `SN_L` not equal to `05`.
+- Germany-wide `vg250_gem` AGS/ARS values are not globally unique in the local check: 11103 total rows, 10949 distinct `AGS`, and 10949 distinct `ARS`; this was not observed as an NRW subset issue in the same check.
+- NRW `BEGINN` and `WSK` fields had no null values in the checked subset, but contain multiple historical or administrative date values and must not be interpreted as one uniform dataset reference date without official documentation.
+- `gpkg_metadata` contains dataset scope metadata pointing to `https://mis.bkg.bund.de/trefferanzeige?docuuid=431406f6-1b31-48a9-b6db-dc4b38caf5ea`.
+- `gpkg_metadata_reference` contains reference scope `geopackage` and timestamp `2025-07-01T10:34:49.263Z`; this is local GeoPackage metadata-reference evidence only, not an official VG250 reference date.
+
 Interpretation limit:
-- File presence and script references do not prove license, boundary version, CRS, layer integrity, source access date, or full NRW boundary consistency.
+- File presence, script references, and SQLite metadata do not prove license beyond official BKG documentation, exact official local cache version/reference date, actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, source access date, or full NRW boundary consistency.
 - VG250 official source page, license family, update cycle, and attribution requirement are resolved from official BKG evidence.
-- Local cache version, CRS/layer integrity, and full NRW boundary consistency remain TODO-VERIFY.
+- Exact official local cache version/reference date, actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, full NRW boundary consistency, authoritative AGS/Gemeindeschluessel identity, source-authority leading-zero validation, ZIP-to-municipality correctness, causal availability, leakage risk, mapping quality, predictive value, forecast improvement, feature value, model impact, operational benefit, and business benefit remain TODO-VERIFY.
+- No reliable evidence supports value or benefit claims from this metadata inspection.
 
 ## PR34 Geospatial and Store-Coordinate TODO-VERIFY Inventory
 
