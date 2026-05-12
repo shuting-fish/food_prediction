@@ -452,6 +452,19 @@ Interpretation limit:
 - VG250 official source page, license family, update cycle, and attribution requirement are resolved from official BKG evidence.
 - Local cache version, CRS/layer integrity, and full NRW boundary consistency remain TODO-VERIFY.
 
+## PR34 Geospatial and Store-Coordinate TODO-VERIFY Inventory
+
+Read-only PR34 scoping consolidates the current geospatial and store-coordinate evidence limits:
+
+- Store-coordinate basis: current store reference QA reports 84 stores, 0 valid coordinates, 0 spatial joins, and 84 ZIP fallback assignments. Store coordinate source quality and store-to-municipality spatial assignment quality remain TODO-VERIFY.
+- ZIP/postcode basis: current ZIP reference output has one row per ZIP, but repository evidence does not prove true one-to-one ZIP-to-municipality mapping. ZIP/postcode ambiguity and multi-municipality ZIP handling remain TODO-VERIFY.
+- AGS/Gemeindeschluessel basis: current shape, prefix, and state-code checks are structural only. Authoritative identity, source-authority validation, and leading-zero preservation remain TODO-VERIFY.
+- PLZ centroid basis: current centroid file QA is structural only. Source URL, license, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, leakage risk, and mapping quality remain TODO-VERIFY.
+- VG250 basis: existing audit text records official VG250 source-page, license-family, update-cycle, and attribution context, but local cache reference date/version, CRS/layer integrity, and full NRW boundary consistency remain TODO-VERIFY.
+- Parquet/GPKG basis: file presence and script references do not prove content-level parquet-to-CSV equivalence, layer integrity, CRS, local cache version, or downstream use.
+- OSM basis: `osm_pois_overpass_store_context` remains deferred. Source, license, lineage, temporal availability, causal availability, leakage risk, mapping quality, coordinate source quality, duplicate or identical geospatial output effects, and predictive value remain TODO-VERIFY.
+- Value-claim boundary: repository evidence provides No reliable evidence for promoting these artifacts beyond candidate source-QA and reference-mapping context in the current phase.
+
 ## Unresolved TODO-VERIFY Items
 
 The following items remain unresolved:
