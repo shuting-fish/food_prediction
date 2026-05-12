@@ -246,7 +246,7 @@ Current AGS/Gemeindeschluessel shape checks found 0 invalid 8-digit `municipalit
 
 | Field | Status |
 |---|---|
-| Registry ID | `store_municipality_reference_parquet` |
+| Registry ID | `store_municipality_reference`; `store_municipality_reference_parquet` |
 | Source name | derived store-to-municipality reference candidate |
 | Source file or path | raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.csv; raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.parquet |
 | Source URL | derived from canonical stores and ZIP-to-municipality reference; source URL not applicable for derived files; upstream PLZ centroid provenance remains TODO-VERIFY |
