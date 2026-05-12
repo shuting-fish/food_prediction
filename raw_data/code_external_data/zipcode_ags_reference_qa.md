@@ -92,9 +92,9 @@ Script evidence:
 - `build_zipcode_to_municipality_nrw_csv.py` filters NRW municipalities using AGS prefix `05`.
 
 Interpretation limit:
-- File presence and script references do not prove VG250 license, boundary version, CRS, layer integrity, source access date, or full NRW boundary consistency.
-- VG250 lineage remains TODO-VERIFY.
-- VG250 license or usage terms remain TODO-VERIFY.
+- File presence and script references alone do not prove the exact local VG250 cache version/reference date, actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, local cache source access date, or full NRW boundary consistency.
+- VG250 official source, license family, annual update cycle, and attribution requirement are documented from official BKG evidence.
+- Local VG250 cache version/reference date remains TODO-VERIFY.
 - Full NRW boundary consistency remains TODO-VERIFY.
 
 ## PLZ Centroid and Coordinate QA
@@ -146,7 +146,7 @@ Interpretation limit:
 - The current store municipality reference depends on ZIP fallback for all stores.
 - ZIP fallback can create false precision if treated as verified store-level municipality truth.
 - Store coordinate source quality remains TODO-VERIFY.
-- Spatial assignment quality remains limited because no valid store-coordinate spatial join was used.
+- Spatial assignment quality remains TODO-VERIFY because no valid store-coordinate spatial join was used.
 
 ### Store Source Schema QA Update
 
