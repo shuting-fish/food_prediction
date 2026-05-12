@@ -54,6 +54,7 @@ Do not treat TODO-VERIFY fields as resolved unless later supported by source evi
 
 | Field | Status |
 |---|---|
+| Registry ID | `census_destatis_workbook` |
 | Source name | Destatis GV-ISys Alle politisch selbständigen Gemeinden mit ausgewählten Merkmalen am 31.12.2024 (4. Quartal) |
 | Source file or path | raw_data/code_external_data/census_raw/destatis_gvisys_31122024.xlsx |
 | Source URL | https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV4QAktuell.html |
@@ -76,6 +77,7 @@ The repository contains a local workbook at the documented path. Official Destat
 
 | Field | Status |
 |---|---|
+| Registry ID | `census_population_area_source_csv` |
 | Source name | Destatis GV-ISys derived municipality population and area source CSV |
 | Source file or path | raw_data/code_external_data/census_raw/municipality_population_area_source.csv |
 | Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
@@ -98,6 +100,7 @@ The script normalizes municipality_ags to 8 characters and checks duplicate or u
 
 | Field | Status |
 |---|---|
+| Registry ID | `census_raw_municipality_csv` |
 | Source name | Destatis GV-ISys derived municipality census raw CSV |
 | Source file or path | raw_data/code_external_data/census_raw/municipality_census_raw.csv |
 | Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
@@ -120,6 +123,7 @@ The script records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 and MAX_ALLOWED_REFERE
 
 | Field | Status |
 |---|---|
+| Registry ID | `census_municipality_feature_base`; `census_store_feature_base` |
 | Source name | Destatis GV-ISys derived municipality and store census feature bases |
 | Source file or path | raw_data/code_external_data/_external_data/census_features/municipality_census_feature_base.csv; raw_data/code_external_data/_external_data/census_features/store_census_feature_base.csv |
 | Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
@@ -144,6 +148,7 @@ Read-only row-level review of the existing municipality census feature base foun
 
 | Field | Status |
 |---|---|
+| Registry ID | `vg250_boundary_cache` |
 | Source name | BKG Verwaltungsgebiete 1:250 000, Stand 01.01. (VG250 01.01.) |
 | Source file or path | raw_data/code_external_data/_reference_geo/vg250_cache/DE_VG250.gpkg |
 | Source URL | product page: https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html; direct URL in script: https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/aktuell/vg250_01-01.utm32s.gpkg.ebenen.zip |
@@ -166,6 +171,7 @@ The script uses the VG250 municipality layer `vg250_gem` and filters NRW municip
 
 | Field | Status |
 |---|---|
+| Registry ID | `nrw_plz_centroids` |
 | Source name | TODO-VERIFY; upstream source identity: No reliable evidence. |
 | Source file or path | raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv |
 | Source URL | TODO-VERIFY; stable upstream URL, download path, or source repository: No reliable evidence. |
@@ -203,6 +209,7 @@ Repository evidence does not resolve the PLZ centroid source name, source URL, u
 
 | Field | Status |
 |---|---|
+| Registry ID | `zipcode_to_municipality_reference` |
 | Source name | derived ZIP-to-municipality reference candidate |
 | Source file or path | raw_data/code_external_data/_reference_geo/zipcode_to_municipality_nrw.csv |
 | Source URL | derived from PLZ centroids and VG250 boundary logic; VG250 official source checked 2026-05-08; PLZ centroid upstream source remains TODO-VERIFY |
@@ -239,6 +246,7 @@ Current AGS/Gemeindeschluessel shape checks found 0 invalid 8-digit `municipalit
 
 | Field | Status |
 |---|---|
+| Registry ID | `store_municipality_reference_parquet` |
 | Source name | derived store-to-municipality reference candidate |
 | Source file or path | raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.csv; raw_data/code_external_data/_external_data/store_geography/store_municipality_reference.parquet |
 | Source URL | derived from canonical stores and ZIP-to-municipality reference; source URL not applicable for derived files; upstream PLZ centroid provenance remains TODO-VERIFY |
