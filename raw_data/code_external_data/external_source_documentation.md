@@ -167,6 +167,21 @@ Read-only row-level review of the existing municipality census feature base foun
 
 The script uses the VG250 municipality layer `vg250_gem` and filters NRW municipalities by AGS prefix 05. Official BKG documentation resolves the public product page, license family, attribution requirement, and annual update cycle, but it does not prove the exact version of the local cached GeoPackage.
 
+Read-only SQLite metadata evidence from the local GeoPackage supports only technical file observations:
+
+- Standard-library sqlite3 inspection completed successfully against the local GeoPackage.
+- GeoPackage metadata tables are present, including `gpkg_contents`, `gpkg_geometry_columns`, `gpkg_spatial_ref_sys`, `gpkg_metadata`, and `gpkg_metadata_reference`.
+- `gpkg_contents` declares VG250 feature layers with `srs_id = 25832`; date-like description entries show `2025-01-01`.
+- `gpkg_geometry_columns` declares VG250 geometry layers including `vg250_gem`, `vg250_krs`, `vg250_lan`, `vg250_li`, `vg250_pk`, `vg250_rbz`, `vg250_sta`, and `vg250_vwg`; `vg250_gem` is declared as `MULTIPOLYGON` with `srs_id = 25832`.
+- `gpkg_spatial_ref_sys` lists EPSG:25832 / ETRS89 / UTM zone 32N.
+- SQLite row counts observed include `vg250_gem = 11103`, `vg250_krs = 433`, `vg250_lan = 34`, `vg250_rbz = 21`, `vg250_sta = 11`, and `vg250_vwg = 4680`.
+- `vg250_gem` contains municipality identity candidate columns including `AGS`, `ARS`, `GEN`, `BEZ`, `SN_L`, `SN_R`, `SN_K`, `NUTS`, and `geom`.
+- Local SQLite checks found `vg250_gem` has 11103 rows, no null or blank `AGS` values, all checked `AGS` values are 8 characters, and no non-digit `AGS` values were observed.
+- For the `SN_L = '05'` NRW subset, SQLite checks found 396 rows, 396 distinct `AGS`, 396 distinct `ARS`, 0 duplicate `AGS`, 0 duplicate `ARS`, and AGS/SN_L prefix consistency for the checked predicates.
+- `gpkg_metadata` points to BKG-MIS metadata URL `https://mis.bkg.bund.de/trefferanzeige?docuuid=431406f6-1b31-48a9-b6db-dc4b38caf5ea`; `gpkg_metadata_reference` contains timestamp `2025-07-01T10:34:49.263Z` as local GeoPackage metadata-reference evidence only.
+
+These SQLite observations do not prove actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, full NRW boundary consistency, authoritative AGS/Gemeindeschluessel identity, source-authority leading-zero validation, exact official local cache version or reference date, ZIP-to-municipality correctness, causal availability, leakage safety, predictive value, forecast improvement, feature value, model impact, operational benefit, or business benefit. `BEGINN` and `WSK` contain multiple historical or administrative date values and must not be interpreted as one uniform dataset reference date without official documentation. No reliable evidence supports value or benefit claims from this metadata inspection.
+
 ## Source 5: NRW PLZ Centroids
 
 | Field | Status |
