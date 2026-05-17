@@ -83,9 +83,11 @@ Destatis evidence:
 
 BKG evidence:
 - VG250 01.01 provides administrative areas from state to municipality boundaries for Germany.
+- Official BKG MIS metadata for docuuid `431406f6-1b31-48a9-b6db-dc4b38caf5ea` records product `VG250_3112`, official `Letzte Änderung 31.12.2024`, metadata record date `05.05.2026`, EPSG `25832`, and `Datenlizenz Deutschland Namensnennung 2.0`.
 - The official product page reports reference status 2025-01-01 and a 1-year update cycle.
 - VG250 is provided under Datenlizenz Deutschland Namensnennung 2.0 with BKG source attribution requirements.
-- The local `DE_VG250.gpkg` cache version remains TODO-VERIFY because file presence and script URL do not prove exact local cache version.
+- Official BKG MIS metadata supports source metadata facts only; it does not prove that the local `DE_VG250.gpkg` cache is complete, unmodified, geometrically valid, CRS-transformation correct, fully NRW-boundary consistent, or fully equivalent to the official product.
+- The exact official local `DE_VG250.gpkg` cache version/reference date remains TODO-VERIFY because file presence, script URL, and local metadata do not prove exact local cache version.
 - The BKG PLZ product is restricted and requires a license agreement; it is context only and does not prove lineage for the local `plz_centroids_nrw.csv`.
 
 PLZ centroid repository evidence:
@@ -447,10 +449,19 @@ Observed:
 - raw_data/code_external_data/_reference_geo/vg250_cache/DE_VG250.gpkg exists.
 - build_zipcode_to_municipality_nrw_csv.py references VG250 and the vg250_gem municipality layer.
 
+Official BKG/MIS metadata evidence:
+- MIS docuuid `431406f6-1b31-48a9-b6db-dc4b38caf5ea`.
+- Product identifier `VG250_3112`.
+- Official `Letzte Änderung 31.12.2024`.
+- Metadata record date `05.05.2026`.
+- EPSG `25832`.
+- License family `Datenlizenz Deutschland Namensnennung 2.0`.
+- These are source metadata facts only and do not prove local GeoPackage/cache completeness, modification status, geometry validity, CRS transformation correctness, full NRW boundary consistency, or equivalence to the official product.
+
 Read-only SQLite metadata evidence:
 - Standard-library sqlite3 inspection completed successfully against the local GeoPackage.
 - GeoPackage tables include `gpkg_contents`, `gpkg_geometry_columns`, `gpkg_spatial_ref_sys`, `gpkg_metadata`, and `gpkg_metadata_reference`.
-- `gpkg_contents` declares VG250 feature layers with `srs_id = 25832` and identifier/date-like description entries showing `2025-01-01`.
+- `gpkg_contents` declares VG250 feature layers with `srs_id = 25832` and local `gpkg_contents.description` date-like values showing `2025-01-01`; their exact meaning remains TODO-VERIFY.
 - `gpkg_geometry_columns` declares `geom` columns for `vg250_gem` MULTIPOLYGON, `vg250_krs` MULTIPOLYGON, `vg250_lan` MULTIPOLYGON, `vg250_li` LINESTRING, `vg250_pk` POINT, `vg250_rbz` MULTIPOLYGON, `vg250_sta` MULTIPOLYGON, and `vg250_vwg` MULTIPOLYGON, all with `srs_id = 25832`.
 - `gpkg_spatial_ref_sys` contains EPSG:25832 / ETRS89 / UTM zone 32N.
 - SQLite row counts: `vg250_gem = 11103`, `vg250_krs = 433`, `vg250_lan = 34`, `vg250_rbz = 21`, `vg250_sta = 11`, and `vg250_vwg = 4680`.
@@ -460,11 +471,11 @@ Read-only SQLite metadata evidence:
 - Germany-wide `vg250_gem` AGS/ARS values are not globally unique in the local check: 11103 total rows, 10949 distinct `AGS`, and 10949 distinct `ARS`; this was not observed as an NRW subset issue in the same check.
 - NRW `BEGINN` and `WSK` fields had no null values in the checked subset, but contain multiple historical or administrative date values and must not be interpreted as one uniform dataset reference date without official documentation.
 - `gpkg_metadata` contains dataset scope metadata pointing to `https://mis.bkg.bund.de/trefferanzeige?docuuid=431406f6-1b31-48a9-b6db-dc4b38caf5ea`.
-- `gpkg_metadata_reference` contains reference scope `geopackage` and timestamp `2025-07-01T10:34:49.263Z`; this is local GeoPackage metadata-reference evidence only, not an official VG250 reference date.
+- `gpkg_metadata_reference` contains reference scope `geopackage` and timestamps such as `2025-07-01T10:34:48Z` or `2025-07-01T10:34:49Z`; these are local GeoPackage metadata-reference evidence only, not an official VG250 reference date by themselves.
 
 Interpretation limit:
-- File presence, script references, and SQLite metadata do not prove license beyond official BKG documentation, exact official local cache version/reference date, actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, source access date, or full NRW boundary consistency.
-- VG250 official source page, license family, update cycle, and attribution requirement are resolved from official BKG evidence.
+- File presence, script references, and SQLite metadata do not prove license beyond official BKG metadata, exact official local cache version/reference date, actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, source access date, or full NRW boundary consistency.
+- VG250 official source metadata, license family, update cycle, attribution requirement, MIS docuuid, `VG250_3112`, official `Letzte Änderung 31.12.2024`, metadata record date `05.05.2026`, and EPSG `25832` are resolved only as official BKG source metadata evidence.
 - Exact official local cache version/reference date, actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, full NRW boundary consistency, authoritative AGS/Gemeindeschluessel identity, source-authority leading-zero validation, ZIP-to-municipality correctness, causal availability, leakage risk, mapping quality, predictive value, forecast improvement, feature value, model impact, operational benefit, and business benefit remain TODO-VERIFY.
 - No reliable evidence supports value or benefit claims from this metadata inspection.
 
