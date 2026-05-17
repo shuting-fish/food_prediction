@@ -358,9 +358,17 @@ Observed metrics:
 - assignment_method polygon_intersects = 864
 - lexicographic resolution rows observed in current output = 0
 - nearest municipality fallback rows observed in current output = 0
+- local VG250 NRW municipalities observed in coverage-gap QA = 396
+- ZIP-map municipalities observed in coverage-gap QA = 394
+- local VG250 NRW municipalities not referenced by the ZIP map in the observed coverage-gap QA = 05370024 / Selfkant; 05370032 / Waldfeucht
+- Heinsberg ZIP-map context rows observed = 8
+- observed Heinsberg context rows with assignment_method polygon_intersects = 8
 
 Interpretation limit:
 - The current output has one row per ZIP, but that is not proof of true one-to-one ZIP-to-municipality mapping.
+- The observed Selfkant/Waldfeucht coverage gap is local read-only QA evidence only; it does not prove the ZIP-to-municipality mapping is correct or wrong.
+- Cause and correctness of the Selfkant/Waldfeucht gap remain TODO-VERIFY.
+- PLZ centroid provenance/license and ZIP-to-municipality truth remain TODO-VERIFY.
 - Source truth for multi-municipality ZIPs in repository evidence: No reliable evidence.
 - Multi-municipality ZIP ambiguity remains TODO-VERIFY.
 
