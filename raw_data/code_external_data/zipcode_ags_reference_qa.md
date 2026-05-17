@@ -91,6 +91,20 @@ Script evidence:
 - `build_zipcode_to_municipality_nrw_csv.py` uses the `vg250_gem` municipality layer.
 - `build_zipcode_to_municipality_nrw_csv.py` filters NRW municipalities using AGS prefix `05`.
 
+Official BKG/MIS metadata evidence:
+- MIS docuuid `431406f6-1b31-48a9-b6db-dc4b38caf5ea`.
+- Product identifier `VG250_3112`.
+- Official `Letzte Änderung 31.12.2024`.
+- Metadata record date `05.05.2026`.
+- EPSG `25832`.
+- License family `Datenlizenz Deutschland Namensnennung 2.0`.
+- These facts support source metadata only and do not prove local GeoPackage/cache completeness, modification status, geometry validity, CRS transformation correctness, full NRW boundary consistency, or equivalence to the official product.
+
+Local GeoPackage/cache metadata evidence:
+- Local cache path: `raw_data/code_external_data/_reference_geo/vg250_cache/DE_VG250.gpkg`.
+- Local `gpkg_contents.description` date-like values showing `2025-01-01` are local GeoPackage metadata evidence only; their exact meaning remains TODO-VERIFY.
+- Local GeoPackage metadata-reference timestamps such as `2025-07-01T10:34:48Z` or `2025-07-01T10:34:49Z` are not an official VG250 reference date by themselves.
+
 Interpretation limit:
 - File presence and script references alone do not prove the exact local VG250 cache version/reference date, actual geometry validity, calculated spatial bounds, CRS transformation correctness, full layer integrity, local cache source access date, or full NRW boundary consistency.
 - VG250 official source, license family, annual update cycle, and attribution requirement are documented from official BKG evidence.
