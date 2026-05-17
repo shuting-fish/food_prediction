@@ -145,6 +145,11 @@ Interpretation limit:
 - Upstream provenance conclusion for `plz_centroids_nrw.csv`: No reliable evidence.
 - PLZ centroid source name, source URL, access date, license or usage terms, upstream provenance, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping quality, and predictive value remain TODO-VERIFY.
 
+Source-selection requirements:
+- Any later PLZ centroid source-selection or replacement preparation must document source identity, stable URL or repository, license or usage terms, access date, spatial level, temporal or reference level, update logic, coordinate method, coordinate precision, join keys, limitations, raw lineage plan, QA status, causal availability, and leakage review before any download, regeneration, replacement, or promotion is considered.
+- This QA note is documentation-only. It does not select, validate, replace, or promote a PLZ source or derived ZIP-to-municipality mapping.
+- Unsupported source-quality, mapping-correctness, predictive, operational, or business-value conclusions remain: No reliable evidence.
+
 ## Store Municipality Fallback QA
 
 Observed current file:
