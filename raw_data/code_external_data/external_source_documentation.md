@@ -232,6 +232,12 @@ The local `plz_centroids.csv` is proven only as a historical helper input, not a
 
 Repository evidence does not resolve the PLZ centroid source name, source URL, upstream access date, license or usage terms, upstream provenance, precision, coordinate quality, reference date, update logic, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping quality, or predictive value. These fields remain TODO-VERIFY.
 
+### Source-Selection Requirements
+
+Any later PLZ centroid source-selection or replacement preparation must document source identity, stable URL or repository, license or usage terms, access date, spatial level, temporal or reference level, update logic, coordinate method, coordinate precision, join keys, limitations, raw lineage plan, QA status, causal availability, and leakage review before any download, regeneration, replacement, or promotion is considered. This documentation-only note does not select, validate, replace, or promote a PLZ source or derived ZIP-to-municipality mapping.
+
+Until those requirements are supported by direct evidence, PLZ centroid source quality, ZIP-to-municipality mapping correctness, predictive value, operational value, and business value remain: No reliable evidence.
+
 ## Source 6: ZIP to Municipality Reference
 
 | Field | Status |
