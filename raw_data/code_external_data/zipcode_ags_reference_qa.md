@@ -230,6 +230,6 @@ The following remain TODO-VERIFY:
 
 No forecast-improvement, feature-value, operational-benefit, business-benefit, or model-impact claim is supported by this QA.
 
-## Non-Final Status
+## Non-final Status
 
 This QA supports source and reference mapping documentation only. It does not approve ML integration or final training feature engineering.
