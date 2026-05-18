@@ -197,6 +197,25 @@ Interpretation limit:
 - OSM source, license, lineage, temporal availability, causal availability, leakage risk, mapping quality, coordinate source quality, and predictive value remain TODO-VERIFY.
 - Source, lineage, coordinate quality, causal availability, leakage safety, predictive value, and operational value conclusion: No reliable evidence.
 
+## PLZ/ZIP Mapping Evidence Requirements Checklist
+
+This checklist is Non-final and documentation-only. Each item below requires direct evidence before any future PLZ centroid source selection, source replacement, ZIP-to-municipality mapping promotion, or mapping-quality claim.
+
+| Evidence area | Required direct evidence before status change |
+|---|---|
+| PLZ centroid source | Source identity, stable source URL, API endpoint, repository, or download path; access date; source reference date; license or usage terms; upstream provenance; reproducible acquisition path. |
+| Coordinate basis | Coordinate method, coordinate precision, coordinate quality, spatial level, and evidence that PLZ centroids remain approximate and are not precise store coordinates. |
+| Temporal and causal basis | Temporal/reference level, update logic, publication lag, revision lag, backfill behavior, prediction-time availability, causal availability, and leakage review. |
+| Join and mapping basis | Join keys, join direction, ZIP/postcode ambiguity review, and multi-municipality ZIP allocation logic. |
+| AGS/Gemeindeschluessel basis | Source authority, format, length, municipality identity, and leading-zero preservation against the source authority. |
+| VG250 basis | Local cache version/reference date, geometry validity, CRS/layer integrity, calculated spatial bounds, and full NRW boundary consistency. |
+| Coverage-gap basis | Cause and correctness of the observed Selfkant/Waldfeucht coverage gap. |
+| Store-assignment basis | Store-coordinate source quality and store-to-municipality spatial assignment quality. |
+| Lineage and QA basis | Raw lineage plan, transformation logic, output path, output schema, QA checks, and QA result. |
+| Claim boundary | Source availability, structural QA, local file presence, and one-row-per-ZIP output do not prove source-quality, mapping-correctness, causal availability, leakage safety, predictive value, operational value, or business value. Unsupported source-quality, mapping-correctness, predictive-value, forecast-improvement, feature-value, model-impact, operational-benefit, and business-benefit claims remain: No reliable evidence. |
+
+All unresolved checklist items remain TODO-VERIFY. Modeling, ML integration, Streamlit, deployment, business recommendations, and later-phase value work remain Deferred, not implemented.
+
 ## Leakage and Causal Availability
 
 The following remain TODO-VERIFY:
