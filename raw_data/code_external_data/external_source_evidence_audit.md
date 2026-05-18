@@ -99,6 +99,14 @@ PLZ centroid repository evidence:
 - Repository evidence does not prove the upstream centroid source, source URL, access date, license, reference date, precision, coordinate quality, update logic, temporal availability, causal availability, leakage risk, or mapping quality.
 - Upstream source identity, license, reproducible upstream acquisition path, coordinate method, and temporal metadata conclusion: No reliable evidence.
 
+PLZ centroid registry row field note:
+- The current registry key column is `registry_id`, and the row `nrw_plz_centroids` exists in `raw_data/code_external_data/external_source_qa_registry.csv`.
+- Reproduced row fields: `artifact_path = raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv`; `mapping_entity = postcode_centroid`; `mapping_keys = zip;lat;lng`; `mapping_method = PLZ centroid coordinate candidate`; `candidate_enrichment_status = candidate_external_enrichment_only`.
+- Registry status fields still recorded as `TODO-VERIFY`: `source_name`, `source_reference_or_url`, `source_documentation_status`, `license_status`, `reference_date`, `temporal_availability_status`, `causal_availability_status`, `leakage_risk_status`, `mapping_quality_status`, and `predictive_value_status`.
+- Registry notes preserve the upstream provenance conclusion: No reliable evidence.
+- Registry notes preserve that PLZ centroids must not be treated as precise store coordinates or proof that ZIP/postcode maps one-to-one to municipality.
+- This field-level note does not resolve any `TODO-VERIFY` item and does not validate, replace, or promote the PLZ centroid artifact or any ZIP/postcode-to-municipality mapping.
+
 PLZ centroid upstream source research:
 - Read-only upstream source research on 2026-05-09 reviewed official or source-linked candidate pages only.
 - BKG Postleitzahlgebiete Deutschland remains restricted context only, not local lineage.
