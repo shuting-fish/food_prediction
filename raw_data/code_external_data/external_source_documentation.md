@@ -232,6 +232,14 @@ The local `plz_centroids.csv` is proven only as a historical helper input, not a
 
 Repository evidence does not resolve the PLZ centroid source name, source URL, upstream access date, license or usage terms, upstream provenance, precision, coordinate quality, reference date, update logic, temporal availability, causal availability, publication lag, revision lag, leakage risk, mapping quality, or predictive value. These fields remain TODO-VERIFY.
 
+### Public Source Candidate: yetzt/postleitzahlen
+
+Direct source inspection on 2026-05-18 reviewed `https://github.com/yetzt/postleitzahlen`, `datapackage.json`, `opendata.json`, and the releases page. The repository is a public source candidate for German PLZ/postcode geometry provenance review only.
+
+Observed candidate-source facts: the repository describes German postcode area shapes in compressed GeoJSON and TopoJSON formats, with extraction from OpenStreetMap via Overpass; metadata records `license = ODbL-1.0`, describes German postcode areas 2025, and lists `data/postleitzahlen.geojson` and `data/postleitzahlen.topojson`; the releases page shows release `2026.02` dated 2026-02-20 with four assets.
+
+Boundary: no repository evidence ties `yetzt/postleitzahlen` to the local `plz_centroids.csv` historical helper input or to `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv`. Local lineage, license suitability for this project, reproducible acquisition path, reference-date alignment, geometry quality, coordinate derivation method, temporal availability, causal availability, leakage review, and ZIP/postcode-to-municipality mapping quality remain TODO-VERIFY.
+
 ### Source-Selection Requirements
 
 Any later PLZ centroid source-selection or replacement preparation must document source identity, stable URL or repository, license or usage terms, access date, spatial level, temporal or reference level, update logic, coordinate method, coordinate precision, join keys, limitations, raw lineage plan, QA status, causal availability, and leakage review before any download, regeneration, replacement, or promotion is considered. This documentation-only note does not select, validate, replace, or promote a PLZ source or derived ZIP-to-municipality mapping.
