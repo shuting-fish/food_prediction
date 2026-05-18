@@ -13,7 +13,7 @@ Use this repo-local instruction only for the Food Prediction repository.
 Authority order:
 1. System and tool safety rules.
 2. Active user task.
-3. Current global Codex custom instructions visible to the session.
+3. Current session-level instructions visible to the session.
 4. Fresh PowerShell, Git, and file evidence from `C:\Users\simon\food_prediction`.
 5. Existing files in this repository only after fresh verification.
 6. Prior chat or memory as non-authoritative background only.
@@ -130,3 +130,4 @@ Minimal final chat response must contain only:
 Do not invent evidence, paths, commands, tests, branch state, validation outcomes, or status in completion reporting.
 
 Do not make `final`, `complete`, `release-ready`, `production-ready`, `QA-passed`, or `validated` claims unless directly proven by fresh evidence.
+
