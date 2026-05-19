@@ -234,7 +234,7 @@ Repository evidence does not resolve the PLZ centroid source name, source URL, u
 
 ### Public Source Candidate: yetzt/postleitzahlen
 
-Direct source inspection on 2026-05-18 reviewed `https://github.com/yetzt/postleitzahlen`, `datapackage.json`, `opendata.json`, and the releases page. The repository is a public source candidate for German PLZ/postcode geometry provenance review only.
+Direct source inspection on 2026-05-19 reviewed `https://github.com/yetzt/postleitzahlen`, `datapackage.json`, `opendata.json`, and the releases page. The repository is a public source candidate for German PLZ/postcode geometry provenance review only.
 
 Observed candidate-source facts: the repository describes German postcode area shapes in compressed GeoJSON and TopoJSON formats, with extraction from OpenStreetMap via Overpass; metadata records `license = ODbL-1.0`, describes German postcode areas 2025, and lists `data/postleitzahlen.geojson` and `data/postleitzahlen.topojson`; the releases page shows release `2026.02` dated 2026-02-20 with four assets.
 
