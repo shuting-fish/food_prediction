@@ -240,6 +240,13 @@ Observed candidate-source facts: the repository describes German postcode area s
 
 Boundary: no repository evidence ties `yetzt/postleitzahlen` to the local `plz_centroids.csv` historical helper input or to `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv`. Local lineage, license suitability for this project, reproducible acquisition path, reference-date alignment, geometry quality, coordinate derivation method, temporal availability, causal availability, leakage review, and ZIP/postcode-to-municipality mapping quality remain TODO-VERIFY.
 
+Future raw acquisition documentation requirements for this candidate:
+- Non-final status: this is a reproducibility checklist only; no data are downloaded, no raw folder is created, no registry semantics are changed, and the source is not selected or promoted.
+- Required source documentation fields before any future acquisition: source identity, repository URL, pinned release or tag, release asset or file path, access date, license evidence, attribution requirement, spatial level, reference or update semantics, raw storage path, lineage note, limitations, QA checklist, and stop conditions.
+- Proposed raw storage path remains TODO-VERIFY until explicitly approved before folder creation: `raw_data/code_external_data/_external_data/yetzt_postleitzahlen/raw/`.
+- Future QA checklist: file existence, checksum or hash, schema or layer inspection, CRS, row or feature count, geometry validity, duplicate PLZ/postcode keys, NRW filter logic, bounds sanity check, and license or attribution note.
+- Transformation boundary: `yetzt/postleitzahlen` is polygon geometry candidate context only. Polygon-to-centroid generation is a separate future transformation step; centroid method, CRS, precision, and QA remain TODO-VERIFY.
+
 ### Source-Selection Requirements
 
 Any later PLZ centroid source-selection or replacement preparation must document source identity, stable URL or repository, license or usage terms, access date, spatial level, temporal or reference level, update logic, coordinate method, coordinate precision, join keys, limitations, raw lineage plan, QA status, causal availability, and leakage review before any download, regeneration, replacement, or promotion is considered. This documentation-only note does not select, validate, replace, or promote a PLZ source or derived ZIP-to-municipality mapping.
