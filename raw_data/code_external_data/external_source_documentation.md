@@ -240,12 +240,24 @@ Observed candidate-source facts: the repository describes German postcode area s
 
 Boundary: no repository evidence ties `yetzt/postleitzahlen` to the local `plz_centroids.csv` historical helper input or to `raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv`. Local lineage, license suitability for this project, reproducible acquisition path, reference-date alignment, geometry quality, coordinate derivation method, temporal availability, causal availability, leakage review, and ZIP/postcode-to-municipality mapping quality remain TODO-VERIFY.
 
-Future raw acquisition documentation requirements for this candidate:
-- Non-final status: this is a reproducibility checklist only; no data are downloaded, no raw folder is created, no registry semantics are changed, and the source is not selected or promoted.
-- Required source documentation fields before any future acquisition: source identity, repository URL, pinned release or tag, release asset or file path, access date, license evidence, attribution requirement, spatial level, reference or update semantics, raw storage path, lineage note, limitations, QA checklist, and stop conditions.
-- Proposed raw storage path remains TODO-VERIFY until explicitly approved before folder creation: `raw_data/code_external_data/_external_data/yetzt_postleitzahlen/raw/`.
-- Future QA checklist: file existence, checksum or hash, schema or layer inspection, CRS, row or feature count, geometry validity, duplicate PLZ/postcode keys, NRW filter logic, bounds sanity check, and license or attribution note.
-- Transformation boundary: `yetzt/postleitzahlen` is polygon geometry candidate context only. Polygon-to-centroid generation is a separate future transformation step; centroid method, CRS, precision, and QA remain TODO-VERIFY.
+Plan-only raw acquisition reproducibility record for this candidate:
+
+| Field | Required future record content | Current status |
+|---|---|---|
+| Record status | Non-final; documentation-only planning record for a candidate source. | Blocked / TODO-VERIFY |
+| Source identity | `yetzt/postleitzahlen` as a public PLZ/postcode geometry candidate only. | Candidate source only |
+| Repository URL | `https://github.com/yetzt/postleitzahlen`. | Candidate source reference only |
+| Pinned release or asset target | A future record must name the exact release, tag, commit, or source file/asset before any acquisition. No target is approved here. | TODO-VERIFY |
+| Access date | A future acquisition record must record the actual access date used for acquisition. The 2026-05-19 inspection date is candidate-source context only. | TODO-VERIFY |
+| License / usage evidence | A future record must capture direct license text, attribution requirements, and redistribution or repository-storage constraints. License suitability for this project is not concluded here. | TODO-VERIFY |
+| Spatial and temporal semantics | A future record must document covered geography, PLZ/postcode geometry level, reference date, update cadence, publication lag, revision lag, and backfill behavior. | TODO-VERIFY |
+| Raw storage path | Proposed path remains uncreated and requires explicit approval before folder creation: `raw_data/code_external_data/_external_data/yetzt_postleitzahlen/raw/`. | TODO-VERIFY |
+| Lineage requirements | A future record must define source URL or asset, raw file path, checksum or equivalent file identity, schema/layer inspection, and any manual steps. No lineage to local `plz_centroids_nrw.csv` is proven. | TODO-VERIFY / No reliable evidence |
+| QA checklist | Future checks must include file existence, checksum/hash, schema or layer inspection, CRS, feature count, geometry validity, duplicate PLZ/postcode keys, NRW filter logic, bounds sanity check, and attribution note. | TODO-VERIFY |
+| Leakage questions | A future record must document prediction-time availability, publication/revision timing, backfill behavior, and causal availability before any later use assessment. | TODO-VERIFY |
+| Stop rules | Stop before download, transformation, regeneration, source replacement, source promotion, mapping use, modelling, or TODO-VERIFY closure by assumption. | Non-final |
+
+Transformation boundary: `yetzt/postleitzahlen` is polygon geometry candidate context only. Polygon-to-centroid generation would be a separate future transformation step; centroid method, CRS, precision, QA, NRW boundary consistency, ZIP/postcode mapping QA, and leakage posture remain TODO-VERIFY.
 
 ### Source-Selection Requirements
 
