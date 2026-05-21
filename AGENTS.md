@@ -5,6 +5,7 @@ PROJECT: Food Prediction
 DEFAULT_REPO_PATH: C:\Users\simon\food_prediction
 STATUS: Non-final
 DEFAULT_PHASE: External Data Acquisition + Reference Mapping + Source QA only
+CURRENT_REVISION: 2026-05-21 context fidelity rule update
 
 ## Authority and conflict rules
 
@@ -14,9 +15,10 @@ Authority order:
 1. System and tool safety rules.
 2. Active user task.
 3. Current session-level instructions visible to the session.
-4. Fresh PowerShell, Git, and file evidence from `C:\Users\simon\food_prediction`.
-5. Existing files in this repository only after fresh verification.
-6. Prior chat or memory as non-authoritative background only.
+4. Current Project Settings and active project-source governance, when available to the session.
+5. Fresh PowerShell, Git, and file evidence from `C:\Users\simon\food_prediction`.
+6. Existing files in this repository only after fresh verification.
+7. Prior chat, Canvas, memory, screenshots, diagrams, or handovers as non-authoritative background only unless verified by current evidence.
 
 If instructions conflict, follow the higher-priority source. If evidence is missing, stale, conflicting, or unverified, stop before guessing and mark the item `TODO-VERIFY` or use exactly: `No reliable evidence`.
 
@@ -35,10 +37,31 @@ Minimum fresh verification:
 - divergence against intended upstream or base, when relevant
 - recent commits, when relevant
 - relevant file and folder existence
+- relevant file contents before editing or replacing
 
 Do not invent evidence, paths, folders, branches, commits, remotes, tests, validation outcomes, repository state, implementation status, source availability, or project status.
 
 Use PowerShell for Windows workflows. Use explicit paths such as `C:\Users\simon\food_prediction`.
+
+## Context fidelity and handover rule
+
+Do not rely on a visible Codex/ChatGPT context-window usage indicator as evidence of source fidelity, remaining context safety, or safe continuation.
+
+If context appears materially long, compressed, stale, internally inconsistent, or at risk of losing source fidelity, stop before further repo-dependent conclusions or edits and produce a compact `NON_FINAL` handover.
+
+The handover must list:
+- verified current scope
+- sources actually read
+- commands actually run
+- files actually inspected or changed
+- tests/checks actually executed
+- open `TODO-VERIFY` items
+- blockers
+- safest next step for a fresh Codex/chat session
+
+Do not claim completion, validation, readiness, clean status, `QA-passed`, or equivalent finality unless backed by fresh command/file evidence from the current session.
+
+Do not continue by assumption when source fidelity, repository state, branch state, file state, command output, test result, runtime, dependency status, or implementation state is uncertain.
 
 ## Phase boundary
 
@@ -112,9 +135,9 @@ Customer-facing artifacts, repository documentation, code comments, notebooks, t
 
 ## Finality and status claims
 
-Do not claim `final`, `complete`, `release-ready`, `production-ready`, `QA-passed`, `validated`, or equivalent status unless directly proven by fresh evidence.
+Do not claim `final`, `complete`, `release-ready`, `production-ready`, `QA-passed`, `validated`, `ready`, `clean`, or equivalent status unless directly proven by fresh evidence.
 
-Use `Non-final` when unresolved `TODO-VERIFY` items affect correctness, reproducibility, legality, leakage safety, geospatial validity, repository accuracy, or implementation status.
+Use `Non-final` when unresolved `TODO-VERIFY` items affect correctness, reproducibility, legality, leakage safety, geospatial validity, repository accuracy, source fidelity, or implementation status.
 
 ## Machine-readable completion reporting
 
@@ -129,5 +152,19 @@ Minimal final chat response must contain only:
 
 Do not invent evidence, paths, commands, tests, branch state, validation outcomes, or status in completion reporting.
 
-Do not make `final`, `complete`, `release-ready`, `production-ready`, `QA-passed`, or `validated` claims unless directly proven by fresh evidence.
+Do not make `final`, `complete`, `release-ready`, `production-ready`, `QA-passed`, `validated`, `ready`, `clean`, or equivalent claims unless directly proven by fresh evidence.
 
+## Maintenance
+
+Update this file only from:
+- current Project Settings
+- active project-source governance
+- verified command output
+- verified file evidence
+- verified source documentation
+- reproducible QA result
+- explicit user confirmation
+
+Do not update this file from memory alone, old chats alone, Canvas alone, diagrams alone, screenshots alone, or unverified handovers alone.
+
+Do not delete `TODO-VERIFY` items without closing evidence.
