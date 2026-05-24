@@ -144,6 +144,30 @@ These derived artifacts remain candidate enrichment only. The script metadata re
 
 Read-only row-level review of the existing municipality census feature base found that the observed name-mismatch pattern is official/display municipality names with designation suffixes versus shorter store-reference municipality names. This documents the mismatch pattern only. It does not prove authoritative municipality identity, resolve AGS/Gemeindeschluessel authority checks, or resolve leading-zero preservation against an authoritative source.
 
+### 2026-05-24 Destatis Candidate Hardening Evidence
+
+Fresh read-only PowerShell verification on `C:\Users\simon\food_prediction` found the required Destatis/census candidate artifacts present and parsed the current CSV artifacts with these row counts:
+
+| Artifact | Row count | Schema summary |
+|---|---:|---|
+| raw_data/code_external_data/census_raw/municipality_population_area_source.csv | 25 | `municipality_ags`, `municipality_name`, `total_population`, `area_sq_km` |
+| raw_data/code_external_data/census_raw/municipality_census_raw.csv | 25 | `municipality_ags`, `municipality_name`, `total_population`, `area_sq_km`, age, foreign-population, household, and purchasing-power columns |
+| raw_data/code_external_data/_external_data/census_features/census_feature_base_qa_summary.csv | 9 | `metric`, `value` |
+| raw_data/code_external_data/_external_data/census_features/municipality_census_feature_base.csv | 25 | municipality/store-reference context, `data_reference_date`, population and density fields, demographic columns, and QA flags |
+| raw_data/code_external_data/_external_data/census_features/store_census_feature_base.csv | 84 | store context, municipality reference fields, `data_reference_date`, census columns, assignment fields, and QA flags |
+
+The current `municipality_census_raw.csv` has non-empty `total_population` and `area_sq_km` values for 25 of 25 rows. The current age, foreign-population, household, and purchasing-power columns checked in that file are empty for 25 of 25 rows. This is current repository evidence about populated and unpopulated fields only; it does not resolve source completeness, mapping quality, causal availability, leakage risk, or any downstream value status.
+
+Current script evidence supports repository lineage only. `fill_municipality_census_population_area.py` references `destatis_gvisys_31122024.xlsx`, uses `openpyxl`/`read_excel`, normalizes `municipality_ags`, and writes `municipality_population_area_source.csv` and `municipality_census_raw.csv`. `build_municipality_census_feature_base.py` reads `municipality_census_raw.csv`, normalizes `municipality_ags`, joins store municipality reference data, writes municipality/store census outputs, and writes `census_feature_base_qa_summary.csv`.
+
+Current AGS evidence is structural only: the inspected census CSVs contain 8-character `municipality_ags` values with leading zero examples. Authoritative AGS/Gemeindeschluessel identity and leading-zero preservation against a source authority remain TODO-VERIFY.
+
+Current store-level census context uses `zipcode_fallback_no_valid_coordinates` for 84 of 84 store rows, and `qa_has_valid_coordinates` is `False` for 84 of 84 rows. This is not evidence of coordinate-based spatial assignment quality. Store coordinate source quality, ZIP-to-municipality ambiguity, and mapping quality remain TODO-VERIFY.
+
+Current XLSX package inspection found workbook package entries including `xl/workbook.xml`, worksheet XML, `xl/sharedStrings.xml`, and `docProps` entries. Exact workbook title/created/modified metadata capture for this hardening record remains TODO-VERIFY. The source/raw/workbook reference date `2024-12-31` and derived script metadata/data reference date `2022-05-15` remain conflicting and unresolved.
+
+Decision boundary: the Destatis GV-ISys municipality census/demographics source family is allowed to proceed only as documented candidate enrichment / Non-final. This does not promote the source and does not resolve product-specific rights, revision lag, causal availability, leakage risk, AGS identity, municipality identity, mapping quality, or any downstream value status.
+
 ## Source 4: BKG VG250 Boundary Cache
 
 | Field | Status |
@@ -436,10 +460,14 @@ The following items remain unresolved:
 - AGS/Gemeindeschluessel identity
 - AGS/Gemeindeschluessel format validation against source authority
 - AGS/Gemeindeschluessel leading-zero preservation against source authority
+- Destatis source/raw/workbook reference date `2024-12-31` versus derived script metadata/data reference date `2022-05-15`
+- exact workbook title/created/modified metadata capture for the 2026-05-24 hardening record
+- municipality identity/name mismatch interpretation for Destatis/store-reference joins
 - NRW boundary consistency
 - ZIP centroid source quality
 - centroid approximation risk
 - store coordinate source quality
+- store-level ZIP fallback/no-valid-coordinate limitations
 - duplicate coordinate risk
 - identical OSM features caused by identical or centroid-derived coordinates
 - predictive value
