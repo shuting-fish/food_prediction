@@ -47,6 +47,13 @@ Verified registry:
 - 5 deferred registry rows
 - no invalid phase_scope_status values found
 
+2026-05-24 read-only hardening evidence:
+- Fresh repo status: `## master...upstream/master`.
+- Existing modified file before this hardening slice: raw_data/code_external_data/external_source_qa_registry.csv.
+- Fresh diff scope for that existing modification: current_high rows have `deferred_reason=not_deferred`; no implementation or data regeneration evidence was used.
+- Target documentation files and registry file were present.
+- No tests, downloads, data regeneration, modeling, staging, commit, push, or PR were run for this hardening record.
+
 ## Current High TODO-VERIFY Inventory
 
 The following current_high registry rows still contain TODO-VERIFY fields after applying repository-supported evidence and official public source evidence checked on 2026-05-08.
@@ -184,6 +191,7 @@ Interpretation limit:
 - Read-only row-level review found the observed mismatch pattern is official/display municipality names with designation suffixes versus shorter store-reference municipality names.
 - Name mismatch review does not prove authoritative municipality identity or resolve AGS/Gemeindeschluessel authority, format, or leading-zero preservation.
 - They do not prove source license, source URL, publication lag, revision lag, causal availability, leakage safety, or predictive value.
+- The allowed source-family decision is limited to documented candidate enrichment / Non-final.
 
 ### Store municipality reference QA summary
 
@@ -223,6 +231,33 @@ Observed CSV headers support that expected key columns exist in the following fi
 
 Header presence does not prove semantic correctness, license status, causal availability, or mapping validity.
 
+2026-05-24 census CSV schema and content evidence:
+
+| Artifact | Row count | Header evidence |
+|---|---:|---|
+| raw_data/code_external_data/census_raw/municipality_population_area_source.csv | 25 | `municipality_ags`, `municipality_name`, `total_population`, `area_sq_km` |
+| raw_data/code_external_data/census_raw/municipality_census_raw.csv | 25 | `municipality_ags`, `municipality_name`, `total_population`, `area_sq_km`, age, foreign-population, household, and purchasing-power columns |
+| raw_data/code_external_data/_external_data/census_features/census_feature_base_qa_summary.csv | 9 | `metric`, `value` |
+| raw_data/code_external_data/_external_data/census_features/municipality_census_feature_base.csv | 25 | municipality/store-reference context, `data_reference_date`, population and density fields, demographic columns, and QA flags |
+| raw_data/code_external_data/_external_data/census_features/store_census_feature_base.csv | 84 | store context, municipality reference fields, `data_reference_date`, census columns, assignment fields, and QA flags |
+
+Current field-population evidence from `municipality_census_raw.csv`:
+- `total_population`: 25 non-empty values, 0 blank values.
+- `area_sq_km`: 25 non-empty values, 0 blank values.
+- `population_age_0_17`, `population_age_18_64`, `population_age_65_plus`, `foreign_population_total`, `households_total`, `average_household_size`, `purchasing_power_index`, and `purchasing_power_per_capita_eur`: 0 non-empty values and 25 blank values each.
+
+Current AGS shape evidence is structural only. The inspected census CSV artifacts contain 8-character `municipality_ags` values with leading-zero examples, but authoritative AGS/Gemeindeschluessel identity and leading-zero preservation against a source authority remain TODO-VERIFY.
+
+Current store-level census context evidence:
+- `store_census_feature_base.csv` has 84 rows with `assignment_method = zipcode_fallback_no_valid_coordinates`.
+- `qa_has_valid_coordinates = False` for 84 rows.
+- Store coordinate source quality, ZIP-to-municipality ambiguity, and mapping quality remain TODO-VERIFY.
+
+Current XLSX package evidence:
+- `destatis_gvisys_31122024.xlsx` exists and contains package entries such as `xl/workbook.xml`, worksheet XML, `xl/sharedStrings.xml`, `docProps/app.xml`, and `docProps/core.xml`.
+- Exact workbook title/created/modified metadata capture for this hardening record remains TODO-VERIFY.
+- Source/raw/workbook reference date `2024-12-31` and derived script metadata/data reference date `2022-05-15` remain conflicting and unresolved.
+
 ## Script Evidence
 
 ### build_municipality_census_feature_base.py
@@ -240,6 +275,7 @@ Relevant evidence:
 - Uses MAX_ALLOWED_REFERENCE_DATE = 2025-06-30.
 - Writes municipality and store census feature base outputs.
 - Writes census_feature_base_qa_summary.csv.
+- 2026-05-24 scan confirmed this lineage evidence in the current script.
 
 Limit:
 - Official Destatis pages resolve the source family and standard reuse terms for the GV-ISys source, but the derived script reference date conflicts with the official 2024-12-31 product reference.
@@ -257,6 +293,7 @@ Relevant evidence:
 - Normalizes municipality_ags to 8 characters.
 - Checks duplicate municipality_ags.
 - Checks unresolved target municipalities.
+- 2026-05-24 scan confirmed the local workbook, `openpyxl`/`read_excel`, AGS normalization, and output-write references in the current script.
 
 Limit:
 - Official Destatis pages resolve source family, source page, access date, and standard reuse terms.
@@ -525,6 +562,8 @@ The following items remain unresolved:
 - local VG250 cache reference date/version
 - raw source provenance
 - file lineage completeness
+- Destatis source/raw/workbook reference date `2024-12-31` versus derived script metadata/data reference date `2022-05-15`
+- exact workbook title/created/modified metadata capture for the 2026-05-24 hardening record
 - publication lag
 - revision lag
 - backfill behavior
@@ -537,10 +576,12 @@ The following items remain unresolved:
 - AGS/Gemeindeschluessel identity
 - AGS/Gemeindeschluessel format validation against source authority
 - AGS/Gemeindeschluessel leading-zero preservation against source authority
+- municipality identity/name mismatch interpretation for Destatis/store-reference joins
 - NRW boundary consistency
 - ZIP centroid source quality
 - centroid approximation risk
 - store coordinate source quality
+- store-level ZIP fallback/no-valid-coordinate limitations
 - store-to-municipality spatial assignment quality
 - content-level parquet-to-CSV equivalence and downstream use
 - duplicate coordinate risk
