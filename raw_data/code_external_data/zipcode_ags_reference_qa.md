@@ -91,6 +91,65 @@ Interpretation limit:
 - AGS/Gemeindeschluessel identity remains TODO-VERIFY.
 - Leading-zero preservation against an authoritative source remains TODO-VERIFY.
 
+### Regionaldatenbank GEMEIN 05* Metadata Probe - 2026-05-27
+
+Source/probe identity:
+- Regionaldatenbank Deutschland / GENESIS REST metadata value-list probe for `GEMEIN` with `selection=05*`.
+- Evidence basis: user-provided sanitized metadata probe output for access date `2026-05-27`.
+- Status: `NON_FINAL`.
+
+Endpoint and parameters:
+- Endpoint: `catalogue/values2variable`.
+- Parameters: `name=GEMEIN`; `selection=05*`; `area=Alle`; `searchcriterion=Code`; `sortcriterion=Code`; `pagelength=5000`; `language=de`.
+- Credential fields were masked in the response.
+
+Exact response status:
+- `Code=22`.
+- `Type=Warnung`.
+- `Content=erfolgreich (Mindestens ein Parameter enthält ungültige Werte. Er wurde angepasst, um den Service starten zu können.: sortcriterion)`.
+
+Returned metadata value QA:
+- Returned metadata value count: `406`.
+- Returned `Code` values match regex `^05[0-9]{6}$`: `true`.
+- Code length distribution: length `8`, count `406`.
+- Duplicate `Code` count: `0`.
+- `Information=true` count: `23`.
+- Leading zeros are preserved in returned samples.
+
+Limited first values:
+- `05111000` Düsseldorf, kreisfreie Stadt.
+- `05112000` Duisburg, kreisfreie Stadt.
+- `05113000` Essen, kreisfreie Stadt.
+- `05114000` Krefeld, kreisfreie Stadt.
+- `05116000` Mönchengladbach, kreisfreie Stadt.
+
+Limited last values:
+- `05978024` Lünen, Stadt.
+- `05978028` Schwerte, Stadt.
+- `05978032` Selm, Stadt.
+- `05978036` Unna, Stadt.
+- `05978040` Werne, Stadt.
+
+Phase-safety flags:
+- No `/data/*` endpoint was used in the probe evidence.
+- No downloads were performed in the probe evidence.
+- No dataset body inspection was performed in the probe evidence.
+- No repository mutation occurred during the probe evidence.
+- No endpoint was called while adding this documentation note.
+
+Remaining TODO-VERIFY:
+- Full NRW `GEMEIN` coverage against an independent official reference.
+- Exact AGS/Gemeindeschluessel identity against an official reference.
+- Join-level compatibility with project reference mapping.
+- Temporal/currentness semantics of `GEMEIN` values.
+- License/usage/customer delivery conclusion not made.
+
+Status boundaries:
+- Source promotion: `BLOCKED`.
+- Customer delivery readiness: `BLOCKED`.
+- Legal/customer delivery conclusion: `not_made`.
+- No predictive, operational, or business value claim is made.
+
 ## NRW Boundary QA
 
 Observed current file:
