@@ -82,11 +82,21 @@ Official pages checked on 2026-05-08:
 - BKG VG250 product page: https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html
 - BKG PLZ product page, context only: https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html
 
+Official source-evidence retry pages checked on 2026-05-28:
+- Destatis GV-ISys / Gemeindeverzeichnis source identity and listed-field page: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/_inhalt.html
+- Destatis AGS/Gemeindeschluessel glossary: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Glossar/amtlicher-gemeindeschluessel.html
+- Destatis Gemeindeverzeichnis glossary: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Glossar/gemeindeverzeichnis.html
+- Destatis general copyright/usage terms location: https://www.destatis.de/DE/Service/Impressum/copyright-allgemein.html
+- Statistikportal Gemeindeverzeichnis and Open Data pages were treated as source-evidence only.
+- GovData metadata detail and `dl-de/by-2-0` license pages remained blocked or unavailable in the retry evidence.
+
 Destatis evidence:
 - GV-ISys is published by the Statistical Offices of the Federation and the Länder and includes AGS, ARS, municipality names, postal code of the administrative seat, area, and population.
 - The 31.12.2024 publication page for all politically independent municipalities is dated 2025-01-07.
-- Destatis standard copyright terms permit reuse with source attribution unless product-specific third-party or deviating rights apply.
+- Destatis general copyright/usage terms location was observed; product-specific GV-ISys/Gemeindeverzeichnis license or usage terms remain TODO-VERIFY.
 - Product-specific third-party or deviating rights remain TODO-VERIFY for the local workbook.
+- 2026-05-28 retry evidence recorded GV-ISys source identity, publisher `Statistische Ämter des Bundes und der Länder`, listed fields ARS, AGS, municipality names, administrative-seat postcode, area, population, and settlement typologies, monthly/quarterly/annual temporal semantics, and the Destatis AGS/Gemeindeschluessel glossary reference.
+- GovData metadata detail access, GovData `dl-de/by-2-0` license page availability, latest available edition/currentness, newer quality-report supersession, dataset/file-level metadata, schema, row evidence, delivery/legal/customer suitability, and value claims remain TODO-VERIFY.
 
 BKG evidence:
 - VG250 01.01 provides administrative areas from state to municipality boundaries for Germany.
@@ -278,7 +288,7 @@ Relevant evidence:
 - 2026-05-24 scan confirmed this lineage evidence in the current script.
 
 Limit:
-- Official Destatis pages resolve the source family and standard reuse terms for the GV-ISys source, but the derived script reference date conflicts with the official 2024-12-31 product reference.
+- Official Destatis pages provide source-family evidence and a general terms location for the GV-ISys source, but product-specific license or usage terms remain TODO-VERIFY and the derived script reference date conflicts with the official 2024-12-31 product reference.
 - Name mismatch QA is a string-comparison check only and must not be used to resolve municipality identity by assumption.
 - Product-specific third-party or deviating rights remain TODO-VERIFY.
 - Publication lag and revision lag remain TODO-VERIFY.
@@ -296,7 +306,7 @@ Relevant evidence:
 - 2026-05-24 scan confirmed the local workbook, `openpyxl`/`read_excel`, AGS normalization, and output-write references in the current script.
 
 Limit:
-- Official Destatis pages resolve source family, source page, access date, and standard reuse terms.
+- Official Destatis pages resolve source family, source page, and access-date evidence and provide a general terms location; product-specific license or usage terms remain TODO-VERIFY.
 - The exact local workbook acquisition event remains TODO-VERIFY.
 - Product-specific third-party or deviating rights remain TODO-VERIFY.
 

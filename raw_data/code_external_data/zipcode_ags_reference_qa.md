@@ -85,6 +85,9 @@ Script evidence:
 - `build_store_municipality_reference.py` reads the ZIP reference CSV with `dtype="string"`.
 - ARS values must not be treated as AGS.
 
+Official source-evidence reference:
+- The 2026-05-28 GV-ISys source-evidence retry recorded the Destatis AGS/Gemeindeschluessel glossary as documentation evidence for the official municipal key structure. This is source-documentation evidence only and does not validate local join values, local leading-zero preservation, or project join applicability.
+
 Interpretation limit:
 - These checks verify current string shape and NRW prefix in the inspected files.
 - They do not verify authoritative municipality identity against an external source authority.

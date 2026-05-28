@@ -48,6 +48,14 @@ Official public source pages checked on 2026-05-08:
 - BKG VG250 product page: https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html
 - BKG PLZ product page, context only: https://gdz.bkg.bund.de/index.php/default/postleitzahlgebiete-deutschland-plz.html
 
+Official source-evidence retry pages checked on 2026-05-28:
+- Destatis GV-ISys / Gemeindeverzeichnis source identity and listed-field page: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/_inhalt.html
+- Destatis AGS/Gemeindeschluessel glossary: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Glossar/amtlicher-gemeindeschluessel.html
+- Destatis Gemeindeverzeichnis glossary: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Glossar/gemeindeverzeichnis.html
+- Destatis general copyright/usage terms location: https://www.destatis.de/DE/Service/Impressum/copyright-allgemein.html
+- Statistikportal Gemeindeverzeichnis and Open Data pages were treated as source-evidence only.
+- GovData metadata detail and `dl-de/by-2-0` license pages remained blocked or unavailable in the retry evidence.
+
 Do not treat TODO-VERIFY fields as resolved unless later supported by source evidence, file evidence, reproducible checks, or explicit user confirmation.
 
 ## Source 1: Census Workbook Candidate
@@ -59,7 +67,7 @@ Do not treat TODO-VERIFY fields as resolved unless later supported by source evi
 | Source file or path | raw_data/code_external_data/census_raw/destatis_gvisys_31122024.xlsx |
 | Source URL | https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV4QAktuell.html |
 | Access or creation date | official source page checked 2026-05-08; local workbook modified timestamp remains repository file metadata only |
-| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
+| License or usage terms | Destatis general copyright/usage terms location observed; product-specific GV-ISys/Gemeindeverzeichnis license or usage terms remain TODO-VERIFY; no delivery/legal/customer suitability conclusion. |
 | Spatial level | municipality |
 | Temporal level | official product reference 2024-12-31; official page date 2025-01-07; local workbook metadata title says Gebietsstand 31.12.2024 and Stand August 2025 |
 | Update logic | local workbook is read by fill_municipality_census_population_area.py; no download or refresh was performed in this audit |
@@ -71,7 +79,26 @@ Do not treat TODO-VERIFY fields as resolved unless later supported by source evi
 
 ### Notes
 
-The repository contains a local workbook at the documented path. Official Destatis pages document the GV-ISys product and standard reuse terms, but repository evidence does not prove the exact acquisition event for the local workbook. The local workbook metadata shows a modified timestamp after the official page date, so publication lag and revision lag remain TODO-VERIFY.
+The repository contains a local workbook at the documented path. Official Destatis pages document the GV-ISys product and provide a general copyright/usage terms location, but repository evidence does not prove the exact acquisition event for the local workbook or a product-specific GV-ISys/Gemeindeverzeichnis license. The local workbook metadata shows a modified timestamp after the official page date, so publication lag and revision lag remain TODO-VERIFY.
+
+### 2026-05-28 GV-ISys Source-Evidence Retry
+
+This documentation-only retry used official source-evidence pages only. These pages are evidence sources, not sole controlling sources, and no data download, data endpoint call, dataset body inspection, join, derived file generation, source promotion, delivery approval, legal/customer suitability conclusion, or value claim was performed.
+
+Evidence recorded:
+- Source identity: Destatis GV-ISys / Gemeindeverzeichnis-Informationssystem.
+- Publisher: Statistische Ämter des Bundes und der Länder.
+- Listed fields on the source-identity page: ARS, AGS, municipality names, administrative-seat postcode, area, population, and settlement typologies.
+- Temporal semantics observed at documentation level: monthly update file, quarterly editions, and annual editions.
+- AGS documentation reference: the Destatis AGS/Gemeindeschluessel glossary documents the official municipal key as an eight-digit key made from state, Regierungsbezirk, Kreis, and municipality parts.
+
+Limits and blockers:
+- Product-specific GV-ISys/Gemeindeverzeichnis license or usage terms remain TODO-VERIFY.
+- GovData metadata detail access remains TODO-VERIFY because direct access was blocked in the retry evidence.
+- GovData `dl-de/by-2-0` license page remains TODO-VERIFY because the page was unavailable or under maintenance in the retry evidence.
+- Latest available edition/currentness remains TODO-VERIFY because visible dated entries were ambiguous for this slice.
+- Newer official quality-report supersession remains TODO-VERIFY.
+- Dataset/file-level metadata, schema, row evidence, delivery/legal/customer suitability, and value claims remain TODO-VERIFY.
 
 ## Source 2: Municipality Population and Area Source CSV
 
@@ -82,7 +109,7 @@ The repository contains a local workbook at the documented path. Official Destat
 | Source file or path | raw_data/code_external_data/census_raw/municipality_population_area_source.csv |
 | Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
 | Access or creation date | official source page checked 2026-05-08; local file timestamp remains repository file metadata only |
-| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
+| License or usage terms | Destatis general copyright/usage terms location observed; product-specific GV-ISys/Gemeindeverzeichnis license or usage terms remain TODO-VERIFY; no delivery/legal/customer suitability conclusion. |
 | Spatial level | municipality |
 | Temporal level | source workbook product reference 2024-12-31; revision lag remains TODO-VERIFY |
 | Update logic | generated or updated from local Destatis workbook by fill_municipality_census_population_area.py |
@@ -105,7 +132,7 @@ The script normalizes municipality_ags to 8 characters and checks duplicate or u
 | Source file or path | raw_data/code_external_data/census_raw/municipality_census_raw.csv |
 | Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
 | Access or creation date | official source page checked 2026-05-08; local file timestamp remains repository file metadata only |
-| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
+| License or usage terms | Destatis general copyright/usage terms location observed; product-specific GV-ISys/Gemeindeverzeichnis license or usage terms remain TODO-VERIFY; no delivery/legal/customer suitability conclusion. |
 | Spatial level | municipality |
 | Temporal level | source workbook product reference 2024-12-31; build_municipality_census_feature_base.py still records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 for derived feature outputs, so temporal metadata consistency remains TODO-VERIFY |
 | Update logic | used by build_municipality_census_feature_base.py |
@@ -128,7 +155,7 @@ The script records RAW_SOURCE_REFERENCE_DATE = 2022-05-15 and MAX_ALLOWED_REFERE
 | Source file or path | raw_data/code_external_data/_external_data/census_features/municipality_census_feature_base.csv; raw_data/code_external_data/_external_data/census_features/store_census_feature_base.csv |
 | Source URL | derived from local Destatis GV-ISys workbook; official source page checked 2026-05-08 |
 | Access or creation date | official source page checked 2026-05-08; derived artifact timestamps remain repository file metadata only |
-| License or usage terms | Reuse permitted with source attribution under Destatis standard copyright terms, unless product-specific third-party or deviating rights apply. Product-specific third-party or deviating rights remain TODO-VERIFY. |
+| License or usage terms | Destatis general copyright/usage terms location observed; product-specific GV-ISys/Gemeindeverzeichnis license or usage terms remain TODO-VERIFY; no delivery/legal/customer suitability conclusion. |
 | Spatial level | municipality; store-to-municipality candidate context |
 | Temporal level | registry preserves script metadata reference date 2022-05-15; source workbook product reference is 2024-12-31; consistency remains TODO-VERIFY |
 | Update logic | generated by build_municipality_census_feature_base.py from municipality_census_raw.csv and store_municipality_reference |
