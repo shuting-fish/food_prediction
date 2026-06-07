@@ -1,0 +1,26 @@
+reference_date,municipality_ags,municipality_ars,state_ars,regional_district_ars,district_ars,association_ars,municipality_component,municipality_name,area_km2,population_total,population_male,population_female,population_per_km2,administrative_seat_zipcode,centroid_longitude,centroid_latitude,travel_region_code,travel_region_name,urbanisation_code,urbanisation_name
+2025-12-31,05334002,053340002002,05,3,34,0002,002,"Aachen, Stadt",160.85,262670,137292,125378,1633,52058,"6,0848","50,773516",H01,Eifel und Region Aachen,01,dicht besiedelt
+2025-12-31,05334004,053340004004,05,3,34,0004,004,"Alsdorf, Stadt",31.68,48810,24259,24551,1541,52477,"6,161607","50,874052",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05334008,053340008008,05,3,34,0008,008,"Baesweiler, Stadt",27.84,29206,14158,15048,1049,52499,"6,181166","50,906664",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05334012,053340012012,05,3,34,0012,012,"Eschweiler, Stadt",75.75,57534,28247,29287,760,52249,"6,266781","50,817431",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05334016,053340016016,05,3,34,0016,016,"Herzogenrath, Stadt",33.38,48574,23832,24742,1455,52134,"6,089184","50,865711",H01,Eifel und Region Aachen,01,dicht besiedelt
+2025-12-31,05334020,053340020020,05,3,34,0020,020,"Monschau, Stadt",94.6,12389,6130,6259,131,52156,"6,239288","50,555279",H01,Eifel und Region Aachen,03,gering besiedelt
+2025-12-31,05334024,053340024024,05,3,34,0024,024,"Roetgen, Tor zur Eifel",39.03,8786,4349,4437,225,52159,"6,196427","50,648577",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05334028,053340028028,05,3,34,0028,028,Simmerath,110.92,16612,8277,8335,150,52152,"6,30057","50,606333",H01,Eifel und Region Aachen,03,gering besiedelt
+2025-12-31,05334032,053340032032,05,3,34,0032,032,"Stolberg (Rhld.), Kupferstadt",98.48,57684,28530,29154,586,52222,"6,223585","50,776783",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05334036,053340036036,05,3,34,0036,036,"Würselen, Stadt",34.39,40145,19567,20578,1167,52146,"6,13022","50,821466",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05358008,053580008008,05,3,58,0008,008,"Düren, Stadt",85.01,94568,47041,47527,1112,52349,"6,482964","50,801678",H01,Eifel und Region Aachen,01,dicht besiedelt
+2025-12-31,05358016,053580016016,05,3,58,0016,016,Hürtgenwald,88.05,9196,4573,4623,104,52393,"6,392832","50,723394",H01,Eifel und Region Aachen,03,gering besiedelt
+2025-12-31,05358024,053580024024,05,3,58,0024,024,"Jülich, Stadt",90.39,34890,17605,17285,386,52428,"6,357721","50,922697",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05358032,053580032032,05,3,58,0032,032,Langerwehe,41.46,14976,7400,7576,361,52379,"6,360112","50,818168",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05358036,053580036036,05,3,58,0036,036,"Linnich, Stadt",65.43,13653,6814,6839,209,52441,"6,267275","50,978896",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05358044,053580044044,05,3,58,0044,044,"Nideggen, Stadt",65.04,10764,5303,5461,165,52385,"6,484282","50,692254",H01,Eifel und Region Aachen,03,gering besiedelt
+2025-12-31,05358048,053580048048,05,3,58,0048,048,Niederzier,63.46,15060,7553,7507,237,52382,"6,462259","50,886425",H01,Eifel und Region Aachen,02,mittlere Besiedlungsdichte
+2025-12-31,05358056,053580056056,05,3,58,0056,056,Titz,68.51,9052,4492,4560,132,52445,"6,427013","51,005518",H01,Eifel und Region Aachen,03,gering besiedelt
+2025-12-31,05370004,053700004004,05,3,70,0004,004,"Erkelenz, Stadt",117.34,45315,22167,23148,386,41812,"6,314104","51,078671",H02,Niederrhein,02,mittlere Besiedlungsdichte
+2025-12-31,05370008,053700008008,05,3,70,0008,008,Gangelt,48.72,13410,6717,6693,275,52538,"5,997397","50,992732",H02,Niederrhein,03,gering besiedelt
+2025-12-31,05370012,053700012012,05,3,70,0012,012,"Geilenkirchen, Stadt",83.16,28494,14288,14206,343,52511,"6,119722","50,964538",H02,Niederrhein,02,mittlere Besiedlungsdichte
+2025-12-31,05370016,053700016016,05,3,70,0016,016,"Heinsberg, Stadt",92.21,43163,21521,21642,468,52525,"6,094538","51,061906",H02,Niederrhein,02,mittlere Besiedlungsdichte
+2025-12-31,05370020,053700020020,05,3,70,0020,020,"Hückelhoven, Stadt",61.27,41192,20321,20871,672,41836,"6,226269","51,05634",H02,Niederrhein,02,mittlere Besiedlungsdichte
+2025-12-31,05370028,053700028028,05,3,70,0028,028,"Übach-Palenberg, Stadt",26.09,24277,12133,12144,931,52531,"6,118933","50,919252",H02,Niederrhein,02,mittlere Besiedlungsdichte
+2025-12-31,05370036,053700036036,05,3,70,0036,036,"Wassenberg, Stadt",42.43,19713,9699,10014,465,41849,"6,155749","51,099533",H02,Niederrhein,02,mittlere Besiedlungsdichte
