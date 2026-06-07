@@ -1,0 +1,22 @@
+artifact_status=NON_FINAL
+artifact_role=candidate_enrichment_only
+source_identity=Reduced internal OSM ZIP39 PBF export candidate
+source_page=https://download.geofabrik.de/europe/germany/nordrhein-westfalen.html
+source_snapshot_url=https://download.geofabrik.de/europe/germany/nordrhein-westfalen-260531.osm.pbf
+license_reference=https://www.openstreetmap.org/copyright
+attribution=© OpenStreetMap contributors
+source_local_path=C:\Users\simon\Downloads\OSM_ZIP39_POI_MINIMAL_INTERNAL_NON_FINAL_20260607T001421Z\nordrhein-westfalen_required_zip39_smart_NON_FINAL.osm.pbf
+repo_target_relative_path=raw_data/code_external_data/_external_data/osm_zip39_poi_candidate_NON_FINAL/nordrhein-westfalen_required_zip39_smart_NON_FINAL.osm.pbf
+binary_format=osm.pbf
+source_file_length_bytes=52427101
+source_file_sha256=6425EB1C5832F5569A39F1FF1A2A05B6C66F49C93890644EFFAF15282E5EFD67
+local_last_write_time_utc=2026-06-06T13:38:05.1193932Z
+repo_intake_utc=2026-06-07T18:17:56.8558588Z
+reduction_method=osmium extract --strategy=smart using the documented ZIP39 union
+reproduction_guide=README_STEP_BY_STEP_OSM_ZIP39_POI_EXPORT_LEAN_NON_FINAL.md
+qa_result=Fresh pre-intake and post-copy SHA256 and byte-length identity checks passed
+structural_body_qa=Not rerun in this isolated repo-intake slice
+todo_osm_relations=Preserved; non-blocking for this previously reduced internal export scope only
+customer_delivery_status=Blocked / TODO-VERIFY
+source_promotion_status=Blocked / TODO-VERIFY
+downstream_model_use=Blocked unless separately gated
