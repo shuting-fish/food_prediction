@@ -44,7 +44,7 @@ Project store-municipality reference:
 - Usage: Read-only AGS filter source
 
 Derived project-municipality candidate CSV:
-- Filename: destatis_gv100ad_store_municipalities_2025-12-31_NON_FINAL.csv
+- Filename: destatis_gv100ad_store_municipalities_2025-12-31.csv
 - SHA256: CAC6A4A042AC61AB1BAC88D1CE2A93D661F2EEE8BE216ECE49C8857C569B8D03
 - Row count: 25 unique municipalities
 - Filter key: municipality_ags

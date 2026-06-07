@@ -1,4 +1,4 @@
-# External Data Acquisition and Preparation Guide — NON_FINAL
+# External Data Acquisition and Preparation Guide ÔÇö NON_FINAL
 
 ## 1. Scope and restrictions
 
@@ -32,7 +32,7 @@ This guide does not approve source promotion, redistribution, downstream model u
 
 ### Candidate output
 
-- File: `gv_isys_candidate_NON_FINAL/destatis_gv100ad_store_municipalities_2025-12-31_NON_FINAL.csv`
+- File: `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv100ad_store_municipalities_2025-12-31.csv`
 - Expected candidate rows: `25`
 - Join candidate: `municipality_ags`
 - Schema:
@@ -50,7 +50,7 @@ This guide does not approve source promotion, redistribution, downstream model u
 
 - Source page: https://download.geofabrik.de/europe/germany/nordrhein-westfalen.html
 - Historical snapshot URL: https://download.geofabrik.de/europe/germany/nordrhein-westfalen-260531.osm.pbf
-- Attribution: `© OpenStreetMap contributors`
+- Attribution: `┬® OpenStreetMap contributors`
 - License reference: https://www.openstreetmap.org/copyright
 
 ### Acquisition and preparation
@@ -64,13 +64,13 @@ This guide does not approve source promotion, redistribution, downstream model u
 7. Verify output hashes and aggregate row counts.
 
 Detailed commands are documented in:
-`osm_zip39_poi_candidate_NON_FINAL/README_STEP_BY_STEP_OSM_ZIP39_POI_EXPORT_LEAN_NON_FINAL.md`
+`osm_geofabrik_nrw_zip39_poi_source_snapshot_260531/reproduce_osm_geofabrik_nrw_zip39_poi_source_snapshot_260531.md`
 
 ### Expected internal-candidate outputs
 
-- PBF file: `nordrhein-westfalen_required_zip39_smart_NON_FINAL.osm.pbf`
+- PBF file: `osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf`
 - PBF SHA256: `6425EB1C5832F5569A39F1FF1A2A05B6C66F49C93890644EFFAF15282E5EFD67`
-- CSV file: `osm_zip39_poi_including_bakeries_NON_FINAL.csv`
+- CSV file: `osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv`
 - CSV SHA256: `6888325638722CC2896F50FE607CA9A74F258241400EB9ECBB49BF98E7491AAC`
 - Expected POI rows: `84186`
 - Expected `shop=bakery` rows: `364`

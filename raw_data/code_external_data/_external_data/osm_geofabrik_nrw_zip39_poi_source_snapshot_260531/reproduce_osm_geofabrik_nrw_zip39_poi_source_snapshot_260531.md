@@ -1,9 +1,9 @@
-# OSM ZIP39 PBF and POI CSV — Step-by-Step Reproduction
+# OSM ZIP39 PBF and POI CSV ÔÇö Step-by-Step Reproduction
 
 ## Output files
 
-- `nordrhein-westfalen_required_zip39_smart_NON_FINAL.osm.pbf`
-- `osm_zip39_poi_including_bakeries_NON_FINAL.csv`
+- `osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf`
+- `osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv`
 
 The POI CSV includes the selected OpenStreetMap points of interest, including bakeries tagged as `shop=bakery`.
 
@@ -183,16 +183,16 @@ python3 \
   select_zip39_union.py \
   required_zipcodes.txt \
   work/nrw_postal_code_boundaries.geojson \
-  work/required_zip39_union_NON_FINAL.geojson \
+  work/required_zip39_union.geojson \
   work/zip39_selection_summary.json
 
 osmium extract \
-  --polygon work/required_zip39_union_NON_FINAL.geojson \
+  --polygon work/required_zip39_union.geojson \
   --strategy=smart \
   --set-bounds \
   --fsync \
   --verbose \
-  --output nordrhein-westfalen_required_zip39_smart_NON_FINAL.osm.pbf \
+  --output osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf \
   nordrhein-westfalen-260531.osm.pbf
 ```
 
@@ -347,7 +347,7 @@ osmium export \
   --attributes=type,id \
   --output-format=geojsonseq \
   --output work/osm_zip39_features.geojsonseq \
-  nordrhein-westfalen_required_zip39_smart_NON_FINAL.osm.pbf
+  osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf
 
 python3 \
   export_zip39_pois.py \
@@ -356,20 +356,20 @@ python3 \
 
 gzip --decompress --stdout \
   work/osm_zip39_poi_candidate.csv.gz \
-  > osm_zip39_poi_including_bakeries_NON_FINAL.csv
+  > osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv
 ```
 
 ## 8. Verify the outputs
 
 ```bash
 sha256sum \
-  nordrhein-westfalen_required_zip39_smart_NON_FINAL.osm.pbf \
-  osm_zip39_poi_including_bakeries_NON_FINAL.csv
+  osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf \
+  osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv
 
 python3 - <<'PY'
 import csv
 
-with open("osm_zip39_poi_including_bakeries_NON_FINAL.csv", encoding="utf-8", newline="") as source:
+with open("osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv", encoding="utf-8", newline="") as source:
     rows = list(csv.DictReader(source))
 
 print("POI_ROW_COUNT=" + str(len(rows)))
@@ -393,7 +393,7 @@ This is a `NON_FINAL` internal candidate. Relation-reference completeness remain
 OpenStreetMap attribution:
 
 ```text
-© OpenStreetMap contributors
+┬® OpenStreetMap contributors
 ```
 
 License reference:
