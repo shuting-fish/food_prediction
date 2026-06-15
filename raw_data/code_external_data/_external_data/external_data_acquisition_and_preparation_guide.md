@@ -8,7 +8,15 @@ These files are candidate enrichments only. They are not canonical raw data and 
 
 Canonical raw concepts remain: `sales`, `stores`, `weather`, `holidays`.
 
-## 2. Destatis GV100AD store-municipality candidate
+## 2. Operational acquisition map
+
+| Candidate data | Source and access | Reference period | Preparation route | Current outputs / status |
+|---|---|---|---|---|
+| Destatis GV100AD store-municipality candidate | Destatis Gemeindeverzeichnis / GV100AD publication page; structured file `AuszugGV4QAktuell.xlsx`; source XLSX kept in quarantine | Territorial reference date `2025-12-31`; exact HTTP download timestamp remains `TODO-VERIFY` | Download XLSX, keep original in quarantine, create NRW-only intermediate, filter by required `municipality_ags` from `store_geography/store_municipality_reference.csv`, preserve AGS leading zeros, write CSV and SHA256 sidecar | `destatis_gv100ad_store_municipalities_2025-12-31.csv`; 25 derived municipality rows; 0 missing required AGS values; 0 duplicate derived AGS values; candidate enrichment only |
+| OpenStreetMap ZIP39 POI candidate | Geofabrik historical OpenStreetMap NRW PBF snapshot; source page and snapshot URL documented; OSM copyright page referenced; attribution: OpenStreetMap contributors | Historical snapshot `260531`; relation-reference completeness remains `TODO-OSM-RELATIONS` | Download PBF with `curl`, extract postal-code boundary relations with `osmium tags-filter`, build union of 39 required ZIP polygons, extract ZIP39 PBF with `osmium extract`, export features with `osmium export`, filter selected POIs with Python | ZIP39 PBF plus POI CSV; 84,186 POI rows; 364 `shop=bakery` rows; candidate enrichment only |
+| Root CSV candidates | Repository-root files `Verbraucherpreisindex.csv`, `oil_price.csv`, and `event_data.csv`; hash/byte evidence only in `EXTERNAL_DATA_PROVENANCE.md` | `TODO-VERIFY` | No reproducible acquisition route documented yet because source identity, source URL/access method, access date, and usage terms remain unresolved | Keep as TODO-VERIFY candidates; do not promote or use downstream |
+
+## 3. Destatis GV100AD store-municipality candidate
 
 ### Source and access
 
@@ -57,7 +65,7 @@ Canonical raw concepts remain: `sales`, `stores`, `weather`, `holidays`.
 - Stable public acquisition method remains documented but not fully re-executed in this guide slice.
 - Legal suitability, customer-delivery readiness, redistribution approval, mapping-safety, leakage-safety, downstream join approval, source promotion, and predictive value remain not approved.
 
-## 3. OpenStreetMap ZIP39 POI candidate
+## 4. OpenStreetMap ZIP39 POI candidate
 
 ### Source and access
 
@@ -95,7 +103,7 @@ Detailed reproduction commands are documented in:
 - `TODO-OSM-RELATIONS` remains open.
 - License, redistribution, delivery-readiness, mapping-safety, leakage-safety, downstream join approval, source promotion, and predictive value remain not approved.
 
-## 4. Root CSV candidates
+## 5. Root CSV candidates
 
 The repository root contains three additional external candidate CSV files:
 
@@ -107,7 +115,7 @@ Their hashes and bytes are recorded in `EXTERNAL_DATA_PROVENANCE.md`.
 
 No reproducible acquisition guide is provided for these root CSV candidates because source identity, source URL or access method, access date, and usage terms remain `TODO-VERIFY`.
 
-## 5. Operational boundary
+## 6. Operational boundary
 
 This guide explains acquisition and preparation only.
 
