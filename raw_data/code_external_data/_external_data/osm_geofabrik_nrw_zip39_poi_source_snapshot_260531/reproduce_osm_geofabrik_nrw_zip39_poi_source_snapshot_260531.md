@@ -1,4 +1,4 @@
-# OSM ZIP39 PBF and POI CSV ÔÇö Step-by-Step Reproduction
+# OSM ZIP39 PBF and POI CSV - Step-by-Step Reproduction
 
 ## Output files
 
@@ -393,7 +393,7 @@ This is a `NON_FINAL` internal candidate. Relation-reference completeness remain
 OpenStreetMap attribution:
 
 ```text
-┬® OpenStreetMap contributors
+OpenStreetMap contributors
 ```
 
 License reference:
@@ -401,3 +401,4 @@ License reference:
 ```text
 https://www.openstreetmap.org/copyright
 ```
+

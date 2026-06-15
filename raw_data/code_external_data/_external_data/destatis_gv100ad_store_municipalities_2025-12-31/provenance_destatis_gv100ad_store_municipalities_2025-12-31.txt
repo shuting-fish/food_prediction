@@ -45,7 +45,7 @@ Project store-municipality reference:
 
 Derived project-municipality candidate CSV:
 - Filename: destatis_gv100ad_store_municipalities_2025-12-31.csv
-- SHA256: CAC6A4A042AC61AB1BAC88D1CE2A93D661F2EEE8BE216ECE49C8857C569B8D03
+- SHA256: 61F7EB1D04415343A9698C76D79D74C2C640FC0188FA3B81C252C163449382B7
 - Row count: 25 unique municipalities
 - Filter key: municipality_ags
 - Transformation: Select the distinct municipality_ags values required by store_municipality_reference.csv from the NRW-only GV100AD candidate CSV.
@@ -76,3 +76,4 @@ Derived project-municipality candidate CSV:
 - Do not treat administrative-seat postcode as a complete postcode-to-municipality mapping.
 - Do not overwrite canonical raw data.
 - Do not use this candidate for downstream modeling unless separately approved and evidenced.
+

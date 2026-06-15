@@ -1,59 +1,74 @@
-# External Data Acquisition and Preparation Guide ÔÇö NON_FINAL
+# External Data Acquisition and Preparation Guide - NON_FINAL
 
-## 1. Scope and restrictions
+## 1. Purpose
 
-This guide documents reproducible acquisition and preparation steps for isolated external-data candidate enrichments.
+This guide records how the current internal external-data candidate files were obtained or prepared.
 
-These artifacts are not canonical raw data. They must remain separate from `sales`, `stores`, `weather`, and `holidays`.
+These files are candidate enrichments only. They are not canonical raw data and are not approved for customer delivery, redistribution, joins, downstream model use, legal suitability, mapping safety, leakage safety, or predictive value.
 
-This guide does not approve source promotion, redistribution, downstream model use, customer delivery, legal suitability, mapping safety, leakage safety, or predictive value.
+Canonical raw concepts remain: `sales`, `stores`, `weather`, `holidays`.
 
-## 2. Destatis GV-ISys municipal-directory candidate
+## 2. Destatis GV100AD store-municipality candidate
 
-### Source
+### Source and access
 
-- Organisation: Statistisches Bundesamt (Destatis)
-- Product family: Gemeindeverzeichnis / GV100AD
+- Source organisation: Statistisches Bundesamt (Destatis)
+- Source product family: Gemeindeverzeichnis / GV100AD municipal-directory data
 - Stable publication page: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV4QAktuell.html
 - Structured source file: `AuszugGV4QAktuell.xlsx`
 - Territorial reference date: `2025-12-31`
-- Exact original HTTP download timestamp: `TODO-VERIFY`
+- Exact HTTP download timestamp: `TODO-VERIFY`
+- Usage-term evidence: supporting PDF retained at `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv_isys_usage_terms_supporting_evidence.pdf`
+- Usage-term status: provenance note states redistribution with source attribution is permitted; legal/customer-delivery suitability is not concluded.
 
-### Acquisition and preparation
+### How the data was prepared
 
-1. Open the stable Destatis publication page.
-2. Download the linked XLSX file for the fourth quarter of 2025.
-3. Record the download timestamp and SHA256 hash.
-4. Restrict the structured source data to NRW municipalities.
-5. Read the distinct `municipality_ags` values from `store_municipality_reference.csv`.
-6. Filter the NRW municipality candidate by `municipality_ags`.
-7. Preserve AGS leading zeros.
-8. Do not filter by administrative-seat postcode.
+1. Download the Destatis GV100AD structured XLSX from the stable publication page.
+2. Keep the original XLSX in quarantine.
+3. Export or prepare the NRW-only municipality candidate.
+4. Read the distinct `municipality_ags` values from `store_geography/store_municipality_reference.csv`.
+5. Filter the NRW municipality candidate to those required `municipality_ags` values.
+6. Preserve AGS leading zeros.
+7. Do not use administrative-seat postcode as a municipality mapping key.
+8. Write the store-municipality candidate CSV and SHA256 sidecar.
 
-### Candidate output
+### Inputs and outputs
 
-- File: `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv100ad_store_municipalities_2025-12-31.csv`
-- Expected candidate rows: `25`
-- Join candidate: `municipality_ags`
-- Schema:
-  `reference_date, municipality_ags, municipality_ars, state_ars, regional_district_ars, district_ars, association_ars, municipality_component, municipality_name, area_km2, population_total, population_male, population_female, population_per_km2, administrative_seat_zipcode, centroid_longitude, centroid_latitude, travel_region_code, travel_region_name, urbanisation_code, urbanisation_name`
+- Quarantine source XLSX: `C:\Users\simon\food_prediction_quarantine\gv100ad_cycle_2025_01_01_to_2026_03_31\AuszugGV4QAktuell.xlsx`
+- NRW-only intermediate: `C:\Users\simon\food_prediction_quarantine\gv100ad_cycle_2025_01_01_to_2026_03_31\gv100ad_31122025_nrw_csv_non_final\destatis_gv100ad_municipalities_nrw_2025-12-31_NON_FINAL.csv`
+- AGS filter input: `store_geography/store_municipality_reference.csv`
+- Candidate output: `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv100ad_store_municipalities_2025-12-31.csv`
+- Candidate output SHA256: `61F7EB1D04415343A9698C76D79D74C2C640FC0188FA3B81C252C163449382B7`
+- SHA256 sidecar: `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv100ad_store_municipalities_2025-12-31.csv.sha256.txt`
+- Provenance note: `destatis_gv100ad_store_municipalities_2025-12-31/provenance_destatis_gv100ad_store_municipalities_2025-12-31.txt`
 
-### Preserved blockers
+### QA checks recorded
 
-- Exact field-level temporal semantics before downstream use: `TODO-VERIFY`
-- Exact original HTTP download timestamp: `TODO-VERIFY`
-- Delivery readiness: `Blocked / TODO-VERIFY`
+- NRW source rows: `396`
+- Required unique store municipality AGS values: `25`
+- Derived rows: `25`
+- Missing required municipality AGS values: `0`
+- Duplicate derived municipality AGS values: `0`
+- Filter key: `municipality_ags`, not postcode.
+
+### Open TODO-VERIFY
+
+- Exact HTTP download timestamp.
+- Stable public acquisition method remains documented but not fully re-executed in this guide slice.
+- Legal suitability, customer-delivery readiness, redistribution approval, mapping-safety, leakage-safety, downstream join approval, source promotion, and predictive value remain not approved.
 
 ## 3. OpenStreetMap ZIP39 POI candidate
 
-### Source
+### Source and access
 
+- Source provider: Geofabrik OpenStreetMap extract for Nordrhein-Westfalen
 - Source page: https://download.geofabrik.de/europe/germany/nordrhein-westfalen.html
 - Historical snapshot URL: https://download.geofabrik.de/europe/germany/nordrhein-westfalen-260531.osm.pbf
-- Attribution: `┬® OpenStreetMap contributors`
 - License reference: https://www.openstreetmap.org/copyright
+- Attribution: OpenStreetMap contributors
+- Relation-reference completeness: `TODO-OSM-RELATIONS`
 
-### Acquisition and preparation
+### How the data was prepared
 
 1. Download the historical NRW PBF snapshot with `curl`.
 2. Extract postal-code boundary relations with `osmium tags-filter`.
@@ -63,26 +78,37 @@ This guide does not approve source promotion, redistribution, downstream model u
 6. Retain selected POIs, including bakeries tagged as `shop=bakery`.
 7. Verify output hashes and aggregate row counts.
 
-Detailed commands are documented in:
+Detailed reproduction commands are documented in:
 `osm_geofabrik_nrw_zip39_poi_source_snapshot_260531/reproduce_osm_geofabrik_nrw_zip39_poi_source_snapshot_260531.md`
 
-### Expected internal-candidate outputs
+### Outputs and QA checks recorded
 
-- PBF file: `osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf`
+- PBF output: `osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf`
 - PBF SHA256: `6425EB1C5832F5569A39F1FF1A2A05B6C66F49C93890644EFFAF15282E5EFD67`
-- CSV file: `osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv`
-- CSV SHA256: `6888325638722CC2896F50FE607CA9A74F258241400EB9ECBB49BF98E7491AAC`
-- Expected POI rows: `84186`
-- Expected `shop=bakery` rows: `364`
-- Schema:
-  `feature_unique_id, osm_type, osm_id, geometry_type, representative_latitude, representative_longitude, coordinate_semantics, name, amenity, shop, tourism, leisure, office, craft, healthcare, public_transport, railway, highway, brand, operator, tags_json`
+- POI CSV output: `osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv`
+- POI CSV SHA256: `6888325638722CC2896F50FE607CA9A74F258241400EB9ECBB49BF98E7491AAC`
+- POI rows: `84186`
+- `shop=bakery` rows: `364`
 
-### Preserved blocker
+### Open TODO-VERIFY
 
-`TODO-OSM-RELATIONS` remains open. It is non-blocking only for the previously reduced internal ZIP39 OSM POI export scope.
+- `TODO-OSM-RELATIONS` remains open.
+- License, redistribution, delivery-readiness, mapping-safety, leakage-safety, downstream join approval, source promotion, and predictive value remain not approved.
 
-## 4. Separation from delivery artifacts
+## 4. Root CSV candidates
 
-All documented outputs remain isolated internal candidate enrichments.
+The repository root contains three additional external candidate CSV files:
 
-Before any delivery-readiness review, verify source terms, redistribution suitability, raw lineage, schema, sidecar metadata, temporal semantics, mapping safety, leakage safety, and QA evidence for the intended delivery artifact.
+- `Verbraucherpreisindex.csv`
+- `oil_price.csv`
+- `event_data.csv`
+
+Their hashes and bytes are recorded in `EXTERNAL_DATA_PROVENANCE.md`.
+
+No reproducible acquisition guide is provided for these root CSV candidates because source identity, source URL or access method, access date, and usage terms remain `TODO-VERIFY`.
+
+## 5. Operational boundary
+
+This guide explains acquisition and preparation only.
+
+It does not approve customer delivery, redistribution, legal suitability, source promotion, canonical overwrite, joins, downstream model use, mapping safety, leakage safety, predictive value, operational value, or business value.
