@@ -1,1 +1,0 @@
-6888325638722CC2896F50FE607CA9A74F258241400EB9ECBB49BF98E7491AAC  osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv
