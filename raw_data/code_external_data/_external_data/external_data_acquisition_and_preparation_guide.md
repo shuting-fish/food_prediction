@@ -27,7 +27,7 @@ Canonical raw concepts remain: `sales`, `stores`, `weather`, `holidays`.
 - Territorial reference date: `2025-12-31`
 - Exact HTTP download timestamp: `TODO-VERIFY`
 - Usage-term evidence: supporting PDF retained at `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv_isys_usage_terms_supporting_evidence.pdf`
-- Usage-term status: provenance note states redistribution with source attribution is permitted; legal/customer-delivery suitability is not concluded.
+- Usage-term status: provenance note records a usage-term interpretation involving source attribution; legal suitability, customer-delivery readiness, and redistribution approval are not concluded.
 
 ### How the data was prepared
 
@@ -47,7 +47,7 @@ Canonical raw concepts remain: `sales`, `stores`, `weather`, `holidays`.
 - AGS filter input: `store_geography/store_municipality_reference.csv`
 - Candidate output: `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv100ad_store_municipalities_2025-12-31.csv`
 - Candidate output SHA256: `61F7EB1D04415343A9698C76D79D74C2C640FC0188FA3B81C252C163449382B7`
-- SHA256 sidecar: `destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv100ad_store_municipalities_2025-12-31.csv.sha256.txt`
+- SHA256 sidecar: local/provenance-only checksum file; `.sha256.txt` files must not be tracked in Git.
 - Provenance note: `destatis_gv100ad_store_municipalities_2025-12-31/provenance_destatis_gv100ad_store_municipalities_2025-12-31.txt`
 
 ### QA checks recorded
@@ -120,3 +120,77 @@ No reproducible acquisition guide is provided for these root CSV candidates beca
 This guide explains acquisition and preparation only.
 
 It does not approve customer delivery, redistribution, legal suitability, source promotion, canonical overwrite, joins, downstream model use, mapping safety, leakage safety, predictive value, operational value, or business value.
+## 7. Minimum customer-guide completion addendum
+
+### Source inventory
+
+Current external-data candidates:
+
+- Destatis GV100AD store-municipality candidate.
+  - Source page and structured XLSX are documented.
+  - Exact HTTP download timestamp remains TODO-VERIFY.
+  - Candidate enrichment only.
+  - Not approved for customer delivery, redistribution, source promotion, downstream joins, legal suitability, mapping safety, leakage safety, or predictive value.
+- OpenStreetMap ZIP39 POI candidate.
+  - Geofabrik NRW historical PBF snapshot URL is documented.
+  - OpenStreetMap copyright reference and attribution are documented.
+  - Relation-reference completeness remains TODO-OSM-RELATIONS.
+  - Candidate enrichment only.
+  - Not approved for customer delivery, redistribution, source promotion, downstream joins, legal suitability, mapping safety, leakage safety, or predictive value.
+- Root CSV candidates.
+  - File names and hash/byte evidence are referenced in EXTERNAL_DATA_PROVENANCE.md.
+  - Source identity, source URL/access method, access date, and usage terms remain TODO-VERIFY.
+  - TODO-VERIFY candidates only.
+  - Do not promote or use downstream.
+
+### Required input files
+
+- Destatis GV100AD: AuszugGV4QAktuell.xlsx in quarantine.
+- Destatis GV100AD: store_geography/store_municipality_reference.csv as AGS filter input.
+- OSM ZIP39 POI: Geofabrik NRW historical PBF snapshot.
+- OSM ZIP39 POI: reproduction commands in osm_geofabrik_nrw_zip39_poi_source_snapshot_260531/reproduce_osm_geofabrik_nrw_zip39_poi_source_snapshot_260531.md.
+- Root CSV candidates: Verbraucherpreisindex.csv, oil_price.csv, and event_data.csv.
+
+### Preparation steps
+
+1. Keep source downloads or source snapshots in quarantine or documented staging.
+2. Preserve source identity, source URL/access method, access or creation date, and license/usage-term evidence.
+3. Mark unresolved source fields as TODO-VERIFY.
+4. Prepare candidate enrichment outputs separately from canonical raw concepts.
+5. Preserve AGS leading zeros where AGS values are used.
+6. Do not use PLZ/postcode as a one-to-one municipality key.
+7. Do not treat representative or derived coordinates as precise store or POI locations.
+8. Record output paths, output hashes, aggregate QA checks, and unresolved limitations.
+9. Keep unresolved delivery, redistribution, mapping, leakage, and downstream-use gates as TODO-VERIFY.
+
+### Output files and schemas
+
+- Destatis GV100AD output: destatis_gv100ad_store_municipalities_2025-12-31/destatis_gv100ad_store_municipalities_2025-12-31.csv.
+  - Output file and QA counts are documented.
+  - Full schema should be rechecked before downstream planning.
+- OSM ZIP39 POI output: osm_geofabrik_nrw_zip39_poi_source_snapshot_260531/osm_geofabrik_nrw_zip39_poi_including_bakeries_source_snapshot_260531.csv.
+  - Candidate CSV and aggregate row counts are documented.
+  - Full schema must be verified from the current file before downstream planning.
+- OSM ZIP39 extract: osm_geofabrik_nrw_zip39_extract_source_snapshot_260531.osm.pbf.
+  - Binary PBF candidate output.
+  - Not a customer-delivery artifact.
+- Root CSV candidates.
+  - Schema and source documentation remain TODO-VERIFY.
+
+### Coordinate boundary notes
+
+- Coordinates in the OSM candidate are for source QA and descriptive review only.
+- Coordinates must not be interpreted as precise store locations.
+- Coordinates must not be interpreted as legally or operationally precise POI locations without additional source and geometry-quality evidence.
+- Representative coordinates, geometry-derived coordinates, centroids, or repeated coordinate pairs are mapping-QA risks.
+- Coordinate-based joins, distance calculations, catchment logic, or store-level geographic conclusions are blocked unless separately gated.
+
+### Known limitations
+
+- TODO-OSM-RELATIONS remains open.
+- Exact Destatis HTTP download timestamp remains TODO-VERIFY.
+- Root CSV source identity, source URL/access method, access date, and usage terms remain TODO-VERIFY.
+- License/usage-term evidence does not establish legal suitability or customer-delivery readiness.
+- PLZ/postcode values are descriptive review candidates only and are not one-to-one municipality keys.
+- Candidate availability does not establish mapping safety, leakage safety, downstream join approval, predictive value, forecast improvement, operational benefit, or business value.
+- No customer delivery, redistribution, source promotion, canonical overwrite, downstream use, delivery conversion, or TODO-VERIFY closure is approved by this guide.
