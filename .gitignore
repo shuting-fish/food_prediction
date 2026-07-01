@@ -27,4 +27,6 @@ raw_data/geo/
 visualization_marcel.ipynb
 .virtual_documents/
 anaconda_projects/
-marcel_lokal/
+#marcel_lokal/
+lagging*.ipynb
+gridseachrCV.joblib
