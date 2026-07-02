@@ -12,6 +12,7 @@ env*/
 *.pdf
 *.xlsx
 2026*.parquet
+0*.parquet
 *.xlsx
 .csv
 
