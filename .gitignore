@@ -11,9 +11,9 @@ env*/
 *.log
 *.pdf
 *.xlsx
-*.parquet
+2026*.parquet
 *.xlsx
-*.csv
+.csv
 
 # Generated reports / visuals
 artifacts/
