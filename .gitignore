@@ -12,6 +12,7 @@ env*/
 *.pdf
 *.xlsx
 *.parquet
+*.xlsx
 *.csv
 
 # Generated reports / visuals
@@ -29,3 +30,16 @@ raw_data/code_external_data/_reference_geo/*
 !raw_data/code_external_data/_reference_geo/plz_centroids_nrw.csv
 __pycache__/
 *.pyc
+
+
+# Marcel
+visualization_marcel.ipynb
+.virtual_documents/
+anaconda_projects/
+marcel_lokal/
+Halde/
+external_data_transformed/
+lagging*.ipynb
+gridseachrCV.joblib
+_repo_intake_review_NON_FINAL/
+ data/external/_repo_intake_review_NON_FINAL/
