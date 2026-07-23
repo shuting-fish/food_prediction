@@ -590,74 +590,82 @@ def render_workflow() -> None:
 
 
 def render_qa_evidence() -> None:
-    """Render QA gates and evidence traceability."""
+    """Render the project's quality checks in presentation-friendly language."""
 
     hero(
-        "QA & evidence",
-        "Uncertainty is visible, named, and kept open.",
-        "The project uses TODO-VERIFY to prevent incomplete source, mapping, timing, "
-        "or validation evidence from becoming an unsupported conclusion.",
+        "Quality assurance",
+        "What has been checked—and what still needs work.",
+        "This page summarises the quality questions that matter before external data "
+        "or forecasts can be relied on. Uncertainty is visible wherever the current "
+        "evidence is incomplete.",
     )
-    status_row(("Evidence-first", "Open risk remains visible", "No value claim"))
+    status_row(
+        (
+            "External data kept separate",
+            "Location evidence still open",
+            "Forecast comparison pending",
+        )
+    )
 
     section(
-        "Control areas",
-        "Four gates shape what can be said",
-        "Open checks are not presentation defects; they are explicit limits on interpretation and reuse.",
+        "Quality focus",
+        "Four practical checks protect the forecast",
+        "Before additional data can be used with confidence, the project needs clear "
+        "answers about its origin, location, timing, and measurable contribution.",
     )
     cards(
         (
             (
-                "SOURCE",
-                "Identity & lineage",
-                "Source location, access date, license, update semantics, and transformations require evidence.",
+                "DATA SOURCES",
+                "Can we trace the data?",
+                "Confirm the origin, usage terms, update frequency, and every transformation.",
             ),
             (
-                "TIME",
-                "Causal availability",
-                "Publication lag, revisions, backfills, and prediction-time availability remain controlled.",
+                "LOCATION MAPPING",
+                "Do locations match correctly?",
+                "Verify postcode assignments, municipality codes, coordinates, and duplicate locations.",
             ),
             (
-                "MAP",
-                "Reference & geospatial QA",
-                "ZIP allocation, AGS identity, coordinates, NRW boundaries, and duplicates require checks.",
+                "TIMING",
+                "Was the data available in time?",
+                "Check publication dates, later revisions, and backfilled values against each forecast date.",
             ),
             (
-                "VALUE",
-                "Forecast validation",
-                "Value claims require later time-based or walk-forward validation against a defined baseline.",
+                "FORECAST CHECK",
+                "Does the model beat a simple baseline?",
+                "Compare forecasts with a defined baseline using time-ordered validation in a later phase.",
             ),
         )
     )
 
     section(
-        "Open evidence register",
-        "Selected interpretation blockers",
-        "This compact register reflects the active governance boundary; it does not "
-        "replace the detailed source registry in the repository.",
+        "Current position",
+        "Evidence still needed before stronger conclusions",
+        "The remaining work is easier to understand as concrete questions than as "
+        "internal status codes.",
     )
-    todo_rows = [
-        {"Area": "External sources", "Open evidence": "Identity, usage terms, lineage, update semantics", "Status": "TODO-VERIFY"},
-        {"Area": "Reference mapping", "Open evidence": "ZIP allocation and authoritative AGS identity", "Status": "TODO-VERIFY"},
-        {"Area": "Coordinates", "Open evidence": "Source, quality, approximation, duplicate risk", "Status": "TODO-VERIFY"},
-        {"Area": "Causality", "Open evidence": "Publication, revision, backfill, prediction-time timing", "Status": "TODO-VERIFY"},
-        {"Area": "Forecast value", "Open evidence": "Time-based baseline comparison", "Status": "TODO-VERIFY"},
-    ]
-    st.table(todo_rows)
+    left, right = st.columns(2, gap="large")
+    with left:
+        st.markdown("#### Before external data is used")
+        st.markdown(
+            "- Record the source and usage terms\n"
+            "- Document updates and transformations\n"
+            "- Verify postcode and municipality assignments\n"
+            "- Check coordinate quality and duplicates"
+        )
+    with right:
+        st.markdown("#### Before forecast improvement is claimed")
+        st.markdown(
+            "- Define a simple comparison baseline\n"
+            "- Keep training and test periods in time order\n"
+            "- Use only information available on the forecast date\n"
+            "- Report results together with their limitations"
+        )
 
-    section(
-        "Content traceability",
-        "Evidence used for this presentation",
-        "The draft is anchored to the verified base commit and the active project governance snapshot.",
+    callout(
+        "Until these checks are supported by evidence, the presentation does not "
+        "claim that external data is ready for use or that forecasts have improved."
     )
-    evidence_rows = [
-        {"Evidence": "Upstream base commit", "Reference": "shuting-fish/master @ 24c5757"},
-        {"Evidence": "Repository policy", "Reference": "Project documentation"},
-        {"Evidence": "Workflow artifacts", "Reference": "notebooks/01, 02, 02a, and 03"},
-        {"Evidence": "External-data QA", "Reference": "raw_data/code_external_data/* QA documentation"},
-        {"Evidence": "Active project governance", "Reference": "FPS-GOV-001 / FPS-SLICE-001 / FPS-STATE-001"},
-    ]
-    st.table(evidence_rows)
 
 
 def render_limitations() -> None:
