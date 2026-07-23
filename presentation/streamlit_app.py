@@ -652,7 +652,7 @@ def render_qa_evidence() -> None:
     )
     evidence_rows = [
         {"Evidence": "Upstream base commit", "Reference": "shuting-fish/master @ 24c5757"},
-        {"Evidence": "Repository policy", "Reference": "Readme.md and AGENTS.md"},
+        {"Evidence": "Repository policy", "Reference": "Project documentation"},
         {"Evidence": "Workflow artifacts", "Reference": "notebooks/01, 02, 02a, and 03"},
         {"Evidence": "External-data QA", "Reference": "raw_data/code_external_data/* QA documentation"},
         {"Evidence": "Active project governance", "Reference": "FPS-GOV-001 / FPS-SLICE-001 / FPS-STATE-001"},
