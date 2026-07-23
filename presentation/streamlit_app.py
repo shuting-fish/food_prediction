@@ -524,7 +524,7 @@ def render_data_landscape() -> None:
         {"Priority": 4, "Candidate area": "Weather engineering", "Role": "Potential derived weather context"},
         {"Priority": 5, "Candidate area": "GTFS", "Role": "Transit accessibility context"},
     ]
-    st.dataframe(candidate_rows, hide_index=True, width="stretch")
+    st.table(candidate_rows)
     callout(
         "Boundary: candidate enrichment data must not overwrite the canonical raw core, "
         "and this presentation does not publish or provide downloads for repository data."
@@ -582,7 +582,7 @@ def render_workflow() -> None:
         {"Repository artifact": "notebooks/02a_external_feature_engineering.ipynb", "Presentation status": "Observed"},
         {"Repository artifact": "notebooks/03_modeling.ipynb", "Presentation status": "Observed; not executed"},
     ]
-    st.dataframe(artifact_rows, hide_index=True, width="stretch")
+    st.table(artifact_rows)
     callout(
         "Interpretation limit: repository artifacts demonstrate file presence and "
         "documented workflow intent—not current reproducibility, model quality, or forecast value."
@@ -643,7 +643,7 @@ def render_qa_evidence() -> None:
         {"Area": "Causality", "Open evidence": "Publication, revision, backfill, prediction-time timing", "Status": "TODO-VERIFY"},
         {"Area": "Forecast value", "Open evidence": "Time-based baseline comparison", "Status": "TODO-VERIFY"},
     ]
-    st.dataframe(todo_rows, hide_index=True, width="stretch")
+    st.table(todo_rows)
 
     section(
         "Content traceability",
@@ -657,7 +657,7 @@ def render_qa_evidence() -> None:
         {"Evidence": "External-data QA", "Reference": "raw_data/code_external_data/* QA documentation"},
         {"Evidence": "Active project governance", "Reference": "FPS-GOV-001 / FPS-SLICE-001 / FPS-STATE-001"},
     ]
-    st.dataframe(evidence_rows, hide_index=True, width="stretch")
+    st.table(evidence_rows)
 
 
 def render_limitations() -> None:
@@ -685,7 +685,7 @@ def render_limitations() -> None:
         {"Boundary": "Forecast improvement", "Current position": "TODO-VERIFY pending later walk-forward validation"},
         {"Boundary": "Business benefit", "Current position": "No reliable evidence"},
     ]
-    st.dataframe(limitation_rows, hide_index=True, width="stretch")
+    st.table(limitation_rows)
 
     section(
         "Evidence-producing progression",
