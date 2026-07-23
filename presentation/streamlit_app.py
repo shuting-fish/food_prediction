@@ -670,7 +670,7 @@ def render_limitations() -> None:
         "structure. It is not a model-serving interface, a delivery package, or "
         "evidence that the project improves forecasts.",
     )
-    status_row(("Draft presentation", "Deployment not performed", "Project status: Non-final"))
+    status_row(("Draft presentation", "Deployment: separate QA boundary", "Project status: Non-final"))
 
     section(
         "Current limitations",
@@ -717,8 +717,8 @@ def render_limitations() -> None:
         )
     )
     callout(
-        "Deployment remains a separate slice. It requires an explicit branch, entry point, "
-        "runtime, build-log, secrets, and public-exposure review."
+        "Deployment is governed as a separate verification slice covering the repository, "
+        "branch, entry point, runtime, build logs, secrets handling, and public exposure."
     )
 
 
