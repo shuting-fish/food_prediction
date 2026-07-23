@@ -613,30 +613,33 @@ def render_qa_evidence() -> None:
         "Before additional data can be used with confidence, the project needs clear "
         "answers about its origin, location, timing, and measurable contribution.",
     )
-    cards(
-        (
-            (
-                "DATA SOURCES",
-                "Can we trace the data?",
-                "Confirm the origin, usage terms, update frequency, and every transformation.",
-            ),
-            (
-                "LOCATION MAPPING",
-                "Do locations match correctly?",
-                "Verify postcode assignments, municipality codes, coordinates, and duplicate locations.",
-            ),
-            (
-                "TIMING",
-                "Was the data available in time?",
-                "Check publication dates, later revisions, and backfilled values against each forecast date.",
-            ),
-            (
-                "FORECAST CHECK",
-                "Does the model beat a simple baseline?",
-                "Compare forecasts with a defined baseline using time-ordered validation in a later phase.",
-            ),
+    source_check, location_check = st.columns(2, gap="large")
+    with source_check:
+        st.markdown("#### Data sources")
+        st.markdown("**Can we trace the data?**")
+        st.write(
+            "Confirm the origin, usage terms, update frequency, and every transformation."
         )
-    )
+    with location_check:
+        st.markdown("#### Location mapping")
+        st.markdown("**Do locations match correctly?**")
+        st.write(
+            "Verify postcode assignments, municipality codes, coordinates, and duplicate locations."
+        )
+
+    timing_check, forecast_check = st.columns(2, gap="large")
+    with timing_check:
+        st.markdown("#### Timing")
+        st.markdown("**Was the data available in time?**")
+        st.write(
+            "Check publication dates, later revisions, and backfilled values against each forecast date."
+        )
+    with forecast_check:
+        st.markdown("#### Forecast check")
+        st.markdown("**Does the model beat a simple baseline?**")
+        st.write(
+            "Compare forecasts with a defined baseline using time-ordered validation in a later phase."
+        )
 
     section(
         "Current position",
